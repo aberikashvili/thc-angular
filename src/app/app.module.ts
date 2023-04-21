@@ -3,22 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { OrangeButtonComponent } from './orange-button/orange-button.component';
-import { BlueButtonComponent } from './blue-button/blue-button.component';
+import { HomeModule } from './modules/HomeModule/home.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    OrangeButtonComponent,
-    BlueButtonComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, HomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
