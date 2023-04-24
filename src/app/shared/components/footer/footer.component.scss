@@ -28,7 +28,88 @@
 }
 
 
-// რესპონსივი
+// რესფონსივი
+
+@media (max-width:1680px) {
+    .footer::before{
+        content: "";
+      
+        width: 40px;
+        
+        
+    }
+    .footer__top__wrapper {
+        margin: 0 60px 25px 60px;
+    }
+    .footer__top__wrapper__right--block{
+        width: 200px;
+    }
+.footer__top__wrapper__right--block--text{
+    // font-size: 13px;
+}
+
+.footer__top__wrapper__left {
+    margin-right: 40px;
+}
+.footer__top__wrapper__left--text{
+    font-size: 13px;
+}
+}
+
+
+@media (max-width:1440px) {
+    .footer__top__wrapper__left {
+        display: none;
+    }
+     .footer__top__wrapper{
+        justify-content: center;
+    }
+    .footer__top__wrapper__right{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:800px) {
+    .footer__top__wrapper__right--block--text{
+        font-size: 12px;
+    }
+    .footer__top__wrapper__right--block{
+        width: 170px;
+    }
+    .footer__top__wrapper__right--block--header{
+     font-size: 13px;
+    }
+}
+
+
+@media(max-width:768px){
+
+.footer__bottom__wrapper{
+    font-size: 12px;
+    margin:0 60px;
+}
+.footer__bottom__wrapper__links--link {
+    margin-right: 10px;
+}
+}
+@media(max-width:600px){
+.footer__top__wrapper__right--block:nth-of-type(2){
+    display: none;
+}
+
+    }
+
+@media (max-width:480px) {
+    .footer__bottom__wrapper__links{
+        display: none;
+    }
+    .footer__top__wrapper__right--block:nth-of-type(1){
+        display: none;
+    }
+}
+
 
 @media (max-width:375px) {
 
@@ -60,9 +141,7 @@
       position: relative;
       margin: 0;
     }
-    .footer__bottom__wrapper__links{
-        display: none;
-    }
+   
 }
 
 
