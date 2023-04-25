@@ -1,11 +1,96 @@
-.logo {
-    // border: 2px solid #5765FD;
-    // position: relative;
-    // width: 200px;
-    // height: 200px;
+.mobile-version {
+    display: none;
+}
 
-    // .title {
-    //     position: absolute;
+.nav-midle {
+    a {
+        font-family: 'Prompt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        cursor: pointer;
 
-    // }
+    }
+}
+
+.header-button {
+    button {
+        padding: 13.5px 32px;
+        background: #5765FD;
+        color: white;
+        font-size: 14px;
+
+
+    }
+
+}
+
+.mobileMenu {
+    display: none;
+}
+
+
+
+.mediaArea img:hover {
+    filter: invert(0.5);
+}
+
+@media screen and (max-width: 1120px) {
+    .px-24 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .desktop-version {
+        display: none;
+    }
+
+    .mobile-version {
+        display: flex;
+
+        button {
+            background: #5765FD;
+
+            span {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .mobileMenu {
+        display: flex;
+    }
+
+    .menuBar {
+        margin-top: 25px;
+        font-family: 'Prompt';
+
+        .ind {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .indMenu {
+            font-size: 14px;
+
+        }
+
+    }
+
+    .closeBtn {
+        padding: 10px 14px 6px;
+    }
+
+
+    .mobileBtn {
+        background: #5765FD;
+        color: #fff;
+    }
+
 }

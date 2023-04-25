@@ -1,39 +1,83 @@
 <section class="mainheader bg-white">
-    <div class="desktop-version flex items-center gap-2">
-        <div class="logo">
-            <span class="rounded-sm w-12 title">Tbilisi Holding <br> Company</span>
+    <div class="desktop-version flex items-center py-5	px-24">
+        <a href="#" class="logo cursor-pointer	">
+            <img src="../../../../assets/images/Logo.svg" alt="">
+        </a>
+        <div class="nav-midle flex	justify-center	items-center m-auto gap-8">
+            <a href="#" class="text-slate-900 hover:text-slate-600">WHO ARE YOU</a>
+            <a href="#" class="text-slate-900  hover:text-slate-600">INDUSTRY</a>
+            <a href="#" class="text-slate-900  hover:text-slate-600">OUR BRANDS</a>
+            <a href="#" class="text-slate-900  hover:text-slate-600">NEWS</a>
+            <a href="#" class="text-slate-900 hover:text-slate-600">MEDIA</a>
         </div>
-
-        <div class="relative">
-            <div
-                class="relative w-fit px-4 py-2 border border-1 border-neutral-400 rounded-md flex justify-center items-center cursor-pointer">
-                <div class="mr-2">
-                    The Selected Value
-                </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </div>
-            </div>
-            <div class="absolute w-fit py-1 mt-2 border border-1 border-neutral-400 rounded-md cursor-pointer">
-                <div class="py-2 px-4 w-full hover:bg-neutral-100">
-                    Item 1
-                </div>
-                <div class="py-2 px-4 w-full hover:bg-neutral-100">
-                    Item 2
-                </div>
-                <div class="py-2 px-4 w-full hover:bg-neutral-100">
-                    Item 3
-                </div>
-                <div class="py-2 px-4 w-full hover:bg-neutral-100">
-                    Item 4
-                </div>
-            </div>
+        <div class="header-button">
+            <button class="flex flex-row items-start gap-2.5 ">CONTACT US</button>
         </div>
     </div>
-    <div class="mobile-version">
+    <div class="mobile-version flex flex-col   ">
+        <div *ngIf="!showIndusrtyMenu" class="flex justify-between py-2 px-4 items-center  ">
+            <a href="#" class="logo">
+                <img src="../../../../assets/images/Logo_mobile.svg" alt="">
+            </a>
+            <button class="flex flex-col" [ngClass]="{'px-3 py-3.5':!showNavbar, 'closeBtn':showNavbar,}"
+                [ngStyle]="{'background-color':!showNavbar?'#5765FD':'#FF8C6D'}" (click)="showNavbar=!showNavbar">
+                <div *ngIf="!showNavbar" class="flex flex-col gap-1.5 ">
+                    <img src="../../../../assets/images/menuitem.svg" alt="">
+                    <img src="../../../../assets/images/menuitem.svg" alt="">
+                    <img src="../../../../assets/images/menuitem.svg" alt="">
+                </div>
 
+                <span *ngIf="showNavbar">
+                    X
+                </span>
+            </button>
+        </div>
+        <div *ngIf="showNavbar && !showIndusrtyMenu"
+            class="mobileMenu w-full gap-20  mt-24 m-auto flex flex-col  items-center px-4 ">
+            <div class="flex flex-col gap-7 items-center w-full ">
+                <a class="text-slate-900 hover:text-slate-600">WHO ARE YOU</a>
+                <a (click)="showIndusrtyMenu=!showIndusrtyMenu"
+                    class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative ">
+                    <span>
+                        INDUSTRY
+                    </span>
+                    <span style="position: absolute;right: 0px;">
+                        <img src="../../../../assets/images/row.svg" alt="">
+                    </span>
+
+                </a>
+                <a class="text-slate-900  hover:text-slate-600">OUR BRANDS</a>
+                <a class="text-slate-900  hover:text-slate-600">NEWS</a>
+                <a class="text-slate-900 hover:text-slate-600">MEDIA</a>
+            </div>
+
+            <div class="mobileBtn flex w-full items-center gap-2.5 justify-center">
+                <button class=" py-3">CONTACT US</button>
+            </div>
+            <div class="icon flex gap-9 justify-center	items-center mediaArea">
+                <a> <img src="../../../../assets/images/facebook.svg" alt=""></a>
+                <a> <img src="../../../../assets/images/linkedin.svg" alt=""></a>
+                <a><img src="../../../../assets/images/youtube.svg" alt=""></a>
+            </div>
+        </div>
+        <div *ngIf="showIndusrtyMenu" class="menuBar flex flex-col ml-10 gap-10	 ">
+            <div (click)="showIndusrtyMenu=!showIndusrtyMenu" class="ind flex justify-center   ">
+                <h1 class="moreBack w-full flex items-center justify-center relative flex-row	 ">
+                    <span class="absolute left-0">
+                        <img src="../../../../assets/images/row2.svg" alt="">
+                    </span>
+                    <span>
+                        Industry
+                    </span>
+                </h1>
+            </div>
+            <div class="indMenu flex flex-col gap-5	">
+                <span>Food Import & Distribution </span>
+                <span>Import & Distribution of Toys, Tableware and Stationery</span>
+                <span>Supermarket Chain</span>
+                <span>Construction / Property Development</span>
+                <span>Production</span>
+            </div>
+        </div>
     </div>
 </section>
