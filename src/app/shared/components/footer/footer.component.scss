@@ -30,7 +30,7 @@
 
 // რესფონსივი
 
-@media (max-width:1680px) {
+@media (max-width:1920px) {
     .footer::before{
         content: "";
       
@@ -41,10 +41,10 @@
     .footer__top__wrapper {
         margin: 0 60px 25px 60px;
     }
-    .footer__top__wrapper__right--block{
+    .footer__top__wrapper__right--block:not(:last-of-type){
         width: 200px;
     }
-
+ 
 .footer__top__wrapper__left {
     margin-right: 40px;
 }
@@ -66,15 +66,17 @@
         width: 100%;
     }
 }
+@media (max-width:960px) {
+  
+}
 
-
-@media (max-width:800px) {
+@media (max-width:960px) {
     .footer__top__wrapper__right--block--text{
         font-size: 12px;
     }
-    .footer__top__wrapper__right--block{
-        width: 170px;
-    }
+    // .footer__top__wrapper__right--block{
+    //     width: 170px;
+    // }
     .footer__top__wrapper__right--block--header{
      font-size: 13px;
     }
@@ -85,26 +87,31 @@
 
 .footer__bottom__wrapper{
     font-size: 12px;
-    margin:0 60px;
+    margin:0 50px;
+}
+.footer__top__wrapper {
+    margin: 0 50px 25px 50px;
 }
 .footer__bottom__wrapper__links--link {
     margin-right: 10px;
 }
-}
-@media(max-width:600px){
 .footer__top__wrapper__right--block:nth-of-type(2){
     display: none;
 }
+}
+@media(max-width:600px){
 
+    .footer__top__wrapper__right--block:nth-of-type(1){
+        display: none;
+    }
+  
     }
 
 @media (max-width:480px) {
     .footer__bottom__wrapper__links{
         display: none;
     }
-    // .footer__top__wrapper__right--block:nth-of-type(1){
-    //     display: none;
-    // }
+
 }
 
 
@@ -119,6 +126,9 @@
     }
      .footer__top__wrapper__left {
         display: none;
+     }
+     .footer__top__wrapper__right--block--text{
+        width: 270px;
      }
      .footer__top__wrapper__right--block:not(:last-child){
      display: none;
