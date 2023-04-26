@@ -1,96 +1,105 @@
-.mobile-version {
-    display: none;
-}
-
-.nav-midle {
-    a {
-        font-family: 'Prompt';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        text-transform: uppercase;
-        cursor: pointer;
-
-    }
-}
-
-.header-button {
-    button {
-        padding: 13.5px 32px;
-        background: #5765FD;
-        color: white;
-        font-size: 14px;
-
-
-    }
-
-}
-
-.mobileMenu {
-    display: none;
-}
-
-
-
-.mediaArea img:hover {
-    filter: invert(0.5);
-}
-
-@media screen and (max-width: 1120px) {
-    .px-24 {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-
-@media screen and (max-width: 990px) {
-    .desktop-version {
+.main-header {
+    .mobile-version {
         display: none;
     }
 
-    .mobile-version {
-        display: flex;
 
-        button {
-            background: #5765FD;
+    .desktop-version {
+        &__header-button {
+            button {
+                padding: 13.5px 32px;
+                background: #5765FD;
+                color: white;
+                font-size: 14px;
 
-            span {
-                color: #fff;
-                font-size: 20px;
+
+            }
+
+
+        }
+
+        &__nav-midle {
+            a {
+                font-family: 'Prompt';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-transform: uppercase;
+                cursor: pointer;
+
             }
         }
     }
 
-    .mobileMenu {
-        display: flex;
+
+    .mobile-menu {
+        display: none;
     }
 
-    .menuBar {
-        margin-top: 25px;
-        font-family: 'Prompt';
 
-        .ind {
-            font-weight: bold;
-            font-size: 17px;
+    @media screen and (max-width: 1120px) {
+        .px-24 {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+
+    @media screen and (max-width: 990px) {
+
+        .desktop-version {
+            display: none;
         }
 
-        .indMenu {
-            font-size: 14px;
+        .mobile-version {
+            display: flex;
 
+            button {
+                background: #5765FD;
+
+                span {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+
+            &__mobile-menu {
+                display: flex;
+            }
+
+            &__mobile-btn {
+                background: #5765FD;
+                color: #fff;
+            }
+
+
+            &__menu-bar {
+
+                font-family: 'Prompt';
+
+                &__ind {
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+
+                &__ind-menu {
+                    font-size: 14px;
+
+                }
+
+            }
         }
 
-    }
-
-    .closeBtn {
-        padding: 10px 14px 6px;
-    }
 
 
-    .mobileBtn {
-        background: #5765FD;
-        color: #fff;
+
+        .close-btn {
+            padding: 10px 14px 6px;
+        }
+
+
+
     }
 
 }
