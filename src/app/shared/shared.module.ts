@@ -3,11 +3,10 @@ import { ButtonComponent } from './components/button/button.component';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DistributionCentreComponent } from '../modules/HomeModule/components/distribution-centre/distribution-centre.component';
-
+import { DistributioncenterComponent } from '../modules/HomeModule/components/distributioncenter/distributioncenter.component';
 @NgModule({
-  declarations: [ButtonComponent, HeaderComponent, FooterComponent, DistributionCentreComponent],
+  declarations: [ButtonComponent, HeaderComponent, FooterComponent, DistributioncenterComponent],
   imports: [CommonModule],
-  exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent],
+  exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent,DistributioncenterComponent],
 })
 export class SharedModule {}

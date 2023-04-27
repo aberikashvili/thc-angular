@@ -6,20 +6,20 @@
     img.web{
         display: none;
     }
-    
+
     .Distributioncenter{
         display: flex;
         flex-direction: column;
       }
       img.mobile{
         width: 100%!important;
-        object-fit: cover;
+        object-fit: fill;
       }
-    
+
   }
   @media only screen and (min-width: 769px) {
       img.mobile{
         display: none;
       }
-     
+
   }
