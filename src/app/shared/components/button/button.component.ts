@@ -1,6 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, EventEmitter,Input,Output } from '@angular/core';
-export type ButtonType = 'orange' | 'blue'
+export type ButtonType = 'oranges' | 'blues'
 
 @Component({
   selector: 'app-button',
@@ -11,17 +11,19 @@ export type ButtonType = 'orange' | 'blue'
 export class ButtonComponent {
 
  
-  @Input() type:ButtonType='orange'
+  @Input() type:ButtonType='oranges'
+  
 
+ 
   @Output() clicked= new EventEmitter();
  
 
 
   get orange():boolean{
-    return this.type==="orange"
+    return this.type==="oranges"
   }
   get blue():boolean{
-    return this.type==="blue"
+    return this.type==="blues"
   }
   btnClicked(){
     this.clicked.emit()
