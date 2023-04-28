@@ -10,24 +10,34 @@
 }
 
 
-
-
-.first{
+.button{
     text-transform: capitalize;
+    color:#fff;
+
+&--orange{
     font-size: 13px;
     padding:13px 40px ;
     background-color: #FF8C6D;
-    color:#fff;
-    }
-
-
-    
-    .second{
-        text-transform: capitalize;
+}
+&--blue{
+        
         font-size: 14px;
         padding: 13.5px 32px;
         background-color: #5765FD;
-        color:#fff;
+        
     
     }
+}
+
+// .first{
+    
+//     font-size: 13px;
+//     padding:13px 40px ;
+//     background-color: #FF8C6D;
+   
+//     }
+
+
+    
+    
     
