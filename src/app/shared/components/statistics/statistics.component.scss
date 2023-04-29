@@ -1,8 +1,7 @@
-
 .statistics__right{
     display: flex;
 &__wrapper{
-     display: flex;
+display: flex;
         &__block{
         width: 203px;
         height: 203px;
@@ -96,7 +95,6 @@
         flex-wrap: wrap;
        &__left{
         width: 100%;
-        margin-right: 0;
         &__hedline{
           font-size: 14px;
            &__line{
