@@ -6,6 +6,8 @@
          margin: 0 100px;
          &__left{
             margin-top: 287px;
+            display: flex;
+            flex-direction: column;
             &__hedline{
                 font-weight: bold;
                 letter-spacing:9.6px;
@@ -35,7 +37,8 @@
             &__button{
                 background-color: #5765FD;
                 color: #fffffd;
-                padding: 13px 40px;
+                width:191px ;
+                height: 52px;
                 text-transform: capitalize;
                 margin-top: 24px;
             }
@@ -189,7 +192,8 @@
 
    }
    &__button{
-    padding: 11px 40px;
+    width: 177px;
+    height: 44px;
     font-size: 14px;
 
    }
