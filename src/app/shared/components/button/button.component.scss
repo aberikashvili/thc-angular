@@ -1,26 +1,15 @@
-@media (max-width:375px){
-
-    .first{
-        font-size: 14px;
-        padding: 11px 40px;
-    }
-     .second{
-        padding: 13.5px 127.5px;
-    }
-}
-
 
 .button{
     text-transform: capitalize;
     color:#fff;
      padding:13px 40px ;
+     font-size: 13px;
 
 &--orange{
-    font-size: 13px;
+    
     background-color: #FF8C6D;
 }
 &--blue{
-        font-size: 14px;
         background-color: #5765FD;
     }
 }
