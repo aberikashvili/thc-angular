@@ -4,7 +4,6 @@ export type ButtonType = 'oranges' | 'blues'
 
 @Component({
   selector: 'app-button',
-  template: 'todo button test',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss']
 })
