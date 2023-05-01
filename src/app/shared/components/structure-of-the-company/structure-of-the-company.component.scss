@@ -34,14 +34,9 @@
                 max-width: 632px;
                 
             }
-            // &__button{
-            //     background-color: #5765FD;
-            //     color: #fffffd;
-            //     width:191px ;
-            //     height: 52px;
-            //     text-transform: capitalize;
-            //     margin-top: 24px;
-            // }
+            &__button{
+                margin-top: 24px;
+            }
     }
 
     &__right{
@@ -191,12 +186,12 @@
     max-width:100%
 
    }
-//    &__button{
-//     width: 177px;
-//     height: 44px;
-//     font-size: 14px;
+   &__button{
+    width: 177px;
+    height: 44px;
+    font-size: 14px;
 
-//    }
+   }
     }
 }
 .stracture__wrapper__right{
