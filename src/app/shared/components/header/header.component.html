@@ -28,7 +28,12 @@
             <a href="#" class="text-slate-900 hover:text-slate-600">MEDIA</a>
         </div>
         <div class="desktop-version__header-button">
-            <button class="flex flex-row items-start gap-2.5 ">CONTACT US</button>
+            <!-- <button class="flex flex-row items-start gap-2.5 ">CONTACT US</button> -->
+            <button class="flex flex-row items-start gap-2.5 ">
+                <app-button type="blues" (clicked)="onbuttonclick()">contact us</app-button>
+
+            </button>
+
         </div>
     </div>
     <div class="mobile-version flex flex-col  ">
@@ -83,7 +88,11 @@
             </div>
 
             <div class="mobile-version__mobile-btn flex w-full items-center gap-2.5 justify-center 	">
-                <button class=" py-3 ">CONTACT US</button>
+                <button class="py-3">
+                    <app-button type="blues" (clicked)="onbuttonclick()">contact us</app-button>
+
+                </button>
+
             </div>
             <div class="icon flex gap-9 justify-center	items-center ">
                 <a> <img src="/assets/images/facebook.svg" alt=""></a>

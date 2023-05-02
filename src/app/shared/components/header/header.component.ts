@@ -11,7 +11,9 @@ export class HeaderComponent {
   showMobileMenu: boolean = false;
   showIndusrtyMenu: boolean = false;
 
+  onbuttonclick() {
 
+  }
 }
 
 
