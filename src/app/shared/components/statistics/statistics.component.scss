@@ -1,5 +1,20 @@
-.statistics__left__hedline__line{
+.statistics__left__hedline {
     letter-spacing: 9.6px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.statistics__left__header{
+font-size: 32px;
+color: #28272C;
+// margin: 24px 0;
+font-weight: bold;
+}
+.statistics__left__text{
+    max-width: 777px;
+    color: #28272cb3;
+    font-size: 18px;
 }
 .statistics__right{
     display: flex;
