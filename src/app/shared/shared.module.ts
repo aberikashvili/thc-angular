@@ -4,10 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-
-@NgModule({
-  declarations: [ButtonComponent, HeaderComponent, FooterComponent ],
   imports: [CommonModule],
-  exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent],
+  exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent,DistributioncenterComponent],
 })
 export class SharedModule {}

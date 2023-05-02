@@ -1,0 +1,29 @@
+
+.distributioncenter{
+    margin: auto;
+    display: flex;
+}
+
+@media only screen and (max-width: 426px) {
+    img.web{
+        display: none;
+    }
+
+    .distributioncenter{
+        display: flex;
+        flex-direction: column;
+      }
+      img.mobile{
+        width: 100%!important;
+        object-fit: fill;
+      }
+    
+
+  }
+  @media only screen and (min-width: 427px) {
+      img.mobile{
+        display: none;
+      }
+
+  }
+  
