@@ -27,6 +27,7 @@
                 font-size: 32px;
                 margin: 24px 0;
                 max-width: 487px;
+                font-weight: bold;
             }
             &__text{
                 color: #27262bb3;
@@ -36,6 +37,9 @@
             }
             &__button{
                 margin-top: 24px;
+                width:191px ;
+                height: 52px;
+               
             }
     }
 
@@ -95,12 +99,26 @@
     .stracture__wrapper__right__wrapper--text{
         max-width: 670px;
     }
-
+    .stracture__wrapper__right__wrapper--header{
+        font-size: 19px;
+    }
 }
 
 @media (max-width:1366px) {
     .stracture__wrapper{
         margin: 0 60px;
+    }
+    .stracture__wrapper__right__wrapper--header{
+        font-size: 17px;
+    }
+}
+@media (max-width:1280px) {
+   
+    .stracture__wrapper__right__wrapper--header{
+        font-size: 14px;
+    }
+    .stracture__wrapper__right__wrapper--text{
+        font-size: 13px;
     }
 }
 
@@ -111,8 +129,14 @@
 .stracture__wrapper{
     flex-wrap: wrap;
 }
+
+.stracture__wrapper__right__wrapper--header{
+    
+    font-size:22px ;
+}
 .stracture__wrapper__right__wrapper--text{
-    max-width: 100%;
+   max-width: 100%;
+    font-size:14px ;
 }
 }
 
