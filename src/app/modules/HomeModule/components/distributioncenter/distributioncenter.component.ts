@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./distributioncenter.component.scss']
 })
 export class DistributioncenterComponent {
-
+ 
 }
