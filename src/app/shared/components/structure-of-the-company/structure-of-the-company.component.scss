@@ -4,44 +4,44 @@
         display: flex;
        justify-content: space-between;
          margin: 0 100px;
-         &__left{
-            margin-top: 287px;
-            display: flex;
-            flex-direction: column;
-            &__hedline{
-                font-weight: bold;
-                letter-spacing:9.6px;
-                text-transform: uppercase;
-                display: flex;
-                align-items: center;
-                &--line{
-                    width: 53px;
-                    height: 2px;
-                    background-color:#FF8C6D ;
-                    display: block;
-                    margin-right: 20px;
-                }
-            }
-            &__header{
-                color: #28272C;
-                font-size: 32px;
-                margin: 24px 0;
-                max-width: 487px;
-                font-weight: bold;
-            }
-            &__text{
-                color: #27262bb3;
-                font-size: 18px;
-                max-width: 632px;
+    //      &__left{
+    //         margin-top: 287px;
+    //         display: flex;
+    //         flex-direction: column;
+    //         &__hedline{
+    //             font-weight: bold;
+    //             letter-spacing:9.6px;
+    //             text-transform: uppercase;
+    //             display: flex;
+    //             align-items: center;
+    //             &--line{
+    //                 width: 53px;
+    //                 height: 2px;
+    //                 background-color:#FF8C6D ;
+    //                 display: block;
+    //                 margin-right: 20px;
+    //             }
+    //         }
+    //         &__header{
+    //             color: #28272C;
+    //             font-size: 32px;
+    //             margin: 24px 0;
+    //             max-width: 487px;
+    //             font-weight: bold;
+    //         }
+    //         &__text{
+    //             color: #27262bb3;
+    //             font-size: 18px;
+    //             max-width: 632px;
                 
-            }
-            &__button{
-                margin-top: 24px;
-                width:191px ;
-                height: 52px;
+    //         }
+    //         &__button{
+    //             margin-top: 24px;
+    //             width:191px ;
+    //             height: 52px;
                
-            }
-    }
+    //         }
+    // }
 
     &__right{
       color: #28272C;
