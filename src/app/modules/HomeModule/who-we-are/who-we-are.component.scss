@@ -1,0 +1,28 @@
+.AboutCompany{
+  margin: auto;
+
+}
+p{
+    color: gray;
+    font-size: small;
+    width: 750px;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    p{
+        width: 320px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    p{
+        width: 550px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    p{
+        color: gray;
+        font-size: small;
+        width: 100%;
+        margin: auto;
+    }
+  }
