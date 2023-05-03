@@ -1,5 +1,5 @@
 
-<button class="button" [ngClass]="{'button--orange':orange, 'button--blue':blue}"  (click)="btnClicked()"><ng-content></ng-content>   </button>
+<button class="button" [ngClass]="{'button--orange':orange, 'button--blue':blue}" [ngStyle]="{'min-width':customWidth}"  (click)="btnClicked()"><ng-content></ng-content>   </button>
 
 
 
