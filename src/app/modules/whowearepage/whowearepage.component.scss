@@ -1,6 +1,4 @@
-.mobile{
-    display: none;
-}
+
 .maintext{
     letter-spacing: 7px;
     margin: 20px;
@@ -67,15 +65,9 @@ p{
     .web{
         display: none;
     }
-    
-    .mobile-show {
-        display: initial;
-    }
-    .desktop-show{
-        display: none;
-    }
     .image{
-       max-width: 100%;
+       max-width: 80%;
+      
     }
   }
   @media only screen and (max-width: 375px) {
@@ -128,10 +120,16 @@ p{
      .textandimg{
         margin: 50px 80px 50px  40px;
     }
+    .downsidetext{
+        font-size: small;
+    }
   }
   @media only screen and (max-width: 936px) {
     .smallinfo{
        font-size: 1rem;
+    }
+    .downsidetext{
+        font-size: x-small;
     }
     .line{
         width: 25px;
@@ -151,4 +149,47 @@ p{
    .description{
     font-size: x-small;
    }
+ }
+ @media only screen and (min-width: 675px) {
+    .mobile{
+        display: none;
+    }
+    
+ }
+ .maintextmobile{
+    letter-spacing: 8px;
+    font-size: 0.8rem;
+    margin: 12px;
+    
+}
+.smallinfomobile{
+    font-size: 1.2rem ;
+    text-align: start;
+}
+@media only screen and (max-width: 425px) {
+    .smallinfomobile{
+        font-size: 1rem ;
+    }
+    .maintextmobile{
+        letter-spacing: 6px;
+        font-size: 0.7rem;
+       
+        
+    }
+    
+ }
+ @media only screen and (max-width: 337px){
+    .smallinfomobile{
+        font-size: 0.85rem ;
+    }
+    .descriptionmobile{
+        font-size: 0.55rem !important;
+    
+     }
+ }
+
+ .descriptionmobile{
+    color: gray;
+    font-size: x-small;
+    text-align: start;
  }
