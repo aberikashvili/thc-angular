@@ -1,27 +1,30 @@
-.bbb{
-
+.mobile{
+    display: none;
 }
 .maintext{
     letter-spacing: 7px;
+    margin: 20px;
 }
 .smallinfo{
     text-align: start;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .description{
     color: gray;
     text-align: start;
+    font-size: small;
 }
 .title{
     display: flex;
-    flex-direction: row !important;
+    align-items: center;
     margin: 0 !important;
     
 }
 .line{
     justify-content: center;
-    height: 5px;
+    height: 6px;
     width: 40px;
+   
 }
 .rightside{
     width: 30%;
@@ -30,10 +33,10 @@
 }
 
 
-.textandimg{
+.textandimgweb{
     align-items: center;
     display: flex;
-    flex-direction: row !important;
+    margin: 50px 250px 50px  40px;
     position:absolute !important;
     
 }
@@ -52,7 +55,7 @@ p{
     font-size: medium;
     text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 674px) {
     .rightside{
         width: 60% !important;
         height: 400px;
@@ -61,16 +64,22 @@ p{
        font-size: 3px;
         
     }
+    .web{
+        display: none;
+    }
+    
     .mobile-show {
         display: initial;
     }
     .desktop-show{
         display: none;
     }
+    .image{
+       max-width: 100%;
+    }
   }
   @media only screen and (max-width: 375px) {
     .rightside{
-        
         height: 400px;
     }
     p{
@@ -90,3 +99,56 @@ p{
         
     }
   }
+  @media only screen and (max-width: 1441px) {
+    img{
+        max-width: 60%;
+    }
+    .textandimgweb{
+        margin: 50px 170px 50px  40px;
+    }
+  }
+  @media only screen and (max-width: 1441px) {
+     .smallinfo{
+        font-size: 1.2;
+     }
+     img{
+        max-width: 47%;
+     }
+     .textandimgweb{
+        margin: 50px 110px 50px  40px;
+    }
+  }
+  @media only screen and (max-width: 1282px) {
+     .smallinfo{
+        font-size: 1.2rem;
+     }
+     img{
+        max-width: 45%;
+     }
+     .textandimg{
+        margin: 50px 80px 50px  40px;
+    }
+  }
+  @media only screen and (max-width: 936px) {
+    .smallinfo{
+       font-size: 1rem;
+    }
+    .line{
+        width: 25px;
+        height: 2px;
+    }
+    .maintext{
+        letter-spacing: 5px;
+        font-size: 0.7rem;
+        margin: 12px;
+    }
+    img{
+       max-width: 40%;
+    }
+    .textandimgweb{
+       margin: 50px 60px 50px  40px !important;
+   }
+   .description{
+    font-size: x-small;
+   }
+ }
