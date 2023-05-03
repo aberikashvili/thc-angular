@@ -10,4 +10,4 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [CommonModule],
   exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent],
 })
-export class SharedModule {}
+export class SharedModule { }
