@@ -1,17 +1,41 @@
+.bbb{
 
+}
+.maintext{
+    letter-spacing: 7px;
+}
+.smallinfo{
+    text-align: start;
+    font-size: 1.3rem;
+}
+.description{
+    color: gray;
+    text-align: start;
+}
+.title{
+    display: flex;
+    flex-direction: row !important;
+    margin: 0 !important;
+    
+}
+.line{
+    justify-content: center;
+    height: 5px;
+    width: 40px;
+}
 .rightside{
     width: 30%;
     height: 700px;
     background-color: #FF8C6D;
 }
-.slider{
-    position: absolute;
-}
-.mainplace{
-    position: relative;
-}
+
+
 .textandimg{
+    align-items: center;
     display: flex;
+    flex-direction: row !important;
+    position:absolute !important;
+    
 }
 .hide {
     display: none;
