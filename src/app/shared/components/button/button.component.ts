@@ -8,12 +8,21 @@ export type ButtonType = 'oranges' | 'blues';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
-  @Input() type: ButtonType = 'oranges';
 
-  @Output() clicked = new EventEmitter();
 
-  get orange(): boolean {
-    return this.type === 'oranges';
+ 
+  @Input() type:ButtonType='oranges'
+  
+  @Input() width?:string
+ 
+  @Output() clicked= new EventEmitter();
+ 
+   get customWidth():string | undefined{
+    return this.width
+   }
+
+  get orange():boolean{
+    return this.type==="oranges"
   }
 
   get blue(): boolean {
