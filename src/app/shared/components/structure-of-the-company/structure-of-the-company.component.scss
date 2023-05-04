@@ -201,7 +201,10 @@
 }
 
 @media (max-width:600px){
-
+button{
+    padding: 11px 40px;
+    font-size: 14px;
+}
 .stracture__wrapper{
     margin: 0 25px;
     &__left{
@@ -223,12 +226,7 @@
     max-width:100%
 
    }
-   &__button{
-    width: 177px;
-    height: 44px;
-    font-size: 14px;
 
-   }
     }
 }
 .stracture__wrapper__right{
