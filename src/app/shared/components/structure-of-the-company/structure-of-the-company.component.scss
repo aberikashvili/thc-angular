@@ -42,12 +42,17 @@
                
     //         }
     // }
+ 
+
+
 
     &__right{
       color: #28272C;
       font-size: 24px;
       margin:100px 0;
       &__wrapper{
+        display: flex;
+        flex-direction: column;
         border-bottom: 1px solid #27262b1a;
 
         &--header{
