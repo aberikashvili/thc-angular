@@ -1,5 +1,5 @@
-<section class="main " style="padding: 0px 100px;">
-    <div class="main--desktop-version" style=" display: flex;">
+<section class="main ">
+    <div class="main--desktop-version flex">
         <div class="main--desktop-version--left-side w-2/4 left-24 flex flex-col justify-between self-end">
             <div style="display: flex;
             flex-direction: column;
@@ -33,14 +33,12 @@
             </div>
         </div>
         <div class="main--desktop-version--slider-count">
-            <div class="slider-change">
-                <div class="slider-line flex items-center gap-2">
+            <div class="main--desktop-version--slider-count--slider-change">
+                <div class="main--desktop-version--slider-count--slider-change--slider-line flex items-center gap-2">
                     <span>0{{this.currentIndex + 1}}</span>
                     <span>
-                        <div class="relative"
-                            style="width:100px;height: 2px;background-color:rgba(255, 255, 255, 0.5);">
-                            <span [ngStyle]="{'left': sliderPosition + 'px'}" class="absolute"
-                                style="width: 20px;height: 2px;background-color: #fffffd;"></span>
+                        <div class="relative h-0.5">
+                            <span [ngStyle]="{'left': sliderPosition + 'px'}" class="absolute w-5 h-0.5"></span>
                         </div>
                     </span>
                     <span>05</span>
@@ -48,12 +46,50 @@
             </div>
         </div>
     </div>
+    <div class="main--mobile-version flex px-4">
+        <div class="flex flex-col">
+            <div class="main--mobile-version--title flex flex-col ">
+                <div class="main--mobile-version--title--top-title  flex flex-row gap-2	items-center">
+                    <img class="w-14 h-0.5" src="./assets/line.svg">
+                    <span>WE ARE</span>
+                </div>
+            </div>
+            <div class="main--mobile-version--company-title   ">
+                <span class="city-name">Tbilisi Holding</span><span> Company</span>
+            </div>
+            <div class="main--mobile-version--bottom-description flex flex-col gap-6	">
+                <span>THC LTD represents an extensive array of companies and brands. Just the food segment alone
+                    includes up to 500 different products.</span>
+                <div class="main--mobile-version--bottom-description--btn">
+                    <app-button type="oranges">Learn More</app-button>
+                </div>
+            </div>
+        </div>
 
+        <div class="main--mobile-version--bottom">
+            <div class="main--mobile-version--bottom--img ">
+                <div class="img" [style]="{'background': 'url(' + currentPhoto.image + ')'}">
+                    <span>{{currentPhoto.text}}</span>
+                </div>
+            </div>
 
-    <div class="mobile-version">
-        <div class="title">
-            <img src="/src/assets/line.svg" alt="">
-            <span>WE ARE</span>
+            <div class="main--mobile-version--bottom--slider-count">
+                <div class="main--mobile-version--bottom--slider-count--slider-change">
+                    <div
+                        class="main--mobile-version--bottom--slider-count--slider-change--slider-line flex items-center gap-2">
+                        <span>0{{this.currentIndex + 1}}</span>
+                        <span>
+                            <div
+                                class=" main--mobile-version--bottom--slider-count--slider-change--slider-line--next-slider relative h-0.5">
+                                <span
+                                    class="w-5 h-0.5 main--mobile-version--bottom--slider-count--slider-change--slider-line--next-slider--line absolute "
+                                    [ngStyle]="{'left': sliderPosition + 'px'}"></span>
+                            </div>
+                        </span>
+                        <span>05</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
