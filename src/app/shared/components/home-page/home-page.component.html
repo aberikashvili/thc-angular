@@ -28,13 +28,23 @@
 
         </div>
         <div class="main--desktop-version--right-side  ">
-            <div class="img">
-                <span>Food Import</span>
+            <div class="img" [style]="{'background': 'url(' + currentPhoto.image + ')'}">
+                <span>{{currentPhoto.text}}</span>
             </div>
-
         </div>
-        <div class="slider-count">
-            <div class="slider-img">
+        <div class="main--desktop-version--slider-count">
+            <div class="slider-change">
+                <div class="slider-line flex items-center gap-2">
+                    <span>0{{this.currentIndex + 1}}</span>
+                    <span>
+                        <div class="relative"
+                            style="width:100px;height: 2px;background-color:rgba(255, 255, 255, 0.5);">
+                            <span [ngStyle]="{'left': sliderPosition + 'px'}" class="absolute"
+                                style="width: 20px;height: 2px;background-color: #fffffd;"></span>
+                        </div>
+                    </span>
+                    <span>05</span>
+                </div>
             </div>
         </div>
     </div>
@@ -46,4 +56,5 @@
             <span>WE ARE</span>
         </div>
     </div>
+
 </section>
