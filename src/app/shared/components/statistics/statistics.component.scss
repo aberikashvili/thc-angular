@@ -33,19 +33,13 @@
     flex-direction: column;
     align-items: center;
     &--number{
-        // text-shadow: -2px 0 #5765FD, 0 2px #5765FD, 2px 0 #5765FD, 0 -1px #5765FD;
-            // font-weight: 700;
-            // text-shadow: 2px 0 0 #5866fd, -2px 0 0 #5866fd, 0 2px 0 #5866fd, 0 -2px 0 #5866fd, 1px 1px #5866fd, -1px -1px 0 #5866fd, 1px -1px 0 #5866fd, -1px 1px 0 #5866fd;
             color: #5866fd;
             font-size: 62px;
-            letter-spacing: 0.1rem;
-            stroke-linejoin : round;
+            letter-spacing: 1.6px;
             -webkit-text-fill-color: #fff; 
             -webkit-text-stroke-width: 2px;
-  
-//   -webkit-text-stroke-color: #5866fd;
-  
-// text-shadow: -1px -1px 0 #5765FD, 1px -1px 0 #5765FD, -1px 1px 0 #5765FD, 1px 1px 0 #5765FD;   
+            font-family: 'Prompt Black';
+
     }
     &--text{
           font-size: 14px;
