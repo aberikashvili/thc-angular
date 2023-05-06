@@ -1,4 +1,6 @@
-
+.mainplace{
+    height: 300px;
+}
 .icons{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -8,6 +10,9 @@
 }
 span{
   font-weight: bold;
+}
+span{
+  font-size: 1rem !important;
 }
 .point{
   position: absolute;
@@ -151,6 +156,9 @@ p.smallinfo{
     margin: 10px;
     
  }
+ .infoplace{
+    margin: 10px;
+ }
  img.line{
     width: 20px;
     height: 1.5px;
@@ -171,7 +179,7 @@ p.smallinfo{
         
     }
     img{
-      max-width: 35%;
+        margin-top: 30px;
     }
 }
 @media only screen and (max-width: 934px){
