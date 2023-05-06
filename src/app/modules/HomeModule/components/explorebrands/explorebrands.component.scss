@@ -1,0 +1,168 @@
+.mainplace{
+    height: 300px;
+}
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+    margin: 20px;
+}
+span{
+  font-size: 1rem !important;
+}
+.point{
+  position: absolute;
+  right: 0;
+  
+}
+.point2{
+left: 0;
+position: absolute;
+}
+.point3{
+  bottom:0 ;
+  position: absolute;
+}
+.point4{
+  bottom:0 ;
+  right: 0;
+  position: absolute;
+}
+.point5{
+  bottom:50% ;
+  position: absolute;
+}
+.point6{
+  bottom:50% ;
+  right: 0;
+  position: absolute;
+}
+.point7{
+  bottom:50% ;
+  right: 25%;
+  position: absolute;
+}
+.point8{
+  bottom:50% ;
+  right: 50%;
+  position: absolute;
+}
+.point9{
+  bottom:50% ;
+  right: 75%;
+  position: absolute;
+}
+.point10{
+  bottom:0;
+  right: 25%;
+  position: absolute;
+}
+.point15{
+  bottom:0;
+  right: 50%;
+  position: absolute;
+}
+.point11{
+  top: 0;
+  right: 75%;
+  position: absolute;
+}
+.point12{
+  top: 0;
+  right: 50%;
+  position: absolute;
+}
+.point14{
+  top: 0;
+  right: 25%;
+  position: absolute;
+}
+.point13{
+  bottom: 0;
+  right: 75%;
+  position: absolute;
+}
+
+
+
+img{
+  max-width: 70%;
+  margin: auto;
+}
+.mainplace{
+  margin: auto;
+  display: flex;
+}
+.infoplace{
+    display: flex;
+    flex-direction: column;
+    margin:0 70px ;
+}
+img.line{
+    width: 30px;
+    height: 2px;
+    margin: 0 !important;
+    margin-right: 10px !important;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.maintext{
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+p.smallinfo{
+    margin-bottom:20px ;
+    font-size: 1.3rem;
+}
+.description{
+    color: gray;
+    font-size: 9px;
+}
+@media only screen and (max-width: 768px) {
+ .mainplace{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+ }
+ .infoplace{
+    margin: 10px;
+ }
+ img.line{
+    width: 20px;
+    height: 1.5px;
+ }
+ .maintext{
+    letter-spacing: 5px;
+    font-size: 12px;
+    
+ }
+  p.smallinfo{
+        font-size: 20px;
+    }
+    img.item1{
+        display: none;
+    }
+    .icons{
+        grid-template-columns: auto auto ;
+        
+    }
+    img{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 934px){
+  
+  .maintext{
+    letter-spacing: 6px;
+    font-size: 9px;
+  }
+  img.line{
+    max-width: 30px;
+  }
+}
+button{
+    max-width: auto;
+}
