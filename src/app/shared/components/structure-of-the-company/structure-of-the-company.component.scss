@@ -194,9 +194,13 @@ button{
 .stracture__wrapper__right__wrapper:not(:first-of-type){
     margin-top: 16px;
 }
+.stracture__wrapper__right__wrapper{
+    border-bottom: transparent;
+}
 .stracture__wrapper__right__wrapper--text{
     font-size: 12px;
     margin: 9px 0 16px;
+    
 }
 .stracture__wrapper__right__wrapper--header{
 font-size: 17px;
