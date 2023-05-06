@@ -23,18 +23,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 20px;
-                height: 20px;
-                background-color: transparent;
+                width: 25px;
+                height: 25px;
                 position: relative;
-                &--image1{
-                    position: absolute;
-                    left: 8px;
-                }
-                &--image2{
-                    position: absolute;
-                    right: 0px;
-                    top: 4px;
+                &--image{
+                    width: 20px;
                 }
             }
         }
@@ -212,4 +205,7 @@ font-size: 17px;
     .stracture__wrapper{
         margin: 0 16px;
     }
+   img{
+    max-width: max-content;
+   }
 }
