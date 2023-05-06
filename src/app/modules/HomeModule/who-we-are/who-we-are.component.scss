@@ -14,7 +14,10 @@ p{
 }
 @media only screen and (max-width: 600px) {
     p{
-        width: 320px;
+        width: 300px;
+    }
+    .AboutCompany{
+      margin: 20px !important;
     }
   }
   @media only screen and (max-width: 1000px) {
@@ -27,6 +30,6 @@ p{
         color: gray;
         font-size: small;
         width: 100%;
-        margin: auto;
+        
     }
   }
