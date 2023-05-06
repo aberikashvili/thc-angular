@@ -1,16 +1,24 @@
-
+.mobile{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
 .maintext{
     letter-spacing: 7px;
     margin: 20px;
+    font-size: 12px;
 }
 .smallinfo{
     text-align: start;
     font-size: 1.5rem;
+    margin: 0;
 }
 .description{
     color: gray;
     text-align: start;
-    font-size: small;
+   
+    
 }
 .title{
     display: flex;
@@ -20,7 +28,7 @@
 }
 .line{
     justify-content: center;
-    height: 6px;
+    height: 2px;
     width: 40px;
    
 }
@@ -76,7 +84,6 @@ p{
     }
     p{
         font-size: 2px;
-         
      }
   }
   @media only screen and (max-width: 768px) {
@@ -92,22 +99,17 @@ p{
     }
   }
   @media only screen and (max-width: 1441px) {
-    img{
-        max-width: 60%;
-    }
-    .textandimgweb{
-        margin: 50px 170px 50px  40px;
-    }
-  }
-  @media only screen and (max-width: 1441px) {
      .smallinfo{
-        font-size: 1.2;
+        font-size: 1.38rem !important;
      }
      img{
         max-width: 47%;
      }
      .textandimgweb{
         margin: 50px 110px 50px  40px;
+    }
+    .description{
+        font-size: 13px !important;
     }
   }
   @media only screen and (max-width: 1282px) {
@@ -120,17 +122,13 @@ p{
      .textandimg{
         margin: 50px 80px 50px  40px;
     }
-    .downsidetext{
-        font-size: small;
-    }
+   
   }
   @media only screen and (max-width: 936px) {
     .smallinfo{
        font-size: 1rem;
     }
-    .downsidetext{
-        font-size: x-small;
-    }
+   
     .line{
         width: 25px;
         height: 2px;
@@ -147,14 +145,13 @@ p{
        margin: 50px 60px 50px  40px !important;
    }
    .description{
-    font-size: x-small;
+    font-size: 12px !important;
    }
  }
  @media only screen and (min-width: 675px) {
     .mobile{
         display: none;
     }
-    
  }
  .maintextmobile{
     letter-spacing: 8px;
@@ -165,31 +162,56 @@ p{
 .smallinfomobile{
     font-size: 1.2rem ;
     text-align: start;
+    margin: 0;
 }
-@media only screen and (max-width: 425px) {
-    .smallinfomobile{
-        font-size: 1rem ;
-    }
+
+
+ 
+@media only screen and (max-width: 483px) {
+    
     .maintextmobile{
         letter-spacing: 6px;
-        font-size: 0.7rem;
-       
-        
+        font-size: 0.4rem;
+    }
+    .smallinfomobile{
+        font-size: 1rem;
+    }
+    .descriptionmobile{
+        font-size: 9px !important;
     }
     
  }
- @media only screen and (max-width: 337px){
+ @media only screen and (max-width: 405px){
     .smallinfomobile{
-        font-size: 0.85rem ;
+        font-size: 0.65rem ;
     }
     .descriptionmobile{
         font-size: 0.55rem !important;
     
      }
+     
+     .descriptionmobile{
+        font-size: 6px !important;
+        text-align: start;
+     }
  }
-
  .descriptionmobile{
     color: gray;
-    font-size: x-small;
     text-align: start;
+    font-size: x-small;
+    
+ }
+ .maintextmobile{
+    font-size: 8px !important;
+ }
+ .infoplacemobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+ }
+ 
+ .infoplace{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
  }
