@@ -2,6 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 export type ButtonType = 'oranges' | 'blues';
 
+
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
