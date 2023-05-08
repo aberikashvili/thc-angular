@@ -1,98 +1,125 @@
 <section class="main-header bg-white">
-    <div class="desktop-version flex items-center py-5	px-24">
-        <a href="#" class="logo cursor-pointer	">
-            <img src="/assets/images/Logo.svg" alt="">
+  <div class="desktop-version flex items-center py-5 px-24">
+    <a href="/home" class="logo cursor-pointer">
+      <img src="/assets/images/Logo.svg" alt="" />
+    </a>
+    <div
+      class="desktop-version__nav-midle flex justify-center items-center m-auto gap-8"
+    >
+      <a href="/who-we-are" class="text-slate-900 hover:text-slate-600"
+        >WHO WE ARE</a
+      >
+      <div class="flex gap-1 relative">
+        <a
+          class="text-slate-900 flex flex-row hover:text-slate-600"
+          (click)="showIndusrtyMenu = !showIndusrtyMenu"
+        >
+          <span> INDUSTRY </span>
+          <img
+            class="rotate-90"
+            width="18px"
+            src="/assets/images/row.svg"
+            alt=""
+          />
         </a>
-        <div class="desktop-version__nav-midle flex	justify-center	items-center m-auto gap-8">
-            <a href="#" class="text-slate-900 hover:text-slate-600">WHO WE ARE</a>
-            <div class="flex gap-1 relative">
-                <a class="text-slate-900 flex flex-row hover:text-slate-600"
-                    (click)="showIndusrtyMenu=!showIndusrtyMenu">
-                    <span>
-                        INDUSTRY
-                    </span>
-                    <img class="rotate-90" width="18px" src="/assets/images/row.svg" alt="">
-                </a>
-                <div class="drop-down absolute top-7 p-1.5 rounded-md" *ngIf="showIndusrtyMenu">
-                    <div class="menu-bar__ind-menu flex flex-col gap-2 justify-center  text-sm ">
-                        <a>Food Import & Distribution </a>
-                        <a>Import & Distribution of Toys, Tableware and Stationery</a>
-                        <a>Supermarket Chain</a>
-                        <a>Construction / Property Development</a>
-                        <a>Production</a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="text-slate-900  hover:text-slate-600">OUR BRANDS</a>
-            <a href="#" class="text-slate-900  hover:text-slate-600">NEWS</a>
-            <a href="#" class="text-slate-900 hover:text-slate-600">MEDIA</a>
+        <div
+          class="drop-down absolute top-7 p-1.5 rounded-md"
+          *ngIf="showIndusrtyMenu"
+        >
+          <div
+            class="menu-bar__ind-menu flex flex-col gap-2 justify-center text-sm"
+          >
+            <a>Food Import & Distribution </a>
+            <a>Import & Distribution of Toys, Tableware and Stationery</a>
+            <a>Supermarket Chain</a>
+            <a>Construction / Property Development</a>
+            <a>Production</a>
+          </div>
         </div>
-        <div class="desktop-version__header-button">
-            <app-button type="blues" (clicked)="onbuttonclick()">CONTACT US</app-button>
-        </div>
+      </div>
+      <a href="#" class="text-slate-900 hover:text-slate-600">OUR BRANDS</a>
+      <a href="#" class="text-slate-900 hover:text-slate-600">NEWS</a>
+      <a href="#" class="text-slate-900 hover:text-slate-600">MEDIA</a>
     </div>
-    <div class="mobile-version flex flex-col  ">
-        <div class="flex justify-between py-2 px-4 items-center  ">
-            <a href="#" class="logo">
-                <img src="/assets/images/Logo_mobile.svg" alt="">
-            </a>
-            <button class="flex flex-col" [ngClass]="{'px-3 py-3.5':!showNavbar, 'close-btn':showNavbar,}"
-                [ngStyle]="{'background-color':!showNavbar?'#5765FD':'#FF8C6D'}" (click)="showNavbar=!showNavbar">
-                <div *ngIf="!showNavbar" class="flex flex-col gap-1.5 ">
-                    <img src="/assets/images/menuitem.svg" alt="">
-                    <img src="/assets/images/menuitem.svg" alt="">
-                    <img src="/assets/images/menuitem.svg" alt="">
-                </div>
+    <div class="desktop-version__header-button">
+      <app-button type="blues" (clicked)="onbuttonclick()"
+        >CONTACT US</app-button
+      >
+    </div>
+  </div>
+  <div class="mobile-version flex flex-col">
+    <div class="flex justify-between py-2 px-4 items-center">
+      <a href="#" class="logo">
+        <img src="/assets/images/Logo_mobile.svg" alt="" />
+      </a>
+      <button
+        class="flex flex-col"
+        [ngClass]="{'px-3 py-3.5':!showNavbar, 'close-btn':showNavbar,}"
+        [ngStyle]="{ 'background-color': !showNavbar ? '#5765FD' : '#FF8C6D' }"
+        (click)="showNavbar = !showNavbar"
+      >
+        <div *ngIf="!showNavbar" class="flex flex-col gap-1.5">
+          <img src="/assets/images/menuitem.svg" alt="" />
+          <img src="/assets/images/menuitem.svg" alt="" />
+          <img src="/assets/images/menuitem.svg" alt="" />
+        </div>
 
-                <span *ngIf="showNavbar">
-                    X
+        <span *ngIf="showNavbar"> X </span>
+      </button>
+    </div>
+    <div
+      *ngIf="showNavbar"
+      class="mobile-version__mobile-menu w-full gap-20 mt-24 m-auto flex flex-col items-center"
+    >
+      <div class="flex flex-col gap-7 items-center w-full">
+        <a class="text-slate-900 hover:text-slate-600">WHO WE ARE</a
+        ><a
+          class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative"
+        >
+          <div class="down-menu">
+            <div (click)="showIndusrtyMenu = !showIndusrtyMenu">
+              <div class="flex flex-row">
+                <span class="items-center m-auto flex justify-center">
+                  INDUSTRY
                 </span>
-            </button>
-        </div>
-        <div *ngIf="showNavbar"
-            class="mobile-version__mobile-menu w-full gap-20  mt-24 m-auto flex flex-col  items-center  ">
-            <div class="flex flex-col gap-7 items-center w-full ">
-                <a class="text-slate-900 hover:text-slate-600">WHO WE ARE</a><a
-                    class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative ">
-                    <div class="down-menu">
-                        <div (click)="showIndusrtyMenu=!showIndusrtyMenu">
-                            <div class="flex  flex-row	">
-                                <span class="items-center m-auto flex justify-center">
-                                    INDUSTRY
-                                </span>
-                                <span style="position: absolute;right: 0px;">
-                                    <img class="rotate-90" src="/assets/images/row.svg" alt="">
-                                </span>
-                            </div>
-                            <div *ngIf="showIndusrtyMenu" class="mobile-version__menu-bar flex flex-col  gap-3x">
-                                <div
-                                    class="menu-bar__ind-menu flex flex-col gap-2 justify-center  text-sm mt-5 items-center">
-                                    <a>Food Import & Distribution </a>
-                                    <a>Import & Distribution of Toys, Tableware and Stationery</a>
-                                    <a>Supermarket Chain</a>
-                                    <a>Construction / Property Development</a>
-                                    <a>Production</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="text-slate-900  hover:text-slate-600">OUR BRANDS</a>
-                <a class="text-slate-900  hover:text-slate-600">NEWS</a>
-                <a class="text-slate-900 hover:text-slate-600">MEDIA</a>
+                <span style="position: absolute; right: 0px">
+                  <img class="rotate-90" src="/assets/images/row.svg" alt="" />
+                </span>
+              </div>
+              <div
+                *ngIf="showIndusrtyMenu"
+                class="mobile-version__menu-bar flex flex-col gap-3x"
+              >
+                <div
+                  class="menu-bar__ind-menu flex flex-col gap-2 justify-center text-sm mt-5 items-center"
+                >
+                  <a>Food Import & Distribution </a>
+                  <a>Import & Distribution of Toys, Tableware and Stationery</a>
+                  <a>Supermarket Chain</a>
+                  <a>Construction / Property Development</a>
+                  <a>Production</a>
+                </div>
+              </div>
             </div>
+          </div>
+        </a>
+        <a class="text-slate-900 hover:text-slate-600">OUR BRANDS</a>
+        <a class="text-slate-900 hover:text-slate-600">NEWS</a>
+        <a class="text-slate-900 hover:text-slate-600">MEDIA</a>
+      </div>
 
-            <div class="mobile-version__mobile-btn flex w-full items-center gap-2.5 justify-center 	">
-                <app-button type="blues" (clicked)="onbuttonclick()">CONTACT US</app-button>
-
-
-            </div>
-            <div class="icon flex gap-9 justify-center	items-center ">
-                <a> <img src="/assets/images/facebook.svg" alt=""></a>
-                <a> <img src="/assets/images/linkedin.svg" alt=""></a>
-                <a><img src="/assets/images/youtube.svg" alt=""></a>
-            </div>
-        </div>
-
+      <div
+        class="mobile-version__mobile-btn flex w-full items-center gap-2.5 justify-center"
+      >
+        <app-button type="blues" (clicked)="onbuttonclick()"
+          >CONTACT US</app-button
+        >
+      </div>
+      <div class="icon flex gap-9 justify-center items-center">
+        <a> <img src="/assets/images/facebook.svg" alt="" /></a>
+        <a> <img src="/assets/images/linkedin.svg" alt="" /></a>
+        <a><img src="/assets/images/youtube.svg" alt="" /></a>
+      </div>
     </div>
+  </div>
 </section>
