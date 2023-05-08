@@ -10,10 +10,6 @@ export class HeaderComponent {
   showNavbar: boolean = false;
   showMobileMenu: boolean = false;
   showIndusrtyMenu: boolean = false;
-
-  onbuttonclick() {
-
-  }
+  
+  onbuttonclick() {}
 }
-
-
