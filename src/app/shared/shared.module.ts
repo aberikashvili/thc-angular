@@ -3,11 +3,11 @@ import { ButtonComponent } from './components/button/button.component';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 
 @NgModule({
-  declarations: [ButtonComponent, HeaderComponent, FooterComponent],
+  declarations: [ButtonComponent, HeaderComponent, FooterComponent, HeroSectionComponent],
   imports: [CommonModule],
-  exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent],
+  exports: [CommonModule, ButtonComponent, HeaderComponent, FooterComponent, HeroSectionComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
