@@ -1,9 +1,9 @@
 <section class="main">
-  <div class="main--desktop-version flex">
+  <div class="main--desktop-version flex relative">
     <div
       class="main--desktop-version--left-side w-2/4 left-24 flex flex-col justify-between self-end"
     >
-      <div class="flex flex-col gap-10">
+      <div style="display: flex; flex-direction: column; gap: 40px">
         <div
           class="main--desktop-version--left-side--title flex flex-row gap-5 items-center"
         >
@@ -11,7 +11,9 @@
           <span>WE ARE</span>
         </div>
         <div class="main--desktop-version--left-side--company-name">
-          <span class="city">Tbilisi Holding</span><span> Company</span>
+          <span class="main--desktop-version--left-side--company-name--city"
+            >Tbilisi Holding</span
+          ><span> Company</span>
         </div>
         <div
           class="main--desktop-version--left-side--description flex flex-col gap-5"
@@ -29,22 +31,24 @@
       <div
         class="main--desktop-version--left-side--bottom-text flex flex-col gap-2"
       >
-        <span
+        <span class="font-light"
           >THC LTD represents an extensive array of companies and brands</span
         >
-        <span>Schirnhofer Ges.m.b.H.</span>
+        <span class="font-medium">Schirnhofer Ges.m.b.H.</span>
       </div>
     </div>
-    <div class="main--desktop-version--right-side">
+    <div class="main--desktop-version--right-side flex w-full relative">
       <div
-        class="img"
+        class="main--desktop-version--right-side--img flex items-center justify-center w-full h-full object-cover"
         [style]="{ background: 'url(' + currentPhoto.image + ')' }"
       >
         <span>{{ currentPhoto.text }}</span>
       </div>
     </div>
-    <div class="main--desktop-version--slider-count">
-      <div class="main--desktop-version--slider-count--slider-change">
+    <div class="main--desktop-version--slider-count right-0 absolute">
+      <div
+        class="main--desktop-version--slider-count--slider-change flex items-end items-start p-5 gap-2.5 w-full h-full"
+      >
         <div
           class="main--desktop-version--slider-count--slider-change--slider-line flex items-center gap-2"
         >
@@ -62,18 +66,22 @@
       </div>
     </div>
   </div>
-  <div class="main--mobile-version flex">
+  <div
+    class="main--mobile-version flex-col items-center justify-center m-0 mt-10 gap-10 w-full"
+  >
     <div class="flex flex-col px-4">
       <div class="main--mobile-version--title flex flex-col">
         <div
           class="main--mobile-version--title--top-title flex flex-row gap-2 items-center"
         >
-          <img class="w-14 h-0.5" src="./assets/images/line.svg" />
+          <img class="w-5 h-px" src="./assets/images/line.svg" />
           <span>WE ARE</span>
         </div>
       </div>
       <div class="main--mobile-version--company-title">
-        <span class="city-name">Tbilisi Holding</span><span> Company</span>
+        <span class="main--mobile-version--company-title--city-name"
+          >Tbilisi Holding</span
+        ><span> Company</span>
       </div>
       <div class="main--mobile-version--bottom-description flex flex-col gap-6">
         <span
@@ -87,19 +95,23 @@
     </div>
 
     <div class="main--mobile-version--bottom">
-      <div class="main--mobile-version--bottom--img">
+      <div class="main--mobile-version--bottom--img w-full h-full">
         <div
-          class="img"
+          class="main--mobile-version--bottom--img--image flex items-center justify-center h-full w-full object-cover"
           [style]="{ background: 'url(' + currentPhoto.image + ')' }"
         >
           <span>{{ currentPhoto.text }}</span>
         </div>
       </div>
 
-      <div class="main--mobile-version--bottom--slider-count">
-        <div class="main--mobile-version--bottom--slider-count--slider-change">
+      <div
+        class="main--mobile-version--bottom--slider-count absolute bottom-0 right-0"
+      >
+        <div
+          class="main--mobile-version--bottom--slider-count--slider-change flex justify-center w-full h-full"
+        >
           <div
-            class="main--mobile-version--bottom--slider-count--slider-change--slider-line flex items-center gap-2"
+            class="main--mobile-v>ersion--bottom--slider-count--slider-change--slider-line flex items-center gap-2"
           >
             <span>0{{ this.currentIndex + 1 }}</span>
             <span>

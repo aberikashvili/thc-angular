@@ -1,9 +1,9 @@
 .main {
+  margin-bottom: 23px;
+
   &--desktop-version {
     height: 970px;
-    position: relative;
     padding: 0px 100px;
-    margin-bottom: 23px;
 
     &--left-side {
       height: 64%;
@@ -11,19 +11,12 @@
       &--bottom-text {
         span:first-child {
           width: 570px;
-          font-family: 'Prompt';
-          font-style: normal;
-          font-weight: 300;
           font-size: 18px;
-          line-height: 160%;
           color: #28272c;
           opacity: 0.7;
         }
 
         span:last-child {
-          font-family: 'Prompt';
-          font-style: normal;
-          font-weight: 500;
           font-size: 18px;
           line-height: 160%;
           color: #28272c;
@@ -35,8 +28,6 @@
         font-family: 'Prompt';
 
         span {
-          font-family: 'Prompt';
-          font-style: normal;
           font-weight: 600;
           font-size: 16px;
           letter-spacing: 0.6em;
@@ -49,39 +40,30 @@
         top: 409px;
         width: 777px;
         height: 81px;
-        font-family: 'Prompt';
 
-        .city {
+        &--city {
           left: 101px;
           top: 489px;
-          font-family: 'Prompt';
-          font-style: normal;
           font-weight: 700;
           font-size: 62px;
           line-height: 130%;
           color: #5765fd;
         }
 
-        span {
+        span:last-child {
           left: 101px;
           top: 489px;
-          font-family: 'Prompt';
-          font-style: normal;
           font-weight: 700;
           font-size: 62px;
-          line-height: 130%;
           color: #28272c;
         }
       }
 
       &--description {
         width: 615px;
-        font-family: 'Prompt';
         line-height: 160%;
 
         span {
-          font-family: 'Prompt';
-          font-style: normal;
           color: #28272c;
           opacity: 0.7;
         }
@@ -89,59 +71,35 @@
     }
 
     &--right-side {
-      display: flex;
-      width: 100%;
       padding: 0px 0px 50px 50px;
-      position: relative;
       z-index: 4;
 
-      .img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      &--img {
         background-size: cover !important;
-        object-fit: cover;
         background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
 
         span {
-          font-family: 'Prompt';
-          font-style: normal;
           font-weight: 700;
           font-size: 62px;
-          line-height: 130%;
           color: #fffffd;
         }
       }
     }
 
     &--slider-count {
-      position: absolute;
       width: 680px;
       height: 456px;
       background-color: #5765fd;
       z-index: 2;
       bottom: -23px;
-      right: 0px;
 
       &--slider-change {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-        padding: 20px;
-        gap: 10px;
-        width: 100%;
-        height: 100%;
         color: #fffffd;
 
         &--slider-line {
           span {
-            font-family: 'Prompt';
-            font-style: normal;
             font-weight: 600;
             font-size: 16px;
-            line-height: 150%;
 
             div {
               width: 100px;
@@ -166,17 +124,10 @@
   .main--desktop-version--left-side {
     display: none;
   }
-
-  .px-24 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 
 @media screen and (max-width: 990px) {
   .main {
-    margin-top: 40px;
-    margin-bottom: 0px;
     padding: 0px;
   }
 
@@ -186,35 +137,19 @@
 
   .main--mobile-version {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    gap: 40px;
+  }
 
+  .main--mobile-version {
     &--bottom {
       height: 256px;
       width: 100%;
       position: relative;
-
       &--img {
-        width: 100%;
-        height: 100%;
-
-        .img {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        &--image {
           background-size: cover !important;
-          object-fit: cover;
           background-repeat: no-repeat;
-          height: 100%;
-          width: 100%;
 
           span {
-            font-family: 'Prompt';
-            font-style: normal;
             font-weight: 700;
             font-size: 32px;
             line-height: 130%;
@@ -224,19 +159,12 @@
       }
 
       &--slider-count {
-        position: absolute;
         width: 213px;
         height: 56px;
         background-color: #5765fd;
         z-index: 2;
-        bottom: 0px;
-        right: 0px;
 
         &--slider-change {
-          display: flex;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
           color: #fffffd;
 
           &--slider-line {
@@ -250,8 +178,6 @@
             }
 
             span {
-              font-family: 'Prompt';
-              font-style: normal;
               font-weight: 600;
               font-size: 16px;
               line-height: 150%;
@@ -263,31 +189,20 @@
 
     &--bottom-description {
       span {
-        font-family: 'Prompt';
-        font-style: normal;
+        margin-bottom: 23px;
         font-weight: 300;
         font-size: 14px;
-        line-height: 160%;
         color: #28272c;
         opacity: 0.7;
       }
     }
 
     &--title {
-      margin-bottom: 8px;
-
       &--top-title {
-        img {
-          width: 20px;
-        }
-
         span {
           top: 188px;
-          font-family: 'Prompt';
-          font-style: normal;
           font-weight: 600;
           font-size: 12px;
-          line-height: 160%;
           letter-spacing: 0.6em;
           text-transform: uppercase;
           color: #28272c;
@@ -298,28 +213,20 @@
     &--company-title {
       top: 409px;
       width: 328px;
-      font-family: 'Prompt';
-      margin-bottom: 8px;
 
-      .city-name {
+      &--city-name {
         left: 17px;
         top: 215px;
-        font-family: 'Prompt';
-        font-style: normal;
         font-weight: 700;
         font-size: 28px;
-        line-height: 130%;
         color: #5765fd;
       }
 
-      span {
+      span:last-child {
         left: 17px;
         top: 215px;
-        font-family: 'Prompt';
-        font-style: normal;
         font-weight: 700;
         font-size: 28px;
-        line-height: 130%;
         color: #28272c;
       }
     }
