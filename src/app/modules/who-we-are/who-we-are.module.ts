@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [WhoWeAreComponent, SectionwhoweareComponent],
+  declarations: [WhoWeAreComponent, SectionwhoweareComponent,WhoWeAreMediaComponent,WhoWeAreHeroSectionComponent,WHOWEAREStructureComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class WhoWeAreModule {}
