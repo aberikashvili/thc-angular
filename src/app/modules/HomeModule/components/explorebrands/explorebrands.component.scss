@@ -1,5 +1,7 @@
 .mainplace{
     height: 300px;
+    display: flex;
+
 }
 .icons{
     display: grid;
@@ -93,14 +95,12 @@ img{
   max-width: 70%;
   margin: auto;
 }
-.mainplace{
-  margin: auto;
-  display: flex;
-}
+
 .infoplace{
     display: flex;
     flex-direction: column;
     margin:0 70px ;
+    justify-content: center;
    
 }
 img.line{
@@ -149,8 +149,10 @@ p.smallinfo{
   display: none;
  }
  .point13{
-  display: none;
+  right: 0;
+  bottom: 33%;
  }
+ 
 
  .infoplace{
     margin: 10px;
@@ -171,9 +173,9 @@ p.smallinfo{
   p.smallinfo{
         font-size: 20px;
     }
-    img.item1{
-        display: none;
-    }
+    // img.item1{
+    //     display: none;
+    // }
     .icons{
         grid-template-columns: auto auto ;
         
