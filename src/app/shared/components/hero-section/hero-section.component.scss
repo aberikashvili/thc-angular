@@ -3,6 +3,7 @@
     height: 970px;
     position: relative;
     padding: 0px 100px;
+    margin-bottom: 23px;
 
     &--left-side {
       height: 64%;
@@ -174,6 +175,8 @@
 
 @media screen and (max-width: 990px) {
   .main {
+    margin-top: 40px;
+    margin-bottom: 0px;
     padding: 0px;
   }
 
@@ -184,7 +187,7 @@
   .main--mobile-version {
     display: flex;
     flex-direction: column;
-    width: 358px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -271,7 +274,13 @@
     }
 
     &--title {
+      margin-bottom: 8px;
+
       &--top-title {
+        img {
+          width: 20px;
+        }
+
         span {
           top: 188px;
           font-family: 'Prompt';
@@ -290,6 +299,7 @@
       top: 409px;
       width: 328px;
       font-family: 'Prompt';
+      margin-bottom: 8px;
 
       .city-name {
         left: 17px;
