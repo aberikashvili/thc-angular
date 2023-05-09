@@ -1,14 +1,13 @@
-.mainplace{
-    height: 300px;
-}
+
 .icons{
     display: grid;
     grid-template-columns: auto auto auto auto;
     position: relative;
     margin: 20px;
+    height: 270px;
 }
 span{
-  font-size: 1rem !important;
+  font-weight: bold;
 }
 .point{
   position: absolute;
@@ -97,6 +96,7 @@ img{
     display: flex;
     flex-direction: column;
     margin:0 70px ;
+   
 }
 img.line{
     width: 30px;
@@ -126,9 +126,30 @@ p.smallinfo{
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
+    max-height: auto;
  }
+ .point14{
+  display: none;
+ }
+ .point11{
+  display: none;
+ }
+ .point7{
+  display: none;
+ }
+ .point9{
+  display: none;
+ }
+ .point10{
+  display: none;
+ }
+ .point13{
+  display: none;
+ }
+
  .infoplace{
     margin: 10px;
+    
  }
  img.line{
     width: 20px;
@@ -150,7 +171,7 @@ p.smallinfo{
         
     }
     img{
-        margin-top: 30px;
+      max-width: 35%;
     }
 }
 @media only screen and (max-width: 934px){
