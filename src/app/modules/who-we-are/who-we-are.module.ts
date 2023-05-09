@@ -8,7 +8,6 @@ import { WhoWeAreHeroSectionComponent } from './components/who-we-are-hero-secti
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SectionwhoweareComponent } from './components/section-who-we-are/section-who-we-are.component';
 
-
 const routes: Routes = [
   {
     path: '',
