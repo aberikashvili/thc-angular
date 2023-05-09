@@ -75,15 +75,11 @@
 
       &__menu-bar {
         font-family: 'Prompt';
-        overflow: auto;
+        overflow: hidden;
 
         &__ind {
           font-weight: bold;
           font-size: 17px;
-        }
-
-        &__ind-menu {
-          font-size: 14px;
         }
       }
     }
