@@ -1,150 +1,141 @@
-:host{
-    position: relative;
+:host {
+  position: relative;
 }
-section{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-    margin: 85px 100px;
+section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  margin: 85px 100px;
 }
-.imageplace::before
- {
-   content: "";
-   height: 1075px;
-   width: 527px;
-   background-color: #FF8C6D;
-   position: absolute;
-   z-index: 3;
-   right: -100px;
-   top: -185px;
+.imageplace::before {
+  content: '';
+  height: 1075px;
+  width: 527px;
+  background-color: #ff8c6d;
+  position: absolute;
+  z-index: 3;
+  right: -100px;
+  top: -185px;
 }
-.imageplace{
-    position: relative;
-    margin-left: 70px;
+.imageplace {
+  position: relative;
+  margin-left: 70px;
 }
-.title{
-    display: flex;
-    align-items: center;
+.title {
+  display: flex;
+  align-items: center;
 }
-.whoweare{
-    letter-spacing: 8px;
-    font-size: medium;
-    display: flex;
-    align-items: center;
+.whoweare {
+  letter-spacing: 8px;
+  font-size: medium;
+  display: flex;
+  align-items: center;
 }
-.mainimage{
-    position: relative;
-    z-index: 5;
-    min-width: 705px;
-     
+.mainimage {
+  position: relative;
+  z-index: 5;
+  min-width: 705px;
 }
-.downsidetext{
-    text-align: center;
-    margin-top: 280px;
-    font-size: small;
+.downsidetext {
+  text-align: center;
+  margin-top: 280px;
+  font-size: small;
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    max-width: 705px;
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 705px;
 }
-.about{
-    font-size: small;
-    color: gray;
-    align-items: flex-end;
-    margin-left: 35px;
+.about {
+  font-size: small;
+  color: gray;
+  align-items: flex-end;
+  margin-left: 35px;
 }
-.smallinfo{
-    font-size: x-large;
-    margin: 20px 0 20px 0;
+.smallinfo {
+  font-size: x-large;
+  margin: 20px 0 20px 0;
 }
-.line{
-    height: 2px;
-    width: 30px;
-    margin-right: 20px;
+.line {
+  height: 2px;
+  width: 30px;
+  margin-right: 20px;
 }
-@media only screen and (max-width: 1440px){
-    .mainimage{
-    
+@media only screen and (max-width: 1440px) {
+  .mainimage {
     min-width: 560px;
-   }
-      .imageplace::before
- {
-     height: 150%;
-     
-}
-.downsidetext{
+  }
+  .imageplace::before {
+    height: 150%;
+  }
+  .downsidetext {
     margin-top: 150px;
-   }
+  }
 }
-@media only screen and (max-width: 1366px){
-   section{
-    margin:0 60px
-   }
-   .smallinfo{
+@media only screen and (max-width: 1366px) {
+  section {
+    margin: 0 60px;
+  }
+  .smallinfo {
     font-size: 22px;
-   }
-    .imageplace::before
- {
-     right: -60px;
-}
-.downsidetext{
+  }
+  .imageplace::before {
+    right: -60px;
+  }
+  .downsidetext {
     margin-top: 100px;
-   }
- }
-@media only screen and (max-width: 1024px){
- section{
+  }
+}
+@media only screen and (max-width: 1024px) {
+  section {
     flex-wrap: wrap-reverse;
- }
- .mainimage{
+  }
+  .mainimage {
     min-width: 100%;
-   }
-   .downsidetext{
+  }
+  .downsidetext {
     margin-top: 150px;
-   }
-   .info{
+  }
+  .info {
     max-width: 100%;
-   }
-   .about{
+  }
+  .about {
     margin: 0;
-   }
-.imageplace{
+  }
+  .imageplace {
     margin-top: 130px;
     margin-left: 0;
+  }
+  .imageplace::before {
+    height: 128%;
+    width: 65%;
+    top: -14%;
+  }
 }
-   .imageplace::before
- {   
-     height: 128%;
-     width: 65%;
-     top: -14%;    
-}
-}
-@media only screen and (max-width: 600px){
-  section{
+@media only screen and (max-width: 600px) {
+  section {
     margin: 0 16px;
   }
-     .imageplace::before
- {
-     right: -16px;
-}
-.imageplace{
-    
+  .imageplace::before {
+    right: -16px;
+  }
+  .imageplace {
     margin-top: 80px;
     margin-left: 0;
-}
-.downsidetext{
+  }
+  .downsidetext {
     margin-top: 90px;
     font-size: 9px;
-}
-.about{
+  }
+  .about {
     font-size: 8px;
-}
-.smallinfo{
+  }
+  .smallinfo {
     font-size: 17px;
-}
-.whoweare{
+  }
+  .whoweare {
     font-size: 12px;
-}
+  }
 }
