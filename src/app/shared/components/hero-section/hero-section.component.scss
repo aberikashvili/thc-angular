@@ -1,0 +1,234 @@
+.main {
+  margin-bottom: 23px;
+
+  &--desktop-version {
+    height: 970px;
+    padding: 0px 100px;
+
+    &--left-side {
+      height: 64%;
+
+      &--bottom-text {
+        span:first-child {
+          width: 570px;
+          font-size: 18px;
+          color: #28272c;
+          opacity: 0.7;
+        }
+
+        span:last-child {
+          font-size: 18px;
+          line-height: 160%;
+          color: #28272c;
+        }
+      }
+
+      &--title {
+        top: 343px;
+        font-family: 'Prompt';
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          letter-spacing: 0.6em;
+          text-transform: uppercase;
+          color: #28272c;
+        }
+      }
+
+      &--company-name {
+        top: 409px;
+        width: 777px;
+        height: 81px;
+
+        &--city {
+          left: 101px;
+          top: 489px;
+          font-weight: 700;
+          font-size: 62px;
+          line-height: 130%;
+          color: #5765fd;
+        }
+
+        span:last-child {
+          left: 101px;
+          top: 489px;
+          font-weight: 700;
+          font-size: 62px;
+          color: #28272c;
+        }
+      }
+
+      &--description {
+        width: 615px;
+        line-height: 160%;
+
+        span {
+          color: #28272c;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &--right-side {
+      padding: 0px 0px 50px 50px;
+      z-index: 4;
+
+      &--img {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+
+        span {
+          font-weight: 700;
+          font-size: 62px;
+          color: #fffffd;
+        }
+      }
+    }
+
+    &--slider-count {
+      width: 680px;
+      height: 456px;
+      background-color: #5765fd;
+      z-index: 2;
+      bottom: -23px;
+
+      &--slider-change {
+        color: #fffffd;
+
+        &--slider-line {
+          span {
+            font-weight: 600;
+            font-size: 16px;
+
+            div {
+              width: 100px;
+              background-color: rgba(255, 255, 255, 0.5);
+
+              span {
+                background-color: #fffffd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--mobile-version {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1630px) {
+  .main--desktop-version--left-side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .main {
+    padding: 0px;
+  }
+
+  .main--desktop-version {
+    display: none;
+  }
+
+  .main--mobile-version {
+    display: flex;
+  }
+
+  .main--mobile-version {
+    &--bottom {
+      height: 256px;
+      width: 100%;
+      position: relative;
+      &--img {
+        &--image {
+          background-size: cover !important;
+          background-repeat: no-repeat;
+
+          span {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 130%;
+            color: #fffffd;
+          }
+        }
+      }
+
+      &--slider-count {
+        width: 213px;
+        height: 56px;
+        background-color: #5765fd;
+        z-index: 2;
+
+        &--slider-change {
+          color: #fffffd;
+
+          &--slider-line {
+            &--next-slider {
+              width: 100px;
+              background-color: rgba(255, 255, 255, 0.5);
+
+              &--line {
+                background-color: #fffffd;
+              }
+            }
+
+            span {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+
+    &--bottom-description {
+      span {
+        margin-bottom: 23px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #28272c;
+        opacity: 0.7;
+      }
+    }
+
+    &--title {
+      &--top-title {
+        span {
+          top: 188px;
+          font-weight: 600;
+          font-size: 12px;
+          letter-spacing: 0.6em;
+          text-transform: uppercase;
+          color: #28272c;
+        }
+      }
+    }
+
+    &--company-title {
+      top: 409px;
+      width: 328px;
+
+      &--city-name {
+        left: 17px;
+        top: 215px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #5765fd;
+      }
+
+      span:last-child {
+        left: 17px;
+        top: 215px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #28272c;
+      }
+    }
+  }
+}
