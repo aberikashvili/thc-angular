@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   margin: 0;
   padding: 0;
@@ -17,20 +16,12 @@ body {
 
 @font-face {
   font-family: "Prompt";
-  src: url("assets/fonts/Prompt-Regular.woff2") format("woff2"),
-    url("assets/fonts/Prompt-Regular.woff") format("woff");
+  src: url("assets/fonts/Prompt-Regular.woff2") format("woff2"), url("assets/fonts/Prompt-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'Prompt Black';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Prompt Black'), url('assets/fonts/Prompt-Black.woff') format('woff');
-  }
-
 .layout {
   display: flex;
   flex-direction: column;
-}
+}/*# sourceMappingURL=styles.css.map */

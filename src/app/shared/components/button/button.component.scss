@@ -1,22 +1,20 @@
+.button {
+  text-transform: capitalize;
+  color: #fff;
+  padding: 13px 40px;
+  font-size: 13px;
 
-.button{
-    text-transform: capitalize;
-    color:#fff;
-     padding:13px 40px ;
-     font-size: 13px;
-
-&--orange{
-    
-    background-color: #FF8C6D;
-}
-&--blue{
-        background-color: #5765FD;
-    }
+  &--orange {
+    background-color: #ff8c6d;
+  }
+  &--blue {
+    background-color: #5765fd;
+  }
 }
 
-
-
-
-    
-    
-    
+@media (max-width: 600px) {
+  .button--orange {
+    padding: 11px 40px;
+    font-size: 14px;
+  }
+}

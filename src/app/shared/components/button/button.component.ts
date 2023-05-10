@@ -10,7 +10,13 @@ export type ButtonType = 'oranges' | 'blues';
 export class ButtonComponent {
   @Input() type: ButtonType = 'oranges';
 
+  @Input() width?: string;
+
   @Output() clicked = new EventEmitter();
+
+  get customWidth(): string | undefined {
+    return this.width;
+  }
 
   get orange(): boolean {
     return this.type === 'oranges';

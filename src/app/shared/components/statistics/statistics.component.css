@@ -1,0 +1,199 @@
+.statistics__right {
+  display: flex;
+}
+.statistics__right__wrapper {
+  display: flex;
+}
+.statistics__right__wrapper__block {
+  width: 203px;
+  height: 203px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  margin-top: 22px;
+}
+.statistics__right__wrapper__block--dot:first-of-type {
+  left: -4px;
+  top: -3px;
+}
+.statistics__right__wrapper__block--dot:nth-of-type(2) {
+  right: -4px;
+  top: -3px;
+}
+.statistics__right__wrapper__block--dot:nth-of-type(3) {
+  left: -4px;
+  bottom: -3px;
+}
+.statistics__right__wrapper__block--dot:nth-of-type(4) {
+  right: -4px;
+  bottom: -3px;
+}
+.statistics__right__wrapper__block--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistics__right__wrapper__block--wrapper--number {
+  text-shadow: -1px 0 #5765FD, 0 1px #5765FD, 1px 0 #5765FD, 0 -1px #5765FD;
+  font-weight: 700;
+  color: #fffffd;
+  font-size: 62px;
+}
+.statistics__right__wrapper__block--wrapper--text {
+  font-size: 14px;
+  color: #28272C;
+  text-transform: capitalize;
+}
+.statistics__right__wrapper__block:nth-of-type(2) {
+  margin-right: 0;
+  margin-left: 0;
+}
+.statistics__right__wrapper__block:nth-of-type(3) {
+  margin-right: 0;
+}
+
+@media (max-width: 1680px) {
+  .statistics__right__wrapper__block {
+    width: 181px;
+    height: 181px;
+  }
+  .statistics__right__wrapper__block--wrapper--number {
+    font-size: 52px;
+  }
+  .statistics__left__text {
+    font-size: 16px;
+  }
+  .statistics {
+    margin: 160px 80px 146px 80px;
+  }
+}
+@media (max-width: 1440px) {
+  .statistics {
+    margin: 160px 60px 146px 60px;
+  }
+  .statistics__right__wrapper__block {
+    width: 171px;
+    height: 171px;
+  }
+}
+@media (max-width: 1366px) {
+  .statistics {
+    margin: 160px 60px 146px 60px;
+    flex-wrap: wrap;
+  }
+  .statistics__left {
+    width: 100%;
+  }
+  .statistics__left__hedline {
+    font-size: 14px;
+  }
+  .statistics__left__hedline__line {
+    width: 24px;
+    height: 1px;
+    margin-right: 8px;
+  }
+  .statistics__left__header {
+    margin: 12px 0 16px;
+    font-size: 25px;
+  }
+  .statistics__left__text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .statistics__left__button {
+    margin: 16px 0 60px;
+  }
+  .statistics__right {
+    width: 100%;
+  }
+  .statistics__right__wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .statistics__right__wrapper__block {
+    width: 203px;
+    height: 203px;
+    margin: 0;
+  }
+  .statistics__right__wrapper__block--dot:first-of-type {
+    left: -2px;
+    top: -2px;
+  }
+  .statistics__right__wrapper__block--dot:nth-of-type(2) {
+    right: -2px;
+    top: -2px;
+  }
+  .statistics__right__wrapper__block--dot:nth-of-type(3) {
+    left: -2px;
+    bottom: -2px;
+  }
+  .statistics__right__wrapper__block--dot:nth-of-type(4) {
+    right: -2px;
+    bottom: -2px;
+  }
+}
+@media (max-width: 960px) {
+  .statistics__right__wrapper__block {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+  }
+  .statistics__right__wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .statistics__right__wrapper__block {
+    width: 228px;
+    height: 228px;
+  }
+}
+@media (max-width: 600px) {
+  .statistics__left__hedline {
+    font-size: 12px;
+  }
+  .statistics__left__hedline__line {
+    width: 20px;
+    margin-right: 8px;
+  }
+  .statistics__left__header {
+    font-size: 24px;
+  }
+  .statistics__left__text {
+    font-size: 14px;
+  }
+  .statistics__left__button {
+    padding: 11px 40px;
+    margin: 16px 0 60px;
+  }
+  .statistics .statistics__right__wrapper__block:nth-last-of-type(2) {
+    margin-right: 0;
+  }
+  .statistics__right__wrapper__block {
+    width: 171.5px;
+    height: 171.5px;
+  }
+}
+@media (max-width: 480px) {
+  .statistics {
+    margin: 160px 16px 146px 16px;
+  }
+  .statistics__left__hedline {
+    font-size: 12px;
+  }
+  .statistics__left__hedline__line {
+    width: 20px;
+    height: 1px;
+    margin-right: 8px;
+  }
+  .statistics__right__wrapper__block {
+    width: 171.5px;
+    height: 171.5px;
+  }
+  .statistics__right__wrapper__block--wrapper--number {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=statistics.component.css.map */
