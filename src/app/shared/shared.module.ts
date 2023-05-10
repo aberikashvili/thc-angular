@@ -6,6 +6,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 
+import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
+
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -13,6 +15,7 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
     FooterComponent,
     HeroSectionComponent,
     StatisticsComponent,
+    StructureOfTheCompanyComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -22,6 +25,7 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
     FooterComponent,
     HeroSectionComponent,
     StatisticsComponent,
+    StructureOfTheCompanyComponent,
   ],
 })
 export class SharedModule {}
