@@ -1,28 +1,21 @@
-:host{
-    position: relative;
-}
 section{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
     position: relative;
-    justify-content: space-between;
-    margin: 85px 100px;
+    background: linear-gradient(90deg, white 75%, #FF8C6D 25%);
+    height: 500px;
+    justify-content: space-around;
 }
-.imageplace::before
- {
-   content: "";
-   height: 1075px;
-   width: 527px;
-   background-color: #FF8C6D;
-   position: absolute;
-   z-index: 3;
-   right: -100px;
-   top: -185px;
+.infomobile{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
 }
-.imageplace{
-    position: relative;
-    margin-left: 70px;
+.downsidetext {
+    font-size: small;
 }
 .title{
     display: flex;
@@ -30,31 +23,31 @@ section{
 }
 .whoweare{
     letter-spacing: 8px;
-    font-size: medium;
-    display: flex;
-    align-items: center;
+    margin-left: 10px;
+    font-size: small;
+}
+.info .imageplace{
+    position: absolute;
+
 }
 .mainimage{
-    position: relative;
-    z-index: 5;
-    min-width: 705px;
-     
-}
-.downsidetext{
-    text-align: center;
-    margin-top: 280px;
-    font-size: small;
+    max-width: 400px;
 }
 .info{
     display: flex;
     flex-direction: column;
-    max-width: 705px;
+    
+
+}
+.aboutcompany{
+    display: flex;
+    flex-direction: column;
 }
 .about{
     font-size: small;
     color: gray;
     align-items: flex-end;
-    margin-left: 35px;
+    margin-left: 15px;
 }
 .smallinfo{
     font-size: x-large;
@@ -62,89 +55,63 @@ section{
 }
 .line{
     height: 2px;
-    width: 30px;
-    margin-right: 20px;
+    width: 40px;
 }
-@media only screen and (max-width: 1440px){
-    .mainimage{
-    
-    min-width: 560px;
-   }
-      .imageplace::before
- {
-     height: 150%;
-     
-}
-.downsidetext{
-    margin-top: 150px;
-   }
-}
-@media only screen and (max-width: 1366px){
-   section{
-    margin:0 60px
-   }
+
+@media only screen and (max-width: 920px) {
    .smallinfo{
-    font-size: 22px;
-   }
-    .imageplace::before
- {
-     right: -60px;
-}
-.downsidetext{
-    margin-top: 100px;
-   }
- }
-@media only screen and (max-width: 1024px){
- section{
-    flex-wrap: wrap-reverse;
- }
- .mainimage{
-    min-width: 100%;
-   }
-   .downsidetext{
-    margin-top: 150px;
-   }
-   .info{
-    max-width: 100%;
+     font-size: medium;
    }
    .about{
-    margin: 0;
+     font-size: xx-small;
    }
-.imageplace{
-    margin-top: 130px;
-    margin-left: 0;
-}
-   .imageplace::before
- {   
-     height: 128%;
-     width: 65%;
-     top: -14%;    
-}
-}
-@media only screen and (max-width: 600px){
-  section{
-    margin: 0 16px;
+   .whoweare{
+    font-size: x-small;
+   }
+   .line{
+    width: 30px;
+   }
+   .mainimage{
+    max-width:300px;
   }
-     .imageplace::before
- {
-     right: -16px;
+  section{
+    height: 430px;
+  }
 }
-.imageplace{
-    
-    margin-top: 80px;
-    margin-left: 0;
+@media only screen and (max-width: 682px){
+     .info{
+        display: none;
+     }
+     section{
+        background: linear-gradient(270deg, #FF8C6D 60%, white 40%);
+     }
+     .mainimage{
+        max-width: 450px;
+     }
+     .downsidetext{
+        font-size: x-small ;
+     }
 }
-.downsidetext{
-    margin-top: 90px;
-    font-size: 9px;
+@media only screen and (min-width: 683px){
+     .infomobile{
+        display: none;
+     }
 }
-.about{
-    font-size: 8px;
+@media only screen and (max-width: 466px){
+   .mainimage{
+        max-width: 280px;
+     }
+     section{
+        height: 350px;
+     }
+     .about{
+        font-size: 7px;
+     }
+     .smallinfo{
+     font-size: 12px;
+   }
+   .downsidetext{
+     font-size: xx-small;
+   }
 }
-.smallinfo{
-    font-size: 17px;
-}
-.whoweare{
-    font-size: 12px;
-}
-}
+
