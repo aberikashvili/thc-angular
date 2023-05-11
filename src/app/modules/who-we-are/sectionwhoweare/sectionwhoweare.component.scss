@@ -1,1 +1,117 @@
+section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(90deg, white 75%, #FF8C6D 25%);
+    height: 500px;
+    justify-content: space-around;
+}
+.infomobile{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+}
+.downsidetext {
+    font-size: small;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.whoweare{
+    letter-spacing: 8px;
+    margin-left: 10px;
+    font-size: small;
+}
+.info .imageplace{
+    position: absolute;
+
+}
+.mainimage{
+    max-width: 400px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.aboutcompany{
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    font-size: small;
+    color: gray;
+    align-items: flex-end;
+    margin-left: 15px;
+}
+.smallinfo{
+    font-size: x-large;
+    margin: 20px 0 20px 0;
+}
+.line{
+    height: 2px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 920px) {
+   .smallinfo{
+     font-size: medium;
+   }
+   .about{
+     font-size: xx-small;
+   }
+   .whoweare{
+    font-size: x-small;
+   }
+   .line{
+    width: 30px;
+   }
+   .mainimage{
+    max-width:300px;
+  }
+  section{
+    height: 430px;
+  }
+}
+@media only screen and (max-width: 682px){
+     .info{
+        display: none;
+     }
+     section{
+        background: linear-gradient(270deg, #FF8C6D 60%, white 40%);
+     }
+     .mainimage{
+        max-width: 450px;
+     }
+     .downsidetext{
+        font-size: x-small ;
+     }
+}
+@media only screen and (min-width: 683px){
+     .infomobile{
+        display: none;
+     }
+}
+@media only screen and (max-width: 466px){
+   .mainimage{
+        max-width: 280px;
+     }
+     section{
+        height: 350px;
+     }
+     .about{
+        font-size: 7px;
+     }
+     .smallinfo{
+     font-size: 12px;
+   }
+   .downsidetext{
+     font-size: xx-small;
+   }
+}
 
