@@ -3,94 +3,17 @@
     display: flex;
 
 }
-.icons{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    position: relative;
-    margin: 20px;
-    height: 270px;
-}
-span{
-  font-weight: bold;
-}
-span{
-  font-size: 1rem !important;
-}
 .point{
-  position: absolute;
-  right: 0;
-  
+            left:-4px ;
+            top: -3px;
+        }
+.pointtwo{
+  right:-4px ;
+  top: -3px;
 }
-.point2{
-left: 0;
-position: absolute;
+span{
+  font-size: 1px solid black;
 }
-.point3{
-  bottom:0 ;
-  position: absolute;
-}
-.point4{
-  bottom:0 ;
-  right: 0;
-  position: absolute;
-}
-.point5{
-  bottom:50% ;
-  position: absolute;
-}
-.point6{
-  bottom:50% ;
-  right: 0;
-  position: absolute;
-}
-.point7{
-  bottom:50% ;
-  right: 25%;
-  position: absolute;
-}
-.point8{
-  bottom:50% ;
-  right: 50%;
-  position: absolute;
-}
-.point9{
-  bottom:50% ;
-  right: 75%;
-  position: absolute;
-}
-.point10{
-  bottom:0;
-  right: 25%;
-  position: absolute;
-}
-.point15{
-  bottom:0;
-  right: 50%;
-  position: absolute;
-}
-.point11{
-  top: 0;
-  right: 75%;
-  position: absolute;
-}
-.point12{
-  top: 0;
-  right: 50%;
-  position: absolute;
-}
-.point14{
-  top: 0;
-  right: 25%;
-  position: absolute;
-}
-.point13{
-  bottom: 0;
-  right: 75%;
-  position: absolute;
-}
-
-
-
 img{
   max-width: 70%;
   margin: auto;
@@ -133,25 +56,8 @@ p.smallinfo{
     margin: auto;
     max-height: auto;
  }
- .point14{
-  display: none;
- }
- .point11{
-  display: none;
- }
- .point7{
-  display: none;
- }
- .point9{
-  display: none;
- }
- .point10{
-  display: none;
- }
- .point13{
-  right: 0;
-  bottom: 33%;
- }
+
+ 
  
 
  .infoplace{
