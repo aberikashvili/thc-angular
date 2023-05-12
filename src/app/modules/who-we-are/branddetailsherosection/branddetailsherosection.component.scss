@@ -16,8 +16,7 @@ section{
     
 }
 .downsidesection{
-   display: grid;
-   grid-template-columns: auto auto auto;
+   display: flex;
 }
 .infomobile{
     display: flex;
