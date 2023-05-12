@@ -5,19 +5,25 @@ section{
     align-items: center;
     margin: 0;
     background: linear-gradient(270deg, white 70%, #FF8C6D 30%);
-    height: 500px;
+    height: fit-content;
+    height: 700px;
     justify-content: space-around;
+}
+ b{
+    font-size: small;
+ }
+p{
+    font-size: small;
 }
 .usidesection{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    
 }
 .downsidesection{
    display: flex;
 }
+
 .infomobile{
     display: flex;
     flex-direction: column;
@@ -78,9 +84,7 @@ section{
    .mainimage{
     max-width:300px;
   }
-  section{
-    height: 430px;
-  }
+  
 }
 @media only screen and (max-width: 682px){
      .info{
