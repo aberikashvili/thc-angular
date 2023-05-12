@@ -1,0 +1,127 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(270deg, white 70%, #FF8C6D 30%);
+    height: 500px;
+    justify-content: space-around;
+}
+.usidesection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+.downsidesection{
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+.infomobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.downsidetext {
+    font-size: small;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+}
+.whoweare{
+    letter-spacing: 8px;
+    margin-left: 10px;
+    font-size: small;
+}
+.mainimage{
+    max-width: 400px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+.aboutcompany{
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    font-size: small;
+    color: gray;
+    align-items: flex-end;
+}
+.smallinfo{
+    font-size: x-large;
+    margin: 10px 0 10px 0;
+}
+.line{
+    height: 2px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 920px) {
+   
+   .about{
+     font-size: xx-small;
+   }
+   .whoweare{
+    font-size: x-small;
+   }
+   .line{
+    width: 30px;
+   }
+   .mainimage{
+    max-width:300px;
+  }
+  section{
+    height: 430px;
+  }
+}
+@media only screen and (max-width: 682px){
+     .info{
+        display: none;
+     }
+     section{
+        background: linear-gradient(90deg, #FF8C6D 60%, white 40%);
+     }
+     .mainimage{
+        max-width: 450px;
+     }
+     .downsidetext{
+        font-size: x-small ;
+     }
+}
+@media only screen and (min-width: 683px){
+     .infomobile{
+        display: none;
+     }
+}
+@media only screen and (max-width: 466px){
+   .mainimage{
+        max-width: 280px;
+     }
+     section{
+        height: 350px;
+     }
+     .about{
+        font-size: 7px;
+     }
+     .smallinfo{
+     margin: 10px 0 6px 0;
+   }
+   .downsidetext{
+     font-size: xx-small;
+   }
+   .whoweare{
+     font-size: xx-small;
+   }
+   .line{
+    width: 20px;
+   }
+}
