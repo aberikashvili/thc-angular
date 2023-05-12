@@ -1,13 +1,45 @@
 .mainplace{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    // align-items: flex-start;
+    // justify-content: space-evenly;
 }
 
 .webimage{
   object-fit: cover;
-  margin: 0 !important;
+  margin: 0px !important;
 }
+.statistics__right{
+    display: flex;
+&__wrapper{
+     display: flex;
+        &__block{
+        width: 203px;
+        height: 203px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:  4px;
+        margin-top: 22px;
+        &--dot:first-of-type{
+            left:-4px ;
+            top: -3px;
+        }
+        &--dot:nth-of-type(2){
+            right:-4px ;
+            top: -3px;
+        }
+        &--dot:nth-of-type(3){
+            left:-4px ;
+            bottom: -3px;
+        }
+        &--dot:nth-of-type(4){
+            right:-4px ;
+            bottom: -3px;
+        }
+      }
+    }
+  }
 
 .infoplace{
     
@@ -98,7 +130,7 @@ button{
 @media only screen and (max-width: 1100px){
   .webimage{
      
-     box-sizing: content-box;
+     box-sizing: border-box;
      margin: 0;
   }
 }
