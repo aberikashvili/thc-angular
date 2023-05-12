@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./explorebrands.component.scss']
 })
 export class ExplorebrandsComponent {
-tabsData: any = [];
-  filteredCategoryData: any = [];
+filteredCategoryData: any = [];
 
   ngOnInit(): void {
     this.getCategoryByType();

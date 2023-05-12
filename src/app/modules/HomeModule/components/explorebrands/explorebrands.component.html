@@ -1,25 +1,14 @@
 <article class="mainplace" >
-            <span
-              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute top-0 left-0"
-            ></span>
-            <span
-              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute bottom-0 left-0"
-            ></span>
-            <span
-              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute top-0 right-0"
-            ></span>
-            <span
-              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute bottom-0 right-0"
-            ></span>
+            
             
 
-
-            <div
+           <div *ngFor="let item of filteredCategoryData"
               class="main--desktop-version--category--filter-category--data--content w-full flex flex-col justify-center items-center"
             >
               <img [src]="item.img" />
               <a *ngIf="item.detailUrl">{{ item.detailUrl }}</a>
             </div>
+            
     <div class="infoplace">
        <div class="title">
          <img class="line" src="assets/images/Rectangle.png" >
