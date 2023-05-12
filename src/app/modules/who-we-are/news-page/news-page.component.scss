@@ -1,0 +1,84 @@
+.news__wrapper{
+    margin-top: 69px;
+    display: flex;
+    flex-direction: column;
+    &__component{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 260px;
+        &__wrapper{
+              margin-right: 70px;
+                  &--image{
+            min-width: 560px;
+            height: 560px;
+            background-color: aquamarine;
+            display: block;
+            position: relative; 
+        }
+        }
+        &__wrapper::before{
+            content: "";
+            width: 515px;
+            height: 170px;
+            background-color: #28272C;
+            position: absolute;
+            display: block;
+            top: 490px;
+            right: 215px;
+             // &__wrapper::nth-of-type(2)::before{
+        //        content: "";
+        //     width: 515px;
+        //     height: 170px;
+        //     background-color: #3d15dd;
+        //     position: absolute;
+        //     display: block;
+        //     top: 490px;
+        //     right: 145px;
+        // }
+        }
+        &__wrapper::nth-of-type(2n)::before{
+               content: "";
+            width: 515px;
+            height: 170px;
+            background-color: #3d15dd;
+            position: absolute;
+            display: block;
+            top: 490px;
+            left: 145px;
+        }
+        &__article{
+            display: flex;
+            flex-direction: column;
+            width: 1067px;
+            &--time{
+                color: #5765FD;
+            }
+            &--header{
+            font-size: 32px;
+            }
+            &--text{
+                color:#27262bb3;
+                margin: 12px 0 32px;
+            }
+            &--show{
+                text-transform: capitalize;
+                color:#28272C ;
+                width: 129px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &--line{
+                    width: 32px;
+                    height: 2px;
+                    display: block;
+                    background-color: #5765FD;
+                }
+            }
+        }
+    }
+    &__component:nth-of-type(2n){
+        flex-direction: row-reverse;
+    }
+    
+}
