@@ -12,9 +12,12 @@ const routes: Routes = [
       import('./modules/who-we-are/who-we-are.module').then((m) => m.WhoWeAreModule),
   },
   {
-     path:"industry",
-     loadChildren:()=>
-     import('./modules/industry/industry.module').then((m)=>m.IndustryModule)
+    path: 'industry',
+    loadChildren: () => import('./modules/industry/industry.module').then((m) => m.IndustryModule),
+  },
+  {
+    path: 'news',
+    loadChildren: () => import('./modules/news/news.module').then((m) => m.NewsModule),
   },
   {
     path: '**',
