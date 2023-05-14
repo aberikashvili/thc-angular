@@ -80,6 +80,9 @@
     &__component:nth-of-type(2n){
         flex-direction: row-reverse;
     }
+     &__component:last-of-type{
+       margin-bottom: 0;
+    }
     
 }
 
@@ -89,7 +92,7 @@
 
 @media (max-width:1366px) {
     .news{
-        margin: 0 60px;
+        margin: 160px 60px 260px ;
     }
     .news__wrapper__component__article--header{
         font-size: 22px;
@@ -107,6 +110,11 @@
 
 
 @media (max-width:1024px) {
+    .news{
+         margin: 80px 60px 35px ;
+
+    }
+
 .news__wrapper__component{
     flex-direction: column;
     margin-bottom: 60px;
@@ -114,6 +122,8 @@
         margin:0px
     }  
 }
+
+
 .news__title__text{ 
     font-size:22px ;
 }
@@ -155,7 +165,7 @@ display: none;
 
 @media  (max-width:800px) {
     .news{
-        margin:0 30px;
+        margin:60px 30px 65px;
     }
 .news__wrapper__component{
     flex-direction: column;
@@ -193,7 +203,7 @@ display: none;
 
 @media  (max-width:600px) {
     .news{
-        margin:0 16px;
+        margin:40px 16px 65px ;
         &__title{
             margin-bottom: 12px;
             &__header{
