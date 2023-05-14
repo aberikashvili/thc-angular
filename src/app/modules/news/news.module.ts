@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NewsComponent } from './news.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { NewsPageComponent } from './news-page/news-page.component';
+import { NewsPageComponent } from './components/news-page/news-page.component';
 
 const routes:Routes=[{
   path:"",component:NewsComponent,
