@@ -1,36 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-explorebrands',
   templateUrl: './explorebrands.component.html',
   styleUrls: ['./explorebrands.component.scss'],
 })
-export class ExplorebrandsComponent {
-  categoryData: any = [
-    { img: '/assets/images/Group.png', type: '1', detailUrl: false },
-    { img: '/assets/images/Group.png', type: '1', detailUrl: false },
-    { img: '/assets/images/Group.png', type: '1', detailUrl: false },
-    { img: '/assets/images/Group.png', type: '2', detailUrl: 'Details' },
-    { img: '/assets/images/Group.png', type: '2', detailUrl: false },
-    { img: '/assets/images/Group.png', type: '2', detailUrl: false },
-    { img: '/assets/images/Group.png', type: '3', detailUrl: false },
-    { img: '/assets/images/Group.png', type: '2', detailUrl: false },
-  ];
+export class ExplorebrandsComponent implements OnInit {
+  ngOnInit(): void {
+    this.filterData();
+  }
+  categoryData: any = []
+   shinkhoferArray:any = [];
 
-  // ngOnInit(): void {
-  //   this.getCategoryByType();
-  // }
+ 
 
-  // getCategoryByType() {
-  //   let categoryData = [
-  //     { img: '/assets/images/Group.png', type: '1', detailUrl: false },
-  //     { img: '/assets/images/Group.png', type: '1', detailUrl: false },
-  //     { img: '/assets/images/Group.png', type: '1', detailUrl: false },
-  //     { img: '/assets/images/Group.png', type: '2', detailUrl: 'Details' },
-  //     { img: '/assets/images/Group.png', type: '2', detailUrl: false },
-  //     { img: '/assets/images/Group.png', type: '2', detailUrl: false },
-  //     { img: '/assets/images/Group.png', type: '3', detailUrl: false },
-  //     { img: '/assets/images/Group.png', type: '2', detailUrl: false },
-  //   ];
-  // }
+filterData(){
+  this.shinkhoferArray = [
+    {logo:'/assets/images/Group.png',showOnMobileVersion:true},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:true},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:true},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:true},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:true},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:true},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:false},
+    {logo:'/assets/images/Group.png',showOnMobileVersion:false},
+  ]
 }
+}
+
+
+

@@ -1,22 +1,32 @@
 <article class="mainplace" >
-            
-           <div   >
-             <div class="place flex flex-row" *ngFor="let item of categoryData">
-              <img [src]="item.img" />
-              <a *ngIf="item.detailUrl">{{ item.detailUrl }}</a></div>
-             <span
-              class="main--place--spans w-1 h-1 absolute top-0 left-0"
-            ></span>
-            <span
-              class="main--place--spans w-1 h-1 absolute top-0 left-0"
-            ></span>
-            <span
-              class="main--place--spans w-1 h-1 absolute top-0 left-0"
-            ></span>
-            <span
-              class="main--place--spans  w-1 h-1 absolute top-0 left-0"
-            ></span>
-           </div>
+            <div
+class="menu" style="display: flex;  justify-content: start; 
+padding-left: 4px; margin-top: 50px; margin-left: 50px; margin-bottom: 50px; width: 600px;"
+>
+<div
+  class="menu--info" style="position: relative;display: flex; align-items: center; flex-direction: column;"
+  *ngFor="let item of shinkhoferArray"[ngClass]="{'mobile-version':!item.showOnMobileVersion}" 
+>
+  <span
+    class="menu--info--points" style="width: 4px; height: 4px; position: absolute; top: 0; left: 0;"
+  ></span>
+  <span
+    class="menu--info--points"style="width: 4px; height: 4px; position: absolute; bottom: 0; left: 0;"
+  ></span>
+  <span
+    class="menu--info--points"style="width: 4px; height: 4px; position: absolute; top: 0; right: 0;"
+  ></span>
+  <span
+    class="menu--info--points"style="width: 4px; height: 4px; position: absolute; bottom: 0; right: 0;"
+  ></span>
+
+  <div
+    class="menu--info--content" style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"
+  >
+    <img [src]="item.logo" />
+  </div>
+</div>
+</div>
 
             
     <div class="infoplace">
