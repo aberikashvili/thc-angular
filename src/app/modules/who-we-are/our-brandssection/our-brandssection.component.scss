@@ -1,0 +1,29 @@
+div.upside-backrgound-color-and-img {
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-top-backround-color{
+    background-color: #FF8C6D ;
+    height: 80%;
+    width: 55%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.img-on-background{
+    background-color: gray; 
+    position: absolute;
+    margin-top: 100px;
+    
+}
+.title{
+    font-size: x-large;
+    
+}
+.text-place{
+    text-align: center;
+ margin: 25px 200px 60px  200px;
+}
