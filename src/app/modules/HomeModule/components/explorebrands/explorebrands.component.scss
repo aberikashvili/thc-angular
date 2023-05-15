@@ -9,8 +9,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     &--info {
-      height: 150px;
-      width: 150px;
+      height: 180px;
+      width: 180px;
       margin-top: -4px;
       margin-left: -4px;
 
@@ -23,8 +23,8 @@
       &--content {
         margin:  auto;
         img {
-          width: 113.24px;
-          height: 43.3px;
+          width: 145px;
+          height: 60px;
           display: inline-block;
           cursor: pointer;
         }
@@ -40,36 +40,60 @@
   .mobile-version{
     display: flex;
   }
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1160px){
       .menu {
         margin-left: 0px;
+        width: 650px !important;
     &--info {
-      height: 125px;
-      width: 125px;
+      height: 148px !important;
+      width: 148px !important;
       &--content {
         margin:  auto;
         img {
-          width: 90px;
-          height: 35px;
+          width: 110px;
+          height: 45px;
         }
       }
     }
   }
-  .infoplace{
-     margin-left: 50px !important;
-  }
+  
   }
   @media screen and (max-width: 768px) {
     .mobile-version{
         display: none !important;
     }
-    .menu{
-      width: 300px !important;
+    
+    .infoplace{
+      justify-content: flex-start;
+    }
+     .menu {
+        margin-left: 25px !important;
+        width: 300px !important;
+    &--info {
+      height: 125px;
+      width: 145px;
+     
+      }
+    }
+    .mainplace{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    max-height: auto;
+ }
+ 
+ img.line{
+    width: 20px;
+    height: 1.5px;
+ }
+ .maintext{
+    letter-spacing: 5px;
+    font-size: 12px;
+ }
+  p.smallinfo{
+        font-size: 20px;
     }
   }
-
-
-
 .infoplace{
     width: 300px;
     display: flex;
@@ -105,25 +129,23 @@ p.smallinfo{
 }
 
 
-@media only screen and (max-width: 768px) {
- .mainplace{
-    display: flex;
-    flex-direction: column-reverse;
-    margin: auto;
-    max-height: auto;
- }
- 
- img.line{
-    width: 20px;
-    height: 1.5px;
- }
- .maintext{
-    letter-spacing: 5px;
-    font-size: 12px;
- }
-  p.smallinfo{
-        font-size: 20px;
-    }
-}
 
+
+// @media only screen and (min-width: 1300px){
+//    .menu {
+    
+//     &--info {
+//       height: 200px !important;
+//       width: 200px !important;
+//       &--content {
+//         margin:  auto;
+//         img {
+//           width: 150.99px !important;
+//           height: 60px !important;
+//         }
+      
+//       }
+//     }
+//   }
+// }
 
