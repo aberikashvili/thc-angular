@@ -1,7 +1,7 @@
 .footer::before {
   content: '';
-  height: 100%;
-  width: 60px;
+  height: 261px;
+  width: 40px;
   position: absolute;
   background-color: #5765fd;
 }
@@ -28,50 +28,42 @@
     text-transform: none;
   }
 }
+.footer__top__wrapper {
+  margin: 0 60px 25px 60px;
+  &__Left {
+    margin-right: 35px;
+    &__text {
+      font-size: 13px;
+    }
+  }
+}
+.footer__top__wrapper__right--block:not(:last-of-type) {
+  width: 200px;
+}
 
 // რესფონსივი
 
-@media (max-width: 1920px) {
+@media (max-width: 1440px) {
   .footer::before {
     content: '';
-
-    width: 40px;
-  }
-  .footer__top__wrapper {
-    margin: 0 60px 25px 60px;
-  }
-  .footer__top__wrapper__right--block:not(:last-of-type) {
-    width: 200px;
-  }
-
-  .footer__top__wrapper__left {
-    margin-right: 40px;
-  }
-  .footer__top__wrapper__left--text {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .footer__top__wrapper__left {
     display: none;
   }
   .footer__top__wrapper {
     justify-content: center;
+    &__left {
+      display: none;
+    }
+    &__right {
+      justify-content: space-evenly;
+      width: 100%;
+    }
   }
-  .footer__top__wrapper__right {
-    justify-content: space-evenly;
-    width: 100%;
-  }
-}
-@media (max-width: 960px) {
 }
 
 @media (max-width: 960px) {
   .footer__top__wrapper__right--block--text {
     font-size: 12px;
   }
-
   .footer__top__wrapper__right--block--header {
     font-size: 13px;
   }
@@ -92,6 +84,7 @@
     display: none;
   }
 }
+
 @media (max-width: 600px) {
   .footer__top__wrapper__right--block:nth-of-type(1) {
     display: none;
@@ -99,21 +92,19 @@
 }
 
 @media (max-width: 480px) {
-  .footer__bottom__wrapper__links {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
   .footer::before {
     width: 37px;
-    height: 100%;
+    height: 181px;
+    display: block;
   }
   .footer__top__wrapper {
     margin: 0 0 20px 74px;
-  }
-  .footer__top__wrapper__left {
-    display: none;
+    &__Left {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
   }
   .footer__top__wrapper__right--block--text {
     width: 270px;
@@ -135,8 +126,8 @@
     z-index: 22222;
     position: relative;
     margin: 0;
-  }
-  .footer__top__wrapper__right {
-    justify-content: flex-start;
+    &__right {
+      justify-content: flex-start;
+    }
   }
 }
