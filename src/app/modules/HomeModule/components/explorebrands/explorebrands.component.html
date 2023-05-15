@@ -1,13 +1,23 @@
 <article class="mainplace" >
             
-            
-
-           <div *ngFor="let item of filteredCategoryData"
-              class="main--desktop-version--category--filter-category--data--content w-full flex flex-col justify-center items-center"
-            >
+           <div   >
+             <div class="place flex flex-row" *ngFor="let item of categoryData">
               <img [src]="item.img" />
-              <a *ngIf="item.detailUrl">{{ item.detailUrl }}</a>
-            </div>
+              <a *ngIf="item.detailUrl">{{ item.detailUrl }}</a></div>
+             <span
+              class="main--place--spans w-1 h-1 absolute top-0 left-0"
+            ></span>
+            <span
+              class="main--place--spans w-1 h-1 absolute top-0 left-0"
+            ></span>
+            <span
+              class="main--place--spans w-1 h-1 absolute top-0 left-0"
+            ></span>
+            <span
+              class="main--place--spans  w-1 h-1 absolute top-0 left-0"
+            ></span>
+           </div>
+
             
     <div class="infoplace">
        <div class="title">
