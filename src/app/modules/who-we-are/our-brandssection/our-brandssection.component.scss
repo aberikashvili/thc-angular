@@ -13,17 +13,98 @@ div.upside-backrgound-color-and-img {
     right: 0;
     top: 0;
 }
+.mobilebr{
+    display: none;
+}
 .img-on-background{
     background-color: gray; 
     position: absolute;
-    margin-top: 100px;
-    
+    margin-top: 50px;
 }
 .title{
-    font-size: x-large;
+    font-size: large;
     
+}
+.text-place-large-info-date{
+    margin: 20px 0; 
+    color: #5765FD;
+    font-size: small;
+}
+
+.text-place-large-info{
+    text-align: start;
+     color: gray; 
+     font-size: small;
 }
 .text-place{
     text-align: center;
- margin: 25px 200px 60px  200px;
+ margin: 25px 150px 60px  150px;
 }
+@media only screen and (max-width: 1000px) {
+ .img-on-background{
+    max-width: 70%;
+ }
+ div.upside-backrgound-color-and-img{
+    height: 500px;
+ }
+}
+@media only screen and (max-width: 900px){
+    div.upside-backrgound-color-and-img{
+    height: 400px;
+ }
+ .title{
+    font-size: small;
+    
+}
+.text-place-large-info{
+   font-size: x-small ;
+}
+.text-place-large-info-date{
+    font-size: xx-small;
+}
+    .text-place{
+      margin: 25px 80px 60px  80px;
+}
+}
+
+ @media only screen and (max-width: 596px){
+       .text-place{
+      margin: 20px 50px 60px  50px;
+     }
+      div.upside-backrgound-color-and-img{
+    height: 270px;
+ }
+ .right-top-backround-color{
+   
+    height: 70%;
+    width: 55%;
+    
+}
+.mobilebr{
+    display: initial;
+}
+.webbr{
+    display: none;
+}
+
+ }
+ @media only screen and (max-width: 375px){
+     .title{
+    font-size: x-small;
+    
+}
+    div.upside-backrgound-color-and-img{
+    height: 180px;
+ }
+  .right-top-backround-color{
+   
+    height: 50%;
+    width: 50%;
+    
+}
+.img-on-background{
+    
+    margin-top: 20px;
+}
+
+ }
