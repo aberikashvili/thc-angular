@@ -1,0 +1,94 @@
+.gallery__photos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: none;
+    scrollbar-width: thin;
+    &__image{
+      flex: 0 0 auto;
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
+    }
+  }
+ .gallery__photos__image:not(:first-of-type){
+   margin-left: 9.5px;
+ }
+
+
+
+// რესფონსივი
+
+  
+@media (max-width:1680px) {
+.gallery{
+    margin: 0 80px 160px;
+}
+}
+
+@media (max-width:1440px) {
+.gallery{
+    margin: 0 60px 160px;
+}
+}
+
+@media (max-width:1280px) {
+    .gallery__article__headline{
+        font-size: 16px;
+        &__line{
+            width: 24px;
+            height: 2px;
+            margin-right: 14px;
+        }
+    }
+}
+
+
+
+@media (max-width:1024px) {
+    .gallery__article__headline{
+        font-size: 16px;
+        &__line{
+            width: 22px;
+            height: 1px;
+            margin-right: 14px;
+        }
+    }
+
+}
+
+
+@media (max-width:860px) {
+    .gallery__article__headline{
+        font-size: 14px;
+        &__line{
+            width: 20px;
+            height: 1px;
+        }
+    }
+ .gallery__photos__image:not(:first-of-type){
+      margin-left: 12px;
+    }
+ }
+
+
+
+@media (max-width:600px) {
+    .gallery{
+    margin: 0 16px 160px;
+}
+    .gallery__article__headline{
+        font-size: 12px;
+        &__line{
+            margin-right: 8px;
+        }
+    }
+    .gallery__article__header{
+        font-size: 24px;
+        margin:12px 0 20px;
+    }
+   .gallery__photos__image:not(:first-of-type){
+     margin-left: 8px;
+ }
+}
