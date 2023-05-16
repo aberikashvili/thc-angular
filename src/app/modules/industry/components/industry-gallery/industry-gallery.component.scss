@@ -75,6 +75,10 @@
         font-size: 24px;
         margin:12px 0 20px;
     }
+    .gallery__photos__image{
+        width: 197px;
+        height: 197px;
+    }
    .gallery__photos__image:not(:first-of-type){
      margin-left: 8px;
  }
