@@ -4,17 +4,16 @@ section{
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: fit-content;
-    flex-wrap: wrap;
     justify-content: space-around;
-    
+    position: relative;
 }
 .backgroundcolor{
     background-color:  #FF8C6D;
-    width: 40%;
-    position: relative;
+    width: 30%;
+    left: 0;
+    position: absolute;
     height: 100%;
-
+    z-index: -1;
 }
  b{
     font-size: small;
@@ -22,7 +21,7 @@ section{
 p{
     font-size: small;
 }
-.usidesection{
+.upsidesection{
     margin-top: 40px;
     display: flex;
     flex-direction: row;
@@ -30,7 +29,12 @@ p{
 }
 .downsidesection{
    display: flex;
-//    position: absolute;
+   flex-direction: row; 
+   justify-content: space-around;
+    height: 150px; 
+    width:400px ; 
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .infomobile{
@@ -97,9 +101,7 @@ p{
   
 }
 @media only screen and (max-width: 682px){
-     .info{
-        display: none;
-     }
+     
      
      .mainimage{
         max-width: 450px;
@@ -140,5 +142,13 @@ p{
    }
    .line{
     width: 20px;
+   }
+   section{
+    flex-direction: row;
+    position: relative;
+   }
+   .upsidesection{
+    flex-direction: row;
+    position: relative;
    }
 }
