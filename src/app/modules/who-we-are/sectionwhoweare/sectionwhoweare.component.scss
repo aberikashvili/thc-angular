@@ -9,11 +9,13 @@ section{
     justify-content: space-around;
 }
 .backgroundcolor-web{
-   height:  100%;
-   width: 35%;
+   height:  120%;
+   width: 28%;
    background-color: #FF8C6D;
-   position: relative;
-   z-index: -1;
+   position: absolute;
+   z-index: 3;
+   right: 0;
+   top: -100px;
 }
 .infomobile{
     display: flex;
@@ -39,6 +41,8 @@ section{
 }
 .mainimage{
     max-width: 400px;
+    position: relative;
+    z-index: 5;
 }
 .info{
     display: flex;
@@ -89,7 +93,9 @@ section{
      .info{
         display: none;
      }
-
+    //  .backgroundcolor-web{
+    //     display: none;
+    //  }
      .mainimage{
         max-width: 450px;
      }
