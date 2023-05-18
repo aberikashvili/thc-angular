@@ -4,10 +4,17 @@ section{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: linear-gradient(270deg, white 70%, #FF8C6D 30%);
     height: fit-content;
-    height: 700px;
+    flex-wrap: wrap;
     justify-content: space-around;
+    
+}
+.backgroundcolor{
+    background-color:  #FF8C6D;
+    width: 40%;
+    position: relative;
+    height: 100%;
+
 }
  b{
     font-size: small;
@@ -16,12 +23,14 @@ p{
     font-size: small;
 }
 .usidesection{
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .downsidesection{
    display: flex;
+//    position: absolute;
 }
 
 .infomobile{
@@ -70,6 +79,7 @@ p{
     width: 40px;
 }
 
+
 @media only screen and (max-width: 920px) {
    
    .about{
@@ -90,9 +100,7 @@ p{
      .info{
         display: none;
      }
-     section{
-        background: linear-gradient(90deg, #FF8C6D 60%, white 40%);
-     }
+     
      .mainimage{
         max-width: 450px;
      }
@@ -104,6 +112,8 @@ p{
      }
 
 }
+
+
 @media only screen and (min-width: 683px){
      .infomobile{
         display: none;
