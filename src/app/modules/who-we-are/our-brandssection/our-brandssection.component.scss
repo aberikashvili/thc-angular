@@ -11,14 +11,16 @@ div.upside-backrgound-color-and-img {
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -1;
 }
 .mobilebr{
     display: none;
 }
 .img-on-background{
     background-color: gray; 
-    position: absolute;
+    position: relative;
     margin-top: 50px;
+
 }
 .title{
     font-size: large;
@@ -79,6 +81,9 @@ div.upside-backrgound-color-and-img {
     width: 55%;
     
 }
+ .img-on-background{
+    max-width: 90%;
+ }
 .mobilebr{
     display: initial;
 }
@@ -94,7 +99,9 @@ div.upside-backrgound-color-and-img {
 }
     div.upside-backrgound-color-and-img{
     height: 180px;
+    
  }
+
   .right-top-backround-color{
    
     height: 50%;
