@@ -6,8 +6,8 @@
     display: flex;
     width: 60%;
     margin-left: 50px;
-    margin-top: 50px;  
-    margin-bottom: 50px; 
+    margin-top: 70px;  
+    margin-bottom: 70px; 
     justify-content: space-between;
     flex-wrap: wrap;
     width: 750px;
@@ -22,8 +22,8 @@
       &--content {
         margin:  auto;
         img {
-          width: 145px;
-          height: 60px;
+          width: 113px;
+          height: 43px;
           display: inline-block;
           cursor: pointer;
         }
@@ -36,6 +36,7 @@
       }
     }
   }
+  
   .mobile-version{
     display: flex;
   }
@@ -43,13 +44,13 @@
       .menu {
         width: 650px ;
     &--info {
-      height: 148px ;
+      height: 130px ;
       width: 148px ;
       &--content {
         margin:  auto;
         img {
-          width: 110px;
-          height: 45px;
+          width: 100px;
+          height: 39px;
         }
       }
     }
@@ -97,13 +98,18 @@
     max-height: auto;
  }
  
- img.line{
-    width: 20px;
+ .line{
+    width: 10px !important;
     height: 1.5px;
+    position: absolute;
+    
  }
  .maintext{
     letter-spacing: 5px;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    position: absolute;
  }
   p.smallinfo{
         font-size: 20px;
@@ -115,12 +121,6 @@
     flex-direction: column;
     justify-content: start;
     margin: auto 15px;
-}
-img.line{
-    width: 30px;
-    height: 2px;
-    margin: 0 !important;
-    margin-right: 10px !important;
 }
 .title{
     display: flex;
