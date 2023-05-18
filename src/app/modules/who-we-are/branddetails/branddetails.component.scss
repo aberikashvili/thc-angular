@@ -1,7 +1,11 @@
 div{  
-    max-width: 800px; 
+    max-width: 80%; 
+    
     color: gray;
-     margin: auto;
+     position: absolute;
+     margin: 0 10%;
+    //  z-index: 10;
+    //  bottom: 200px;
      } 
 @media only screen and (max-width: 600px) { 
     div { margin-left: 15px;
