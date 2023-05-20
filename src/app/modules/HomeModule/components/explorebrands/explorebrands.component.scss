@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     width: 750px;
     &--info {
-      height: 195px;
+      height: 200px;
       width: 190px;
       margin-top: -4px;
       margin-left: -4px;
@@ -111,7 +111,7 @@
     }
 }
 .infoplace{
-    width: 325px;
+    width: 340px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -131,11 +131,11 @@
 p.smallinfo{
     margin-bottom:15px ;
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
 }
 .description{
     color: gray;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 
