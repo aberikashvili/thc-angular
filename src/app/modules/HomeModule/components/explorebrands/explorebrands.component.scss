@@ -12,8 +12,8 @@
     flex-wrap: wrap;
     width: 750px;
     &--info {
-      height: 180px;
-      width: 180px;
+      height: 195px;
+      width: 190px;
       margin-top: -4px;
       margin-left: -4px;
       &--points {
@@ -111,7 +111,7 @@
     }
 }
 .infoplace{
-    width: 300px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -131,11 +131,11 @@
 p.smallinfo{
     margin-bottom:15px ;
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .description{
     color: gray;
-    font-size: 9px;
+    font-size: 11px;
 }
 
 
