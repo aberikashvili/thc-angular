@@ -114,9 +114,10 @@
     .news{
          margin: 80px 60px 35px ;
   &__title{
-             margin-bottom: 42px;
+             
              &__text{
                  font-size:22px ;
+                 margin-bottom: 32px;
              }
         }
     }
@@ -170,9 +171,6 @@ display: none;
 @media  (max-width:800px) {
     .news{
         margin:60px 30px 65px;
-       &__title{
-             margin-bottom: 28px;
-        }
     }
 .news__wrapper__component{
     flex-direction: column;
@@ -223,6 +221,7 @@ display: none;
             }
             &__text{
                 font-size: 24px;
+                margin-top: 12px;
             }
         }
     }
