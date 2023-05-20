@@ -53,6 +53,7 @@
             }
             &--header{
             font-size: 32px;
+            font-weight: 600;
             }
             &--text{
                 color:#27262bb3;
@@ -112,7 +113,12 @@
 @media (max-width:1024px) {
     .news{
          margin: 80px 60px 35px ;
-
+  &__title{
+             margin-bottom: 42px;
+             &__text{
+                 font-size:22px ;
+             }
+        }
     }
 
 .news__wrapper__component{
@@ -124,9 +130,7 @@
 }
 
 
-.news__title__text{ 
-    font-size:22px ;
-}
+
 .news__wrapper__component__article--header{
     margin: 12px 0;
     font-size: 18px;
@@ -166,10 +170,13 @@ display: none;
 @media  (max-width:800px) {
     .news{
         margin:60px 30px 65px;
+       &__title{
+             margin-bottom: 28px;
+        }
     }
 .news__wrapper__component{
     flex-direction: column;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     &__article{
         display: none;
        &--time{
@@ -206,7 +213,6 @@ display: none;
     .news{
         margin:40px 16px 65px ;
         &__title{
-            margin-bottom: 12px;
             &__header{
                  font-size: 12px;
                  &__line{
