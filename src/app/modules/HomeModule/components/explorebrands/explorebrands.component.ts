@@ -16,14 +16,14 @@ export class ExplorebrandsComponent implements OnInit {
 
 filterData(){
   this.shinkhoferArray = [
-    { logo: '/assets/images/Group.png', showOnMobileVersion: true },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: true },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: true },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: true, detailUrl: 'Details' },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: true },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: true },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: false },
-    { logo: '/assets/images/Group.png', showOnMobileVersion: false },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: true },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: true },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: true },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: true, detailUrl: 'Details' },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: true },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: true },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: false },
+    { logo: '/assets/images/schirnhoferlogo.png', showOnMobileVersion: false },
   ];
 }
 }
