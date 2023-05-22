@@ -97,6 +97,9 @@
       }
       &--category {
         &--filter-category {
+          .custom-filter:nth-child(n + 7) {
+            display: none;
+          }
           margin-top: 48px;
           &--data {
             height: 165px;
