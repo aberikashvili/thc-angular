@@ -29,14 +29,14 @@
             position: absolute;
             display: block;
             top: 490px;
-            right: 215px;
+            right: 145px;
         }
 
         .second{
             margin: 0 0 0 70px;
             &::before{
                 content: "";
-                left: 215px;
+                left: 145px;
             }
         }
 
