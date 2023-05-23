@@ -137,11 +137,19 @@
   }
 
   .brands__wrapper__block {
-    width: 224.5px;
-    height: 224.5px;
+    // width: 224.5px;
+    // height: 224.5px;
+     width: 283.5px;
+    height: 283.5px;
   }
 }
-
+@media (max-width: 599px) {
+    .brands__wrapper__block {
+    width: 224.5px;
+    height: 224.5px;
+   
+  }
+}
 @media (max-width: 480px) {
   .brands__wrapper__block {
     width: 171.5px;
