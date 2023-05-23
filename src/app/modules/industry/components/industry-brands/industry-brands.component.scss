@@ -115,7 +115,22 @@
     display: none;
   }
 }
-
+@media (max-width: 768px) {
+  .brands__wrapper__block {
+    // width: 240.5px;
+    // height: 240.5px;
+     width: 323.6px;
+    height: 323.6px;
+  }
+}
+@media (max-width: 767px) {
+  .brands__wrapper__block {
+    // width: 240.5px;
+    // height: 240.5px;
+      width: 226.6px;
+    height: 226.6px;
+  }
+}
 @media (max-width: 600px) {
   .brands {
     margin: 160px 16px 146px 16px;
