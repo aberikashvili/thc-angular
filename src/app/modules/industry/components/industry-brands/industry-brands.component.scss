@@ -58,22 +58,7 @@
 }
 
 
-// @media (max-width: 1680px) {
-//   .brands__wrapper__block {
-//     width: 240.16px;
-//     height: 240.16px;
-//   }
-//   .brands {
-//     margin: 160px 80px 146px 80px;
-//   }
-// }
 
-// @media (max-width: 1600px) {
-//   .brands__wrapper__block {
-//     width: 213.5px;
-//     height: 213.5px;
-//   }
-// }
 
 @media (max-width: 1440px) {
   .brands {
@@ -94,31 +79,15 @@
   }
 }
 
-@media (max-width: 1366px) {
-  .brands {
-    // margin: 160px 60px 146px 60px;
-  }
-  // .brands__wrapper__block {
-  //   width: 232.1px;
-  //   height: 232.1px;
-  // }
-}
+
 @media (max-width: 1365px) {
-  .brands {
-    // margin: 160px 60px 146px 60px;
-  }
+
   .brands__wrapper__block {
     width: 232px;
     height: 232px;
   }
 }
 
-// @media (max-width: 1280px) {
-//   .brands__wrapper__block {
-//     width: 171.825px;
-//     height: 171.825px;
-//   }
-// }
 
 @media (max-width: 1279px) {
   .brands__wrapper__block {
@@ -142,10 +111,7 @@
 }
 
 @media (max-width: 959px) {
-  // .brands__wrapper__block {
-  //   width: 170.25px;
-  //   height: 170.25px;
-  // }
+
   .brands__wrapper__block {
     width: 227px;
     height: 227px;
@@ -156,10 +122,8 @@
 
 @media (max-width: 800px) {
   .brands__wrapper__block {
-    // width: 240.5px;
-    // height: 240.5px;
      width: 340px;
-    height: 226.6px;
+    height: 340px;
   }
   .brands__wrapper__block:nth-of-type(n + 7) {
     display: none;
@@ -168,24 +132,18 @@
 
 @media (max-width: 799px) {
   .brands__wrapper__block {
-    // width: 240.5px;
-    // height: 240.5px;
      width: 323.6px;
     height: 323.6px;
   }
 }
 @media (max-width: 768px) {
   .brands__wrapper__block {
-    // width: 240.5px;
-    // height: 240.5px;
      width: 323.6px;
     height: 323.6px;
   }
 }
 @media (max-width: 767px) {
   .brands__wrapper__block {
-    // width: 240.5px;
-    // height: 240.5px;
       width: 240.5px;
     height: 226.6px;
   }
@@ -213,8 +171,6 @@
   }
 
   .brands__wrapper__block {
-    // width: 224.5px;
-    // height: 224.5px;
      width: 284px;
     height: 284px;
   }
