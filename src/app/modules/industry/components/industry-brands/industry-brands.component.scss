@@ -106,8 +106,10 @@
 
 @media (max-width: 800px) {
   .brands__wrapper__block {
-    width: 240.5px;
-    height: 240.5px;
+    // width: 240.5px;
+    // height: 240.5px;
+     width: 226.6px;
+    height: 226.6px;
   }
   .brands__wrapper__block:nth-of-type(n + 7) {
     display: none;
