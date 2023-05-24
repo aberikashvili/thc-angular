@@ -6,12 +6,12 @@ import { DataService } from 'src/app/core/services/data.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
-  constructor(private _dataService: DataService) {}
+export class HomeComponent  {
+  // constructor(private _dataService: DataService) {}
 
-  ngOnInit(): void {
-    this._dataService.getData().subscribe((data) => {
-      console.log(data);
-    });
-  }
+  // ngOnInit(): void {
+  //   this._dataService.getData().subscribe((data) => {
+  //     console.log(data);
+  //   });
+  // }
 }
