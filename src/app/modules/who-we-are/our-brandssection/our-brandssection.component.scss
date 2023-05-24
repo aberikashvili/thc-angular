@@ -20,7 +20,7 @@ div.upside-backrgound-color-and-img {
     background-color: gray; 
     position: relative;
     margin-top: 50px;
-    max-width: 70%;
+    max-width: 80%;
 
 }
 .title{
@@ -31,30 +31,25 @@ div.upside-backrgound-color-and-img {
      
     color: #5765FD;
     font-size: small;
-    width: 60%;
+    
 }
 
 .text-place-large-info{
+    
     text-align: start;
      color: gray; 
      font-size: small;
 }
 .text-place{
+    width: 70%;
     text-align: center;
- margin: 25px 150px 60px  150px;
+ margin: 25px 15% 60px  15%;
 }
-@media only screen and (max-width: 1000px) {
- .img-on-background{
-    max-width: 70%;
- }
- div.upside-backrgound-color-and-img{
-    height: 500px;
- }
-}
+
+
+
 @media only screen and (max-width: 900px){
-    div.upside-backrgound-color-and-img{
-    height: 400px;
- }
+  
  .title{
     font-size: small;
     
@@ -65,27 +60,19 @@ div.upside-backrgound-color-and-img {
 .text-place-large-info-date{
     font-size: xx-small;
 }
-    .text-place{
-      margin: 25px 80px 60px  80px;
-}
+
 }
 
  @media only screen and (max-width: 596px){
-       .text-place{
-      margin: 20px 50px 60px  50px;
-     }
-      div.upside-backrgound-color-and-img{
-    height: 270px;
- }
+      
+ 
  .right-top-backround-color{
    
-    height: 70%;
+    height: 50%;
     width: 55%;
     
 }
- .img-on-background{
-    max-width: 90%;
- }
+
 .mobilebr{
     display: initial;
 }
@@ -96,7 +83,7 @@ div.upside-backrgound-color-and-img {
  }
  @media only screen and (max-width: 375px){
      .title{
-    font-size: x-small;
+    font-size: 8px;
     
 }
     div.upside-backrgound-color-and-img{
@@ -113,6 +100,12 @@ div.upside-backrgound-color-and-img {
 .img-on-background{
     
     margin-top: 20px;
+}
+.text-place-large-info-date{
+     
+    
+    font-size:  7px;
+    
 }
 
  }
