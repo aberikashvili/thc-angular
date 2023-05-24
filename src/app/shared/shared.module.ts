@@ -9,8 +9,8 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
 import { RouterModule } from '@angular/router';
 import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
 import { BaseComponent } from './components/base.component';
-
 import { MediaPageComponent } from './components/media-page/media-page.component';
+
 
 @NgModule({
   declarations: [
