@@ -4,12 +4,10 @@ section{
     justify-content: center;
     align-items: center;
     position: relative;
-    
-    height: 500px;
     justify-content: space-around;
 }
 .backgroundcolor-web{
-   height:  120%;
+   height:  150%;
    width: 28%;
    background-color: #FF8C6D;
    position: absolute;
@@ -17,12 +15,7 @@ section{
    right: 0;
    top: -100px;
 }
-.infomobile{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
 
-}
 .downsidetext {
     font-size: small;
 }
@@ -32,12 +25,9 @@ section{
 }
 .whoweare{
     letter-spacing: 8px;
-    margin-left: 10px;
-    font-size: small;
-}
-.info .imageplace{
-    position: absolute;
-
+    font-size: medium;
+    display: flex;
+    align-items: center;
 }
 .mainimage{
     max-width: 400px;
@@ -45,12 +35,6 @@ section{
     z-index: 5;
 }
 .info{
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.aboutcompany{
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +50,8 @@ section{
 }
 .line{
     height: 2px;
-    width: 40px;
+    width: 30px;
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 920px) {
@@ -79,50 +64,44 @@ section{
    .whoweare{
     font-size: x-small;
    }
-   .line{
-    width: 30px;
-   }
    .mainimage{
     max-width:300px;
   }
-  section{
-    height: 430px;
-  }
-}
-@media only screen and (max-width: 682px){
-     .info{
-        display: none;
+  .downsidetext{
+        font-size: 11px ;
      }
-    //  .backgroundcolor-web{
-    //     display: none;
-    //  }
-     .mainimage{
-        max-width: 450px;
-     }
-     .downsidetext{
-        font-size: x-small ;
-     }
-}
-@media only screen and (min-width: 683px){
-     .infomobile{
-        display: none;
-     }
+
 }
 @media only screen and (max-width: 466px){
+    section{
+        flex-wrap: wrap-reverse;
+        justify-content: start;
+    }
+    
    .mainimage{
         max-width: 280px;
+        margin: 10% 15% 0% 15%;
      }
-     section{
-        height: 350px;
+     .info{
+        margin: 3%;
      }
+    
      .about{
-        font-size: 7px;
+        margin: 0;
      }
-     .smallinfo{
-     font-size: 12px;
-   }
    .downsidetext{
      font-size: xx-small;
+     margin-top: 50px !important;
    }
+   .backgroundcolor-web{
+   height:  65%;
+   width: 60%;
+   top: 190px;
+ 
+}
+// .imageplace{
+//    height:  100%;
+//    top: 100px;
+// }
 }
 
