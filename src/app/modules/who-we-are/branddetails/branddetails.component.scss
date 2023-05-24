@@ -7,8 +7,8 @@ div{
     
      } 
 @media only screen and (max-width: 600px) { 
-    div { margin-left: 15px;
-         margin-right: 15px;
+    div { max-width: 95%; 
+        margin: 8% 2%;
           font-size: x-small;
          }
  }
