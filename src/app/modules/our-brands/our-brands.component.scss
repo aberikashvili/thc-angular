@@ -32,6 +32,8 @@
       }
 
       &--filter-category {
+        display: flex;
+        justify-content: center;
         &--data {
           height: 290px;
           width: 290px;
