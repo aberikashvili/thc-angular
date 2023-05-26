@@ -77,7 +77,14 @@
           <div
             class="main--main-icon--left-icon--area--desc--bottomdesc flex desc-last"
           >
-            <a target="_blank" href="https://digitalinstitute.ge/">
+            <a *ngIf="!item.route"
+              ><span>{{ item.description }}</span></a
+            >
+            <a
+              *ngIf="item.route"
+              target="_blank"
+              [href]="'https://digitalinstitute.ge/'"
+            >
               <span>{{ item.description }}</span></a
             >
             <a target="_blank" href="https://digitalinstitute.ge/"

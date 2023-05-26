@@ -38,7 +38,12 @@ export class IndustryPageComponent implements OnInit {
       { name: 'LABEL', description: '2010' },
       { name: 'YEAR', description: '2010' },
       { name: 'LABEL', description: '2010' },
-      { name: 'WEBSITE', description: 'Digitalinstitute.ge', img: '/assets/images/iconrow.svg' },
+      {
+        name: 'WEBSITE',
+        description: 'Digitalinstitute.ge',
+        img: '/assets/images/iconrow.svg',
+        route: true,
+      },
     ];
   }
 }
