@@ -1,0 +1,80 @@
+<div>
+  <app-header></app-header>
+</div>
+<section class="main flex flex-row">
+  <div class="main--left-side">
+    <div class="main--left-side--title">
+      <div class="main--left-side--title--main-top">
+        <div class="main--left-side--title--main-top--top">
+          <img src="/src/assets/images/contactline.svg" />
+          <span class="touch-span">GET IN TOUCH</span>
+        </div>
+        <div class="main--left-side--title--main-top--contact">
+          <div class="main--left-side--title--main-top--contact--bottom">
+            <span class="conatct-us">Contact Us</span>
+          </div>
+          <div class="main--left-side--title--main-top--contact--desc">
+            <span class="contact-span"
+              >Every beautiful relationship starts with a simple hello. So lets
+              chat. It might just be the start of something memorable.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main--right-side flex flex-row flex-wrap">
+    <div class="main--right-side--inputs">
+      <div class="main--right-side--inputs--first-inputs flex flex-row gap-5">
+        <div class="example-container">
+          <mat-form-field class="example-full-width w-80">
+            <mat-label>First Name</mat-label>
+            <input matInput />
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field class="example-full-width w-80">
+            <mat-label>Last Name</mat-label>
+            <input matInput />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="main--right-side--inputs--second-inputs flex flex-row gap-5">
+        <div class="example-container">
+          <mat-form-field class="w-80">
+            <mat-label>E-mail</mat-label>
+            <input matInput [formControl]="email" />
+            <mat-error *ngIf="email.invalid && email.dirty">
+              <ng-container *ngIf="email.hasError('email')"
+                >Not a valid email</ng-container
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field class="example-full-width w-80">
+            <mat-label>Company Name</mat-label>
+            <input matInput />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="example-container" textarea>
+        <mat-form-field class="example-full-width">
+          <mat-label>Type Text</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+      </div>
+      <div class="main--right-side--inputs--button">
+        <app-button type="oranges" width="70px">SEND</app-button>
+      </div>
+    </div>
+  </div>
+</section>
+<div>
+  <div class="image">
+    <img src="/assets/images/contact.jpg" />
+  </div>
+</div>
+<div>
+  <app-footer></app-footer>
+</div>

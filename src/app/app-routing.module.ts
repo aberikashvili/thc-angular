@@ -12,6 +12,11 @@ const routes: Routes = [
       import('./modules/who-we-are/who-we-are.module').then((m) => m.WhoWeAreModule),
   },
   {
+    path: 'contact-us',
+    loadChildren: () =>
+      import('./modules/contact-us/contact-us-routing.module').then((m) => m.ContactUsModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',
