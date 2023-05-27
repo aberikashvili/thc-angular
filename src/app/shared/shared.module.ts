@@ -5,8 +5,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
+import { ContactUsComponent } from '../modules/contact-us/contact-us.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,8 +19,10 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
     HeroSectionComponent,
     StatisticsComponent,
     StructureOfTheCompanyComponent,
+    ContactUsComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
+
   exports: [
     CommonModule,
     ButtonComponent,
@@ -26,6 +31,11 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
     HeroSectionComponent,
     StatisticsComponent,
     StructureOfTheCompanyComponent,
+    ContactUsComponent,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class SharedModule {}
