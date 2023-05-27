@@ -2,7 +2,6 @@
     overflow: hidden;
 }
 .news__wrapper{
-    // margin-top: 69px;
     display: flex;
     flex-direction: column;
     &__component{
@@ -39,11 +38,6 @@
                 left: 145px;
             }
         }
-
-        // &__wrapper::nth-of-type(2n)::before{
-        //        content: "";
-        //     left: 215px;
-        // }
         &__article{
             display: flex;
             flex-direction: column;
