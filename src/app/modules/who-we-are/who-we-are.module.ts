@@ -9,7 +9,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
 
 import { SectionwhoweareComponent } from './sectionwhoweare/sectionwhoweare.component';
 
-
 const routes: Routes = [
   {
     path: '',
