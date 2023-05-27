@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NewsDetailsPageModule } from './modules/news-details-page/news-details-page.module';
 
 const routes: Routes = [
   {
@@ -21,8 +22,11 @@ const routes: Routes = [
   },
   {
     path: 'our-brands',
-    loadChildren: () =>
-      import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
+    loadChildren: () =>import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
+  },
+  {
+    path:'news-detail-page',
+    loadChildren: ()=> import ( './modules/news-details-page/news-details-page.module').then((m)=>NewsDetailsPageModule)
   },
   {
     path: '**',

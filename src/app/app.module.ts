@@ -9,7 +9,8 @@ import { CoreModule } from './core/core.module';
 import { IndustryModule } from './modules/industry/industry.module';
 import { NewsModule } from './modules/news/news.module';
 import { SharedModule } from './shared/shared.module';
-import { BrandDetailsModule } from './modules/brand-details/brand-details.module';
+
+import { NewsDetailsPageModule } from './modules/news-details-page/news-details-page.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -21,8 +22,10 @@ import { BrandDetailsModule } from './modules/brand-details/brand-details.module
     CoreModule,
     NewsModule,
     IndustryModule,
-    BrandDetailsModule,
+    NewsDetailsPageModule
   ],
+
+
 
   providers: [],
   bootstrap: [AppComponent],
