@@ -1,23 +1,28 @@
+:host{
+    position: relative;
+}
 section{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
     align-items: center;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 85px 100px;
 }
-.backgroundcolor-web{
-   height:  150%;
-   width: 28%;
+.imageplace::before
+ {
+   content: "";
+   height: 1075px;
+   width: 527px;
    background-color: #FF8C6D;
    position: absolute;
    z-index: 3;
-   right: 0;
-   top: -100px;
+   right: -100px;
+   top: -185px;
 }
-
-.downsidetext {
-    font-size: small;
+.imageplace{
+    position: relative;
+    margin-left: 70px;
 }
 .title{
     display: flex;
@@ -30,13 +35,20 @@ section{
     align-items: center;
 }
 .mainimage{
-    max-width: 400px;
     position: relative;
     z-index: 5;
+    min-width: 705px;
+     
+}
+.downsidetext{
+    text-align: center;
+    margin-top: 280px;
+    font-size: small;
 }
 .info{
     display: flex;
     flex-direction: column;
+    max-width: 705px;
 }
 .about{
     font-size: small;
@@ -53,55 +65,86 @@ section{
     width: 30px;
     margin-right: 20px;
 }
-
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1440px){
+    .mainimage{
+    
+    min-width: 560px;
+   }
+      .imageplace::before
+ {
+     height: 150%;
+     
+}
+.downsidetext{
+    margin-top: 150px;
+   }
+}
+@media only screen and (max-width: 1366px){
+   section{
+    margin:0 60px
+   }
    .smallinfo{
-     font-size: medium;
+    font-size: 22px;
+   }
+    .imageplace::before
+ {
+     right: -60px;
+}
+.downsidetext{
+    margin-top: 100px;
+   }
+ }
+@media only screen and (max-width: 1024px){
+ section{
+    flex-wrap: wrap-reverse;
+ }
+ .mainimage{
+    min-width: 100%;
+   }
+   .downsidetext{
+    margin-top: 150px;
+   }
+   .info{
+    max-width: 100%;
    }
    .about{
-     font-size: xx-small;
+    margin: 0;
    }
-   .whoweare{
-    font-size: x-small;
-   }
-   .mainimage{
-    max-width:300px;
+.imageplace{
+    margin-top: 130px;
+    margin-left: 0;
+}
+   .imageplace::before
+ {   
+     height: 128%;
+     width: 65%;
+     top: -14%;    
+}
+}
+@media only screen and (max-width: 600px){
+  section{
+    margin: 0 16px;
   }
-  .downsidetext{
-        font-size: 11px ;
-     }
-
+     .imageplace::before
+ {
+     right: -16px;
 }
-@media only screen and (max-width: 466px){
-    section{
-        flex-wrap: wrap-reverse;
-        justify-content: start;
-    }
+.imageplace{
     
-   .mainimage{
-        max-width: 280px;
-        margin: 10% 15% 0% 15%;
-     }
-     .info{
-        margin: 3%;
-     }
-    
-     .about{
-        margin: 0;
-     }
-   .downsidetext{
-     font-size: xx-small;
-     margin-top: 50px !important;
-   }
-   .backgroundcolor-web{
-   height:  65%;
-   width: 60%;
-   top: 190px;
- 
+    margin-top: 80px;
+    margin-left: 0;
 }
-// .imageplace{
-//    height:  100%;
-//    top: 100px;
-// }
+.downsidetext{
+    margin-top: 90px;
+    font-size: 9px;
 }
-
+.about{
+    font-size: 8px;
+}
+.smallinfo{
+    font-size: 17px;
+}
+.whoweare{
+    font-size: 12px;
+}
+}
