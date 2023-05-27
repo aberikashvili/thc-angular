@@ -7,7 +7,6 @@ import { WhoWeAreMediaComponent } from './components/who-we-are-media/who-we-are
 import { WhoWeAreHeroSectionComponent } from './components/who-we-are-hero-section/who-we-are-hero-section.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-import { BranddetailsComponent } from './branddetails/branddetails.component';
 const routes: Routes = [
   {
     path: '',
