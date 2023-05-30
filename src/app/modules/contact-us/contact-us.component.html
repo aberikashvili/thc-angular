@@ -70,8 +70,11 @@
           <textarea matInput></textarea>
         </mat-form-field>
       </div>
-      <div class="main--right-side--inputs--button">
-        <app-button type="oranges" width="70px">SEND</app-button>
+      <div class="main--right-side--inputs--button desk">
+        <app-button type="oranges" [width]="'100px'">SEND</app-button>
+      </div>
+      <div class="main--right-side--inputs--button mob">
+        <app-button type="oranges" [width]="'343px'">SEND</app-button>
       </div>
     </div>
   </div>
