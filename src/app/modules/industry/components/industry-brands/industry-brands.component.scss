@@ -2,13 +2,13 @@
   flex-wrap: wrap;
   display: flex;
   &__block {
-    // position: relative;
     width: 16.6%;
+    // position: relative;
     // width: 282px;
     // height: 282px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     &__wrapper {
       position: relative;
       width: 100%;
@@ -16,9 +16,9 @@
       &--image {
         position: absolute;
         top: 35%;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        // left: 0;
+        // bottom: 0;
+        // right: 0;
         left: 50%;
         transform: translate(-50%, 0);
       }
@@ -143,4 +143,3 @@
     // height: 171.5px;
   }
 }
-
