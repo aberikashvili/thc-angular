@@ -1,14 +1,9 @@
 .brands__wrapper {
   flex-wrap: wrap;
   display: flex;
+  justify-content: space-between;
   &__block {
-    width: 16.6%;
-    // position: relative;
-    // width: 282px;
-    // height: 282px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    width: 16.667%;
     &__wrapper {
       position: relative;
       width: 100%;
@@ -16,9 +11,6 @@
       &--image {
         position: absolute;
         top: 35%;
-        // left: 0;
-        // bottom: 0;
-        // right: 0;
         left: 50%;
         transform: translate(-50%, 0);
       }
@@ -46,8 +38,6 @@
 
 @media (max-width: 1680px) {
   .brands__wrapper__block {
-    //  width: 304px;
-    //  height: 304px;
     width: 20%;
   }
   .brands {
@@ -59,45 +49,26 @@
   .brands {
     margin: 160px 60px 146px 60px;
   }
-  // .brands__wrapper__block {
-  //   width: 264px;
-  //   height: 264px!important;
-  // }
 }
 
 @media (max-width: 1366px) {
   .brands__wrapper__block {
-    // width: 232px;
-    // height: 241.2px!important;
     width: 25%;
   }
 }
 
 @media (max-width: 1024px) {
   .brands__wrapper__block {
-    // width: 168.1px;
-    // height: 168.1px;
     width: 33.33%;
-    // height: 229px;
   }
 }
 
 @media (max-width: 800px) {
   .brands__wrapper__block {
-    // width: 33.3%!important;
-    //  width: 340px;
-    // height: 320px;
     width: 50% !important;
   }
   .brands__wrapper__block:nth-of-type(n + 7) {
     display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .brands__wrapper__block {
-    //  width: 323.6px;
-    // height: 304px;
   }
 }
 
@@ -122,24 +93,14 @@
       }
     }
   }
-
-  .brands__wrapper__block {
-    //  width: 284px;
-    // height: 284px;
-  }
-}
-
-@media (max-width: 480px) {
-  .brands__wrapper__block {
-    // width: 171.5px;
-    // height: 171.5px;
-  }
 }
 
 @media (max-width: 374px) {
-  .brands__wrapper__block {
-    width: 100% !important;
-    // width: 171.5px!important;
-    // height: 171.5px;
+  .brands__wrapper {
+    justify-content: center;
+    &__block {
+      width: 171.5px !important;
+      height: 171.5px !important;
+    }
   }
 }
