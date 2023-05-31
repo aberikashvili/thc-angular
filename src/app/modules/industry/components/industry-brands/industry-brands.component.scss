@@ -2,7 +2,8 @@
   flex-wrap: wrap;
   display: flex;
   &__block {
-    width: 282px;
+    width: 16.6%;
+    // width: 282px;
     height: 282px;
     position: relative;
     display: flex;
@@ -29,19 +30,20 @@
 
 // რესფონსივი
 
-@media (max-width: 1919px) {
-  .brands__wrapper {
-    justify-content: space-between;
-    &__block {
-      width: 246.825px;
-      width: 246.825px;
-    }
-  }
-}
+// @media (max-width: 1919px) {
+//   .brands__wrapper {
+//     justify-content: space-between;
+//     &__block {
+//       width: 246.825px;
+//       width: 246.825px;
+//     }
+//   }
+// }
 @media (max-width: 1680px) {
   .brands__wrapper__block {
-       width: 304px;
+      //  width: 304px;
        height: 304px;
+       width: 20%;
   }
   .brands {
     margin: 160px 80px 146px 80px;
@@ -49,105 +51,117 @@
 }
 
 
-@media (max-width: 1679px) {
-  .brands__wrapper__block {
-       width: 320.25px;
-       height: 256.2px;
-  }
+// @media (max-width: 1679px) {
+//   .brands__wrapper__block {
+//        width: 320.25px;
+//        height: 256.2px;
+//   }
 
-}
-
-
+// }
 
 
-@media (max-width: 1440px) {
-  .brands {
-    margin: 160px 60px 146px 60px;
-  }
-  .brands__wrapper__block {
-    width: 264px;
-    height: 264px;
-  }
-}
 
 
-@media (max-width: 1439px) {
+// @media (max-width: 1440px) {
+//   .brands {
+//     margin: 160px 60px 146px 60px;
+//   }
+//   .brands__wrapper__block {
+//     width: 264px;
+//     height: 264px;
+//   }
+// }
 
-  .brands__wrapper__block {
-    width: 249.1px;
-    height: 249.1px;
-  }
-}
+
+// @media (max-width: 1439px) {
+
+//   .brands__wrapper__block {
+//     width: 249.1px;
+//     height: 249.1px;
+//   }
+// }
 
 
 @media (max-width: 1365px) {
 
   .brands__wrapper__block {
-    width: 232px;
+    // width: 232px;
     height: 232px;
+    width: 25%;
   }
 }
 
 
-@media (max-width: 1279px) {
+// @media (max-width: 1279px) {
+//   .brands__wrapper__block {
+//     width: 206px;
+//     height: 206px;
+//   }
+// }
+
+// @media (max-width: 1149px) {
+//   .brands__wrapper__block {
+//     width: 150.67px;
+//     height: 150.67px;
+//   }
+// }
+
+// @media (max-width: 1023px) {
+//   .brands__wrapper__block {
+//     width: 168.1px;
+//     height: 168.1px;
+//   }
+// }
+@media (max-width: 1024px) {
   .brands__wrapper__block {
-    width: 206px;
-    height: 206px;
+    // width: 168.1px;
+    // height: 168.1px;
+    width: 33.33%;
+    height: 229px;
   }
 }
 
-@media (max-width: 1149px) {
-  .brands__wrapper__block {
-    width: 150.67px;
-    height: 150.67px;
-  }
-}
+// @media (max-width: 959px) {
 
-@media (max-width: 1023px) {
-  .brands__wrapper__block {
-    width: 168.1px;
-    height: 168.1px;
-  }
-}
-
-@media (max-width: 959px) {
-
-  .brands__wrapper__block {
-    width: 227px;
-    height: 227px;
-  }
-}
+//   .brands__wrapper__block {
+//     width: 227px;
+//     height: 227px;
+//   }
+// }
 
 
 
 @media (max-width: 800px) {
   .brands__wrapper__block {
-     width: 340px;
+    width: 33.3%!important;
+    //  width: 340px;
     height: 340px;
+    width: 50%!important;
   }
   .brands__wrapper__block:nth-of-type(n + 7) {
     display: none;
   }
 }
 
-@media (max-width: 799px) {
-  .brands__wrapper__block {
-     width: 323.6px;
-    height: 323.6px;
-  }
-}
-@media (max-width: 768px) {
-  .brands__wrapper__block {
-     width: 323.6px;
-    height: 323.6px;
-  }
-}
-@media (max-width: 767px) {
-  .brands__wrapper__block {
-      width: 240.5px;
-    height: 226.6px;
-  }
-}
+// @media (max-width: 799px) {
+//   .brands__wrapper__block {
+//      width: 323.6px;
+//     height: 323.6px;
+  
+//   }
+// }
+// @media (max-width: 768px) {
+//   .brands__wrapper__block {
+//      width: 323.6px;
+//     height: 323.6px;
+//   }
+// }
+// @media (max-width: 767px) {
+//   .brands__wrapper__block {
+//       width: 240.5px;
+//     height: 226.6px;
+//   }
+// }
 @media (max-width: 600px) {
   .brands {
     margin: 160px 16px 146px 16px;
@@ -182,15 +196,20 @@
    
   }
 }
-@media (max-width: 479px) {
-  .brands__wrapper__block {
-    width: 171.5px;
-    height: 171.5px;
-  }
-}
+// @media (max-width: 479px) {
+//   .brands__wrapper__block {
+//     width: 171.5px;
+//     height: 171.5px;
+//   }
+// }
 
-@media (max-width: 375px) {
-  .brands__wrapper {
-    justify-content: center;
+@media (max-width: 374px) {
+    .brands__wrapper__block {
+      width: 100%!important;
+    // width: 171.5px!important;
+    // height: 171.5px;
   }
+  // .brands__wrapper {
+  //   justify-content: center;
+  // }
 }
