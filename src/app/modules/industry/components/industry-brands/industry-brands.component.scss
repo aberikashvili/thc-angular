@@ -82,7 +82,7 @@
 // }
 
 
-@media (max-width: 1365px) {
+@media (max-width: 1366px) {
 
   .brands__wrapper__block {
     // width: 232px;
@@ -135,7 +135,7 @@
   .brands__wrapper__block {
     width: 33.3%!important;
     //  width: 340px;
-    height: 340px;
+    height: 320px;
     width: 50%!important;
   }
   .brands__wrapper__block:nth-of-type(n + 7) {
@@ -150,12 +150,12 @@
   
 //   }
 // }
-// @media (max-width: 768px) {
-//   .brands__wrapper__block {
-//      width: 323.6px;
-//     height: 323.6px;
-//   }
-// }
+@media (max-width: 768px) {
+  .brands__wrapper__block {
+    //  width: 323.6px;
+    height: 304px;
+  }
+}
 // @media (max-width: 767px) {
 //   .brands__wrapper__block {
 //       width: 240.5px;
@@ -185,23 +185,23 @@
   }
 
   .brands__wrapper__block {
-     width: 284px;
+    //  width: 284px;
     height: 284px;
   }
 }
-@media (max-width: 599px) {
-    .brands__wrapper__block {
-    width: 224px;
-    height: 224px;
+// @media (max-width: 599px) {
+//     .brands__wrapper__block {
+//     width: 224px;
+//     height: 224px;
    
-  }
-}
-// @media (max-width: 479px) {
-//   .brands__wrapper__block {
-//     width: 171.5px;
-//     height: 171.5px;
 //   }
 // }
+@media (max-width: 480px) {
+  .brands__wrapper__block {
+    // width: 171.5px;
+    height: 171.5px;
+  }
+}
 
 @media (max-width: 374px) {
     .brands__wrapper__block {
