@@ -1,173 +1,164 @@
-.mainplace{
-    display: flex;
-    justify-content: space-around;
-}
-.menu {
-    display: flex;
-    width: 60%;
-    
-    margin-top: 70px;  
-    margin-bottom: 70px; 
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1000px;
-    &--info {
-      height: 220px;
-      width: 250px;
-      margin-top: -4px;
-      margin-left: -4px;
-      &--points {
-        background: #28272c;
-      }
-      &--content {
-        margin:  auto;
-        img {
-          width: 140px;
-          height: 70px;
-          display: inline-block;
-          cursor: pointer;
-        }
-        a {
-          margin-top: 71px;
-          font-size: 14px;
-          color: #5765fd;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-  
-  .mobile-version{
-    display: flex;
-  }
-
-  @media screen and (max-width: 768px){
-    .mobile-version{
-        display: none !important;
-    }
-    .menu {
-        margin-left: 20px ;
-        width: 400px !important ;
-         margin-left: 10px ;
-         &--info {
-      height: 180px;
-      width: 200px;
-      img {
-          width: 125px;
-          height: 50px;
-        }
-      }
-   ainplace{
-    display: flex;
-    flex-direction: column-reverse;
-    }
-    .infoplace{
-      margin-left: 20px !important;
-    }
-        .infoplace{
-    margin: 15px  !important;
-}
-  }
-  @media screen and (min-width: 350px) and (max-height:400) {
-    .menu {
-         &--info {
-      height: 150px !important;
-      width: 150px !important;
-      }
-    }
-  }
-  .mainplace{
-    display: flex;
-    flex-direction: column-reverse;
-    margin: auto;
-    max-height: auto;
- }
- 
- 
- .maintext{
-    letter-spacing: 5px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    position: absolute;
- }
-  p.smallinfo{
-        font-size: 20px;
-    }
-}
 .infoplace{
-    width: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin: auto 0px;
+  max-width: 561px;
 }
-.title{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.maintext{
-    letter-spacing: 5px;
-    font-size: 11px;
-    text-align: center;
-}
-
-p.smallinfo{
-    margin-bottom:15px ;
-    margin-top: 10px;
-    font-size: 1.45rem;
+.smallinfo{
+  font-size: 32px; 
+  margin: 24px 0 ;
 }
 .description{
-    color: gray;
-    font-size: 13px;
+  font-size: 18px ; 
+  color: gray;
+   margin-bottom: 26px ;
 }
-  @media screen and (max-width: 1450px){
-      .menu {
-        width: 700px ;
-        margin-left: 15px;
-    &--info {
-      height: 150px ;
-      width: 170px ;
-      &--content {
-        margin:  auto;
-        img {
-          width: 100px;
-          height: 45px;
+.infoplace_upside_tittle{
+   font-size: small;
+    letter-spacing: 6px; 
+}
+section{
+  display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-between;
+}
+  .brands__wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  &__block {
+    width: 25%;
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      &--image {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      &--dot{
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        background:#28272C ;
+      }
+          &--dot:first-of-type {
+      left: -2px;
+      top: -2px;
+    }
+    &--dot:nth-of-type(2) {
+      right: -2px;
+      top: -2px;
+    }
+    &--dot:nth-of-type(3) {
+      left: -2px;
+      bottom: -2px;
+    }
+    &--dot:nth-of-type(4) {
+      right: -2px;
+      bottom: -2px;
+    }
+    }
+
+  }
+}
+
+// რესფონსივი
+
+
+@media (max-width: 1680px) {
+  .brands__wrapper__block {
+    width: 25%;
+  }
+  .brands__wrapper{
+    max-width: 750px;
+  }
+  .brands {
+    margin: 160px 80px 146px 80px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .brands {
+    margin: 160px 60px 146px 60px;
+  }
+  .brands__wrapper{
+    max-width: 720px;
+  }
+}
+ 
+
+@media (max-width: 1366px) {
+ 
+  section{
+    flex-direction: column;
+  }
+  .brands__wrapper{
+    width: 100%;
+    max-width: 100%;
+    margin-top:30px ;
+  }
+
+}
+
+
+
+
+@media (max-width: 800px) {
+  .brands__wrapper__block {
+    width: 50% !important;
+  }
+  .brands__wrapper__block:nth-of-type(n + 7) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .brands {
+    margin: 160px 16px 146px 16px;
+    &__article {
+      &__headline {
+        font-size: 12px;
+        &__line {
+          width: 20px;
+          height: 1px;
+          margin-right: 8px;
         }
+      }
+      &__header {
+        font-size: 24px;
+        margin: 8px 0 24px;
+      }
+      &__text {
+        font-size: 14px;
       }
     }
   }
-  .description{
-    
-    font-size: 12px;
+  .smallinfo{
+  font-size: 24px; 
+  margin: 16px 0 12px 0;
 }
-  }
-    @media screen and (max-width: 1070px){
-      .menu {
-        width: 700px ;
-        margin-left: 15px;
-    &--info {
-      height: 140px ;
-      width: 140px ;
-      &--content {
-        margin:  auto;
-        img {
-          width: 100px;
-          height: 45px;
-        }
-      }
+.description{
+  font-size: 14px ; 
+  
+   margin-bottom: 20px ;
+}
+
+article{
+  margin-bottom: 60px;
+}
+infoplace{
+  max-width: 100%;
+  width: 100%;
+}
+}
+
+@media (max-width: 374px) {
+  .brands__wrapper {
+    justify-content: center;
+    &__block {
+      width: 171.5px !important;
+      height: 171.5px !important;
     }
   }
-  .description{
-    
-    font-size: 12px;
 }
-  }
-
-
-
-
-      
-
-
