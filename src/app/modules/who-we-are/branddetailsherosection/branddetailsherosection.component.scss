@@ -1,170 +1,162 @@
-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    justify-content: space-around;
+:host{
     position: relative;
 }
-.backgroundcolor{
-    background-color:  #FF8C6D;
-    width: 27%;
-    left: 0;
-    position: absolute;
-    height: 120%;
-    z-index: 3;
-    top: -125px;
-}
- b{
-    font-size: small;
- }
-p{
-    font-size: small;
-}
-.upsidesection{
-    margin-top: 40px;
+.upside{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .downsidesection{
-   display: flex;
-   flex-direction: row; 
-   justify-content: space-around;
-    height: 150px; 
-    width:400px ; 
-    margin-top: 50px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 5;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-.infomobile{
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    position: relative;
+    justify-content: space-between;
+    // margin: 85px 100px;
 }
-.downsidetext {
-    font-size: small;
+.imageplace::before
+ {
+   content: "";
+   height: 1075px;
+   width: 587px;
+   background-color: #FF8C6D;
+   position: absolute;
+   z-index: 3;
+   left: -170px;
+   top: -185px;
+}
+.imageplace{
+    position: relative;
+    margin-left: 70px;
 }
 .title{
     display: flex;
     align-items: center;
-    margin-right: 110px;
 }
-.whoweare{
+.tittle{
     letter-spacing: 8px;
-    font-size: small;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    
 }
 .mainimage{
-    max-width: 400px;
     position: relative;
     z-index: 5;
+    min-width: 559px;
+
+}
+.downsidetext{
+    text-align: center;
+    margin-top: 280px;
+    font-size: small;
 }
 .info{
     display: flex;
-    margin-left: 50px;
-    position: relative;
-    z-index: 5;
-
-}
-.aboutcompany{
-    display: flex;
     flex-direction: column;
+    max-width: 704px;
+    margin-left: 92px;
 }
 .about{
-    font-size: small;
+    font-size: 18px;
     color: gray;
-    align-items: flex-end;
+    
 }
 .smallinfo{
-    font-size: x-large;
-    margin: 10px 0 10px 0;
+    font-size: 32px;
+    margin: 20px 0 20px 0;
 }
 .line{
     height: 2px;
-    width: 40px;
-    margin-right: 10px;
-
-}
-
-
-@media only screen and (max-width: 920px) {
-   
-   .about{
-     font-size: xx-small;
-   }
-   .whoweare{
-    font-size: x-small;
-   }
-   .line{
     width: 30px;
-   }
-   .mainimage{
-    max-width:300px;
-  }
-  
+    margin-right: 20px;
 }
-@media only screen and (max-width: 682px){
-     
+@media only screen and (max-width: 1440px){
+    .mainimage{
     
-        section :nth-child(1) { order: 2; }
-       se :nth-child(2) { order: 1; }
-        :nth-child(3) { order: 3; }
+    min-width: 560px;
+   }
+      .imageplace::before
+ {
+     height: 150%;
+    
      
-     .mainimage{
-        max-width: 450px;
-     }
-     .downsidetext{
-        font-size: x-small ;
-     } 
-     .downsidesection{
-       position: relative;
-     }
-
 }
-
-
-@media only screen and (min-width: 683px){
-     .infomobile{
-        display: none;
-     }
+.downsidetext{
+    margin-top: 150px;
+   }
 }
-@media only screen and (max-width: 466px){
-   .mainimage{
-        max-width: 280px;
-     }
-     section{
-        height: 350px;
-     }
-     .about{
-        font-size: 7px;
-     }
-     .smallinfo{
-     margin: 10px 0 6px 0;
+@media only screen and (max-width: 1366px){
+   section{
+    margin:0 60px
+   }
+   .smallinfo{
+    font-size: 22px;
+   }
+    .imageplace::before
+ {
+     right: -60px;
+}
+.downsidetext{
+    margin-top: 100px;
+   }
+ }
+@media only screen and (max-width: 1024px){
+ section{
+    flex-wrap: wrap-reverse;
+ }
+ .mainimage{
+    min-width: 100%;
    }
    .downsidetext{
-     font-size: xx-small;
+    margin-top: 150px;
    }
-   .whoweare{
-     font-size: xx-small;
+   .info{
+    max-width: 100%;
    }
-   .line{
-    width: 20px;
-   }
-   section{
-    flex-direction: row;
-    position: relative;
-   }
-   .upsidesection{
-    flex-direction: row;
-    position: relative;
-   }
+//    .about{
+//     margin: 0;
+//    }
+.imageplace{
+    margin-top: 130px;
+    margin-left: 0;
+}
+   .imageplace::before
+ {   
+     height: 128%;
+     width: 65%;
+     top: -14%;    
+}
+}
+@media only screen and (max-width: 600px){
+  section{
+    margin: 0 16px;
+  }
+     .imageplace::before
+ {
+     right: -16px;
+}
+.imageplace{
+    
+    margin-top: 80px;
+    margin-left: 0;
+}
+.downsidetext{
+    margin-top: 90px;
+    font-size: 9px;
+}
+.about{
+    font-size: 8px;
+}
+.smallinfo{
+    font-size: 17px;
+}
+.whoweare{
+    font-size: 12px;
+}
 }
