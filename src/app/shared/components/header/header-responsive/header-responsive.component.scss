@@ -3,7 +3,8 @@
     display: none;
   }
 
- 
+
+
 
   .mobile-menu {
     display: none;
@@ -17,14 +18,17 @@
   }
 
   @media screen and (max-width: 990px) {
-    
+      .cdk-overlay-container{
+          width: 100%;
+          }
+
     .desktop-version {
       display: none;
     }
-
+  
     .mobile-version {
       display: flex;
-
+     
       button {
         background: #5765fd;
 

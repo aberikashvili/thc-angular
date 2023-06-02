@@ -18,7 +18,7 @@ export class HeaderComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string):void {
-    this.dialog.open(HeaderResponsiveComponent, {
+    this.dialog.open(HeaderResponsiveComponent,  {
       maxWidth: '100vw',
       maxHeight: '100vh',
       panelClass: 'full-screen-modal',

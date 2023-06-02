@@ -37,3 +37,14 @@ body {
 
 html, body { height: 100%; }
 
+
+.cdk-overlay-container{
+  width: 0;
+}
+
+@media (max-width:990px) {
+  .cdk-overlay-container{
+  width: 100%;
+}
+}
+

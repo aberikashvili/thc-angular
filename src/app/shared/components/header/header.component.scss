@@ -109,6 +109,10 @@
 .mat-mdc-raised-button{
 border-radius: 0;
 height: 40px;
-min-width: 40px;
+min-width: 50px;
 box-shadow: none;
+}
+
+.mat-mdc-button-persistent-ripple::before{
+  background: none;
 }
