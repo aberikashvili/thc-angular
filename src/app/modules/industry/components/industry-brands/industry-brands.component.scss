@@ -14,23 +14,30 @@
         left: 50%;
         transform: translate(-50%, 0);
       }
-    }
-    &__dot:first-of-type {
+      &--dot{
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        background:#28272C ;
+      }
+          &--dot:first-of-type {
       left: -2px;
       top: -2px;
     }
-    &__dot:nth-of-type(2) {
+    &--dot:nth-of-type(2) {
       right: -2px;
       top: -2px;
     }
-    &__dot:nth-of-type(3) {
+    &--dot:nth-of-type(3) {
       left: -2px;
       bottom: -2px;
     }
-    &__dot:nth-of-type(4) {
+    &--dot:nth-of-type(4) {
       right: -2px;
       bottom: -2px;
     }
+    }
+
   }
 }
 
