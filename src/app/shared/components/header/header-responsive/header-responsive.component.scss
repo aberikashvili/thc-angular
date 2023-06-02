@@ -1,5 +1,12 @@
-.mat-dialog-container {
-    max-width: none !important;
-   
-  width: 100vw;
+.cdk-overlay-pane{
+  
+  width: 100%;
+}
+#cdk-overlay-0{
+  max-width: 100%!important;
+}
+.mat-dialog-container{
+  max-width:100%;
+  
+  width: 100%;
 }

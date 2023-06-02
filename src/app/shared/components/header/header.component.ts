@@ -19,8 +19,11 @@ export class HeaderComponent {
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(HeaderResponsiveComponent, {
-      width: '900px',
-      height: '700px',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      height: '100%',
+      width: '100%',
+      panelClass: 'full-screen-modal',
       enterAnimationDuration,
       exitAnimationDuration,
     });
