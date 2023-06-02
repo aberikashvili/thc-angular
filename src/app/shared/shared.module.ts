@@ -7,6 +7,14 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { StatisticsComponent } from './components/statistics/statistics.component';
 
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
+import { RouterModule } from '@angular/router';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { NgIf } from '@angular/common';
+import { HeaderResponsiveComponent } from './components/header/header-responsive/header-responsive.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +24,18 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
     HeroSectionComponent,
     StatisticsComponent,
     StructureOfTheCompanyComponent,
+    HeaderResponsiveComponent,
   ],
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSidenavModule,
+    NgIf,
+  ],
   exports: [
     CommonModule,
     ButtonComponent,

@@ -1,0 +1,60 @@
+  <div class="mobile-version flex flex-col">
+ 
+    <div
+      *ngIf="showNavbar"
+      class="mobile-version__mobile-menu w-full gap-20 mt-24 m-auto flex flex-col items-center"
+    >
+      <div class="flex flex-col gap-7 items-center w-full">
+        <a routerLink="/who-we-are" class="text-slate-900 hover:text-slate-600">WHO WE ARE</a
+        ><a
+          class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative"
+        >
+          <div class="down-menu"  mat-dialog-content>
+            <div (click)="showIndusrtyMenu = !showIndusrtyMenu">
+              <div class="flex flex-row">
+                <span class="items-center m-auto flex justify-center">
+                  INDUSTRY
+                </span>
+                <span style="position: absolute; right: 0px">
+                  <img class="rotate-90" src="/assets/images/row.svg" alt="" />
+                </span>
+              </div>
+              <div
+                *ngIf="showIndusrtyMenu"
+                class="mobile-version__menu-bar flex flex-col gap-3x"
+              >
+                <div
+                  class="menu-bar__ind-menu flex flex-col gap-2 justify-center text-xs mt-5 items-center"
+                >
+                  <a>Food Import & Distribution </a>
+                  <a>Import & Distribution of Toys, Tableware and Stationery</a>
+                  <a>Supermarket Chain</a>
+                  <a>Construction / Property Development</a>
+                  <a>Production</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="text-slate-900 hover:text-slate-600">OUR BRANDS</a>
+        <a class="text-slate-900 hover:text-slate-600">NEWS</a>
+        <a class="text-slate-900 hover:text-slate-600">MEDIA</a>
+      </div>
+
+      <div
+        class="mobile-version__mobile-btn flex w-full items-center gap-2.5 justify-center"
+      >
+        <app-button type="blues" (clicked)="onbuttonclick()"
+          >CONTACT US</app-button
+        >
+      </div>
+      <div class="icon flex gap-9 justify-center items-center">
+        <a> <img src="/assets/images/facebook.svg" alt="" /></a>
+        <a> <img src="/assets/images/linkedin.svg" alt="" /></a>
+        <a><img src="/assets/images/youtube.svg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+
+
+

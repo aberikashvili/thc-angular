@@ -57,6 +57,7 @@
         [ngClass]="{'px-3 py-3.5':!showNavbar, 'close-btn':showNavbar,}"
         [ngStyle]="{ 'background-color': !showNavbar ? '#5765FD' : '#FF8C6D' }"
         (click)="showNavbar = !showNavbar"
+         mat-raised-button (click)="openDialog('0ms', '0ms')"
       >
         <div *ngIf="!showNavbar" class="flex flex-col gap-1.5">
           <img src="/assets/images/menuitem.svg" alt="" />
@@ -72,7 +73,7 @@
       class="mobile-version__mobile-menu w-full gap-20 mt-24 m-auto flex flex-col items-center"
     >
       <div class="flex flex-col gap-7 items-center w-full">
-        <a href="/who-we-are" class="text-slate-900 hover:text-slate-600">WHO WE ARE</a
+        <a routerLink="/who-we-are" class="text-slate-900 hover:text-slate-600">WHO WE ARE</a
         ><a
           class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative"
         >
