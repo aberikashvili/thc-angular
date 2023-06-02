@@ -1,18 +1,42 @@
+<section class="main-header bg-white">
+
+
+  
+  <div class="header mt-[0.5rem] flex justify-between pl-[1rem] pr-[1rem]">
+
+  <a _ngcontent-cps-c19="" href="#" class="logo"
+  ><img _ngcontent-cps-c19="" src="/assets/images/Logo_mobile.svg" alt="" /></a
+>
+
+<button  mat-button mat-dialog-close class="flex flex-col mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base close-btn" ng-reflect-ng-class="[object Object]" ng-reflect-ng-style="[object Object]" style="background-color: rgb(255, 140, 109);" >
+  <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+  <span class="mdc-button__label">
+<span _ngcontent-qqt-c19="" style=" color: white; font-size: 20px;  "> X </span>
+</span>
+<span class="mat-mdc-focus-indicator"></span>
+<span matripple="" class="mat-ripple mat-mdc-button-ripple" ng-reflect-disabled="false" ng-reflect-trigger="[object HTMLButtonElement]"></span>
+<span class="mat-mdc-button-touch-target"></span>
+</button>
+
+</div>
+
+
+
   <div class="mobile-version flex flex-col">
- 
     <div
-      *ngIf="showNavbar"
       class="mobile-version__mobile-menu w-full gap-20 mt-24 m-auto flex flex-col items-center"
     >
       <div class="flex flex-col gap-7 items-center w-full">
-        <a routerLink="/who-we-are" class="text-slate-900 hover:text-slate-600">WHO WE ARE</a
-        ><a
-          class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative"
+        <a routerLink="/who-we-are" class="text-slate-900 hover:text-slate-600" mat-dialog-close
+          >WHO WE ARE</a
+        ><a  
+          class="text-slate-900 hover:text-slate-600 more flex-row flex items-center justify-center w-full relative" 
         >
-          <div class="down-menu"  mat-dialog-content>
+          <div class="down-menu" mat-dialog-content>
             <div (click)="showIndusrtyMenu = !showIndusrtyMenu">
               <div class="flex flex-row">
-                <span class="items-center m-auto flex justify-center">
+                <span style="padding: 0;" class="items-center m-auto flex justify-center
+                ">
                   INDUSTRY
                 </span>
                 <span style="position: absolute; right: 0px">
@@ -26,27 +50,29 @@
                 <div
                   class="menu-bar__ind-menu flex flex-col gap-2 justify-center text-xs mt-5 items-center"
                 >
-                  <a>Food Import & Distribution </a>
-                  <a>Import & Distribution of Toys, Tableware and Stationery</a>
-                  <a>Supermarket Chain</a>
-                  <a>Construction / Property Development</a>
-                  <a>Production</a>
+                  <a mat-dialog-close>Food Import & Distribution </a>
+                  <a mat-dialog-close>Import & Distribution of Toys, Tableware and Stationery</a>
+                  <a mat-dialog-close>Supermarket Chain</a>
+                  <a mat-dialog-close>Construction / Property Development</a>
+                  <a mat-dialog-close>Production</a>
                 </div>
               </div>
             </div>
           </div>
         </a>
-        <a class="text-slate-900 hover:text-slate-600">OUR BRANDS</a>
-        <a class="text-slate-900 hover:text-slate-600">NEWS</a>
-        <a class="text-slate-900 hover:text-slate-600">MEDIA</a>
+        <a class="text-slate-900 hover:text-slate-600" mat-dialog-close>OUR BRANDS</a>
+        <a class="text-slate-900 hover:text-slate-600" mat-dialog-close>NEWS</a>
+        <a class="text-slate-900 hover:text-slate-600" mat-dialog-close>MEDIA</a>
       </div>
 
       <div
         class="mobile-version__mobile-btn flex w-full items-center gap-2.5 justify-center"
       >
-        <app-button type="blues" (clicked)="onbuttonclick()"
-          >CONTACT US</app-button
+      <div mat-button mat-dialog-close>
+        <app-button  type="blues"  (clicked)="onbuttonclick()"
+          >CONTACT US</app-button 
         >
+        </div>
       </div>
       <div class="icon flex gap-9 justify-center items-center">
         <a> <img src="/assets/images/facebook.svg" alt="" /></a>
@@ -55,6 +81,5 @@
       </div>
     </div>
   </div>
-
-
+</section>
 

@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-responsive.component.scss'],
 })
 export class HeaderResponsiveComponent {
-  dropdownPopoverShow = false;
+  dropdownPopoverShow = true;
   showNavbar: boolean = true;
-  // showMobileMenu: boolean = false;
+  showMobileMenu: boolean = true;
   showIndusrtyMenu: boolean = false;
    onbuttonclick() {}
    
