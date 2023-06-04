@@ -69,6 +69,7 @@ section{
 .imageplace::before
  {
    content: "";
+   width: 65%;
    height: 1075px;
    
 }
@@ -80,6 +81,7 @@ section{
    }
       .imageplace::before
  {
+    width: 80%;
      height: 150%;
      
 }
@@ -97,6 +99,7 @@ section{
    }
     .imageplace::before
  {
+    width: 60%;
      right: -60px;
 }
 .downsidetext{
