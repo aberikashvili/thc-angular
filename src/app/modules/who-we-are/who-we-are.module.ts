@@ -7,7 +7,6 @@ import { WhoWeAreMediaComponent } from './components/who-we-are-media/who-we-are
 import { WhoWeAreHeroSectionComponent } from './components/who-we-are-hero-section/who-we-are-hero-section.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-import { SectionwhoweareComponent } from './sectionwhoweare/sectionwhoweare.component';
 
 const routes: Routes = [
   {
@@ -17,7 +16,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [WhoWeAreComponent, SectionwhoweareComponent,WhoWeAreMediaComponent,WhoWeAreHeroSectionComponent,WHOWEAREStructureComponent],
+  declarations: [
+    WhoWeAreComponent,
+    WhoWeAreHeroSectionComponent,
+    WHOWEAREStructureComponent,
+    WhoWeAreMediaComponent,
+  ],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class WhoWeAreModule {}
