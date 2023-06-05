@@ -68,12 +68,12 @@ section{
     width: 30px;
     margin-right: 20px;
 }
-@media only screen and (max-width: 1940px){
+@media only screen and (max-width: 1900px){
 .imageplace::before
  {
    content: "";
    width: 65%;
-   height: 1075px;
+   height: 1200px;
    
    
 }
@@ -83,6 +83,19 @@ section{
    
 }
 }
+@media only screen and (max-width: 1730px){
+.imageplace::before
+ {
+   content: "";
+   width: 65%;
+   height: 1075px;
+   
+   
+}
+
+ }
+
+
 @media only screen and (max-width: 1440px){
     .mainimage{
     
@@ -110,6 +123,7 @@ section{
  {
     width: 60%;
      right: -60px;
+     height: 140%;
 }
 .downsidetext{
     margin-top: 100px;
