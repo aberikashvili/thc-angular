@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
   selector: 'app-hero-section',
@@ -11,13 +12,32 @@ export class HeroSectionComponent implements OnInit {
   currentPhoto!: any;
   currentIndex: number = 0;
 
-  constructor() {}
 
+ constructor(private _dataservice: DataService) {}
+ 
   ngOnInit() {
     this.getSliderData();
     this.startSlider();
+       this._dataservice.getHero().subscribe((data) => {
+         this.title = data.title;
+         this.subtitle = data.subtitle;
+         this.descriptioncaption = data.descriptioncaption;
+         this.representcaption = data.representcaption;
+       });
   }
 
+
+
+  
+  title!: string;
+  subtitle!: string;
+  descriptioncaption!: string;
+  representcaption!: string;
+  photos!: [];
+
+ 
+
+  
   getSliderData() {
     this.sliderPhotos = [
       {
