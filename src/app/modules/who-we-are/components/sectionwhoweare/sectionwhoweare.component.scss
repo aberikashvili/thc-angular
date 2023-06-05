@@ -63,6 +63,16 @@ section {
   width: 30px;
   margin-right: 20px;
 }
+@media only screen and (max-width: 1900px) {
+  .imageplace::before {
+    content: '';
+    width: 65%;
+    height: 1075px;
+  }
+  .downsidetext {
+    margin: 300px auto 0 auto;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .mainimage {
     min-width: 560px;
