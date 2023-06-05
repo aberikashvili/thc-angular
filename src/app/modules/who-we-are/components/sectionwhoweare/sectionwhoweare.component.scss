@@ -42,8 +42,9 @@ section{
 }
 .downsidetext{
     text-align: center;
-    margin-top: 280px;
-    font-size: small;
+    margin: 280px auto 0 auto;
+    font-size: 26px;
+    max-width: 880px;
 }
 .info{
     display: flex;
@@ -71,6 +72,12 @@ section{
    content: "";
    width: 65%;
    height: 1075px;
+   
+   
+}
+.downsidetext{
+   
+    margin: 300px auto 0 auto;
    
 }
 }
@@ -115,6 +122,8 @@ section{
    }
    .downsidetext{
     margin-top: 150px;
+    max-width: 342px;
+    font-size: 16px;
    }
    .info{
     max-width: 100%;
@@ -148,7 +157,7 @@ section{
 }
 .downsidetext{
     margin-top: 90px;
-    font-size: 9px;
+    
 }
 .about{
     font-size: 8px;
