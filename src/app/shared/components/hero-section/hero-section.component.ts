@@ -23,17 +23,18 @@ export class HeroSectionComponent implements OnInit {
          this.subtitle = data.subtitle;
          this.descriptioncaption = data.descriptioncaption;
          this.representcaption = data.representcaption;
+         this.photos=data.photos
        });
   }
 
 
 
-  
+
   title!: string;
   subtitle!: string;
   descriptioncaption!: string;
   representcaption!: string;
-  photos!: [];
+  photos!: string[];
 
  
 
