@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +13,24 @@ export class HeaderComponent {
   showIndusrtyMenu: boolean = false;
   
   onbuttonclick() {}
+
+     foodcaption!: string;
+     distributioncaption!: string;
+     supermarketcaption!: string;
+     constructioncaption!: string;
+     productioncaption!: string;
+  
+  
+   constructor(private _dataservice:DataService ){}
+
+
+   ngOnInit(){
+         this._dataservice.getHeader().subscribe((data) => {
+           this.foodcaption = data.foodcaption;
+           this.distributioncaption = data.distributioncaption;
+           this.supermarketcaption = data.supermarketcaption;
+           this.constructioncaption = data.constructioncaption;
+           this.productioncaption = data.productioncaption;
+         });
+   }
 }
