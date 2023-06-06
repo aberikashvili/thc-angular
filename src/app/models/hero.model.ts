@@ -1,11 +1,9 @@
 export class Hero {
   constructor(
-    public title: '',
-    public subtitle: '',
-    public descriptioncaption: '',
-    public representcaption: '',
-    public photos: [
-      '','','','',''
-    ]
+    public title: string,
+    public subtitle: string,
+    public descriptioncaption: string,
+    public representcaption: string,
+    public photos: string[]
   ){}
 }
