@@ -1,9 +1,9 @@
 export class Header {
   constructor(
-    public foodcaption: "",
-    public distributioncaption: '',
-    public supermarketcaption: '',
-    public constructioncaption: '',
-    public productioncaption: ''
+    public foodcaption: string,
+    public distributioncaption: string,
+    public supermarketcaption: string,
+    public constructioncaption: string,
+    public productioncaption: string
   ) {}
 }
