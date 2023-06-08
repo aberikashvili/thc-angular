@@ -1,8 +1,10 @@
 {
   "title": "WE ARE",
-  "subtitle": "Tbilisi Holding Company",
+  "subtitle": "Tbilisi Holding",
+  "company": "Company",
   "descriptioncaption": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-  "representcaption": "THC LTD represents an extensive array of companies and brandsSchirnhofer Ges.m.b.H.",
+  "representcaption": "THC LTD represents an extensive array of companies and brands",
+  "namecaption":"Schirnhofer Ges.m.b.H.",
   "photos": [
     "/assets/images/slider1.png",
     "https://www.worldatlas.com/r/w1200/upload/0a/d3/22/shutterstock-716192545.jpg",

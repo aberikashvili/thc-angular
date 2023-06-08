@@ -10,11 +10,12 @@
           <img class="w-14 h-0.5" src="./assets/images/line.svg" />
           <span class="font-bold">{{title}}</span>
         </div>
-        <div class="main--desktop-version--left-side--company-name">
+        
+       <div class="main--desktop-version--left-side--company-name">
           <span
             class="main--desktop-version--left-side--company-name--city font-bold"
             >{{subtitle}}</span
-          >
+          ><span class="font-bold"> {{company}}</span>
         </div>
         <div
           class="main--desktop-version--left-side--description flex flex-col gap-5"
@@ -34,7 +35,7 @@
         <span class="font-light"
           >{{representcaption}}</span
         >
-        <!-- <span class="font-medium">Schirnhofer Ges.m.b.H.</span> -->
+        <span class="font-medium">{{namecaption}}</span>
       </div>
     </div>
     <div class="main--desktop-version--right-side flex w-full relative">
@@ -75,18 +76,17 @@
           class="main--mobile-version--title--top-title flex flex-row gap-2 items-center"
         >
           <img class="w-5 h-px" src="./assets/images/line.svg" />
-          <span class="font-bold">WE ARE</span>
+          <span class="font-bold">{{title}}</span>
         </div>
       </div>
       <div class="main--mobile-version--company-title">
         <span class="main--mobile-version--company-title--city-name font-bold"
-          >Tbilisi Holding</span
-        ><span class="font-bold"> Company</span>
+          >{{subtitle}}</span
+        ><span class="font-bold"> {{company}}</span>
       </div>
       <div class="main--mobile-version--bottom-description flex flex-col">
         <span
-          >THC LTD represents an extensive array of companies and brands. Just
-          the food segment alone includes up to 500 different products.</span
+          >{{descriptioncaption}}</span
         >
         <div class="main--mobile-version--bottom-description--btn">
           <app-button type="oranges">Learn More</app-button>
@@ -131,3 +131,4 @@
     </div>
   </div>
 </section>
+

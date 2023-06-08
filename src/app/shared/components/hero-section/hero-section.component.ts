@@ -20,10 +20,12 @@ export class HeroSectionComponent implements OnInit {
     this.startSlider();
        this._dataservice.getHero().subscribe((data) => {
          this.title = data.title;
+         this.company = data.company;
          this.subtitle = data.subtitle;
          this.descriptioncaption = data.descriptioncaption;
          this.representcaption = data.representcaption;
-         this.photos=data.photos
+         this.namecaption= data.namecaption;
+         this.photos=data.photos;
        });
   }
 
@@ -32,8 +34,10 @@ export class HeroSectionComponent implements OnInit {
 
   title!: string;
   subtitle!: string;
+  company!:string;
   descriptioncaption!: string;
   representcaption!: string;
+  namecaption!:string;
   photos!: string[];
 
  
