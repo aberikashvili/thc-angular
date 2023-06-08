@@ -26,7 +26,7 @@ export class HeaderComponent {
 
 
    ngOnInit(){
-         this._dataservice.getHeader().subscribe((data):void => {
+         this._dataservice.getHeader().subscribe((data) => {
            this.foodcaption = data.foodcaption;
            this.distributioncaption = data.distributioncaption;
            this.supermarketcaption = data.supermarketcaption;
