@@ -12,7 +12,7 @@ export class DataService {
   getData(): Observable<any> {
     return this._http.get('/api/services');
   }
-  getFooter(): Observable<Footer>{
-    return this._http.get<Footer>("/api/footer")
+  getFooter(): Observable<Footer> {
+    return this._http.get<Footer>('/api/footer');
   }
 }

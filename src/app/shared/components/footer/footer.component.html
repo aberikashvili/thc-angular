@@ -23,58 +23,56 @@
         <p
           class="footer__top__wrapper__left--text w-[486px] text-[14px] text-[#28272c80]"
         >
-          <!-- THC LTD represents an extensive array of companies and brands. Just
-          the food segment alone includes up to 500 different products. -->
           {{description}}
         </p>
       </div>
       <nav class="footer__top__wrapper__right flex">
         <ul class="footer__top__wrapper__right--block">
-          <h2 class="footer__top__wrapper__right--block--header">company</h2>
+          <h2 class="footer__top__wrapper__right--block--header">{{company}}</h2>
           <a href="" class="footer__top__wrapper__right--block--text"
-            >who we are</a
+            >{{whoweare}}</a
           >
           <a href="" class="footer__top__wrapper__right--block--text"
-            >industry</a
+            >{{industry}}</a
           >
           <a href="" class="footer__top__wrapper__right--block--text"
-            >our brands</a
+            >{{ourbrands}}</a
           >
         </ul>
 
         <ul class="footer__top__wrapper__right--block">
           <h2 class="footer__top__wrapper__right--block--header">
-            quick links
+            {{quicklinks}}
           </h2>
-          <a href="" class="footer__top__wrapper__right--block--text">media</a>
-          <a href="" class="footer__top__wrapper__right--block--text">news</a>
+          <a href="" class="footer__top__wrapper__right--block--text">{{ media}} </a>
+          <a href="" class="footer__top__wrapper__right--block--text">{{news}}</a>
         </ul>
 
         <ul class="footer__top__wrapper__right--block">
           <h2 class="footer__top__wrapper__right--block--header">
-            social network
+            {{socialnetwork}}
           </h2>
           <a href="" class="footer__top__wrapper__right--block--text"
-            >facebook</a
+            >{{facebook}}</a
           >
           <a href="" class="footer__top__wrapper__right--block--text"
-            >linkedin</a
+            >{{linkedin}}</a
           >
           <a href="" class="footer__top__wrapper__right--block--text"
-            >youtube</a
+            >{{youtube}}</a
           >
         </ul>
 
         <ul class="footer__top__wrapper__right--block">
-          <h2 class="footer__top__wrapper__right--block--header">contact</h2>
+          <h2 class="footer__top__wrapper__right--block--header">{{contact}}</h2>
           <p class="footer__top__wrapper__right--block--text">
-            a. tsereteli ave. 60, Tbilisi Georgia
+          {{caption}}
           </p>
           <p class="footer__top__wrapper__right--block--text">
-            +995 598 23 98 23
+           {{phonecaption}}
           </p>
           <p class="footer__top__wrapper__right--block--text text">
-            Support@thc.com
+           {{emailcaption}}
           </p>
         </ul>
       </nav>
@@ -85,13 +83,13 @@
       class="footer__bottom__wrapper ml-[100px] mr-[100px] pt-[40px] pb-[40px] text-[14px] flex justify-between text-[#FFFFFD]"
     >
       <p class="footer__bottom__wrapper__rights">
-        © 2023 THC, Inc. All Rights Reserved.
+       {{rightscaption}}
       </p>
       <div class="footer__bottom__wrapper__links">
         <a href="" class="footer__bottom__wrapper__links--link mr-[40px]"
-          >Privacy</a
+          >{{privacycaption}}</a
         >
-        <a href="">Terms of use</a>
+        <a href="">{{termscaption}}</a>
       </div>
     </div>
   </section>
