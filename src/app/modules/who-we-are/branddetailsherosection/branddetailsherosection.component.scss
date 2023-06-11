@@ -10,15 +10,14 @@
 .downsidesection{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 section{
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
     justify-content: space-between;
-    // margin: 85px 100px;
+    margin: 0px 319px;
 }
 .imageplace::before
  {
@@ -28,12 +27,12 @@ section{
    background-color: #FF8C6D;
    position: absolute;
    z-index: 3;
-   left: -170px;
+   left: -319px;
    top: -185px;
 }
 .imageplace{
     position: relative;
-    margin-left: 70px;
+    
 }
 .title{
     display: flex;
@@ -59,7 +58,7 @@ section{
 .info{
     display: flex;
     flex-direction: column;
-    max-width: 704px;
+    max-width: 633px;
     margin-left: 92px;
 }
 .about{
@@ -75,6 +74,12 @@ section{
     height: 2px;
     width: 30px;
     margin-right: 20px;
+}
+
+@media only screen and (max-width: 1680px){
+  section{
+    margin: 0 200px;
+  }
 }
 @media only screen and (max-width: 1440px){
     .mainimage{
@@ -92,23 +97,30 @@ section{
    }
 }
 @media only screen and (max-width: 1366px){
-   section{
-    margin:0 60px
-   }
+   
    .smallinfo{
     font-size: 22px;
    }
-    .imageplace::before
- {
-     right: -60px;
-}
+//     .imageplace::before
+//  {
+//     //  right: -60px;
+// }
 .downsidetext{
     margin-top: 100px;
    }
  }
+ @media only screen and (max-width: 1280px){
+  section{
+    margin: 0 120px;
+  }
+}
 @media only screen and (max-width: 1024px){
  section{
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    margin: 0 60px;
+ }
+ .upside{
+
  }
  .mainimage{
     min-width: 100%;
@@ -117,22 +129,23 @@ section{
     margin-top: 150px;
    }
    .info{
-    max-width: 100%;
-   }
-//    .about{
-//     margin: 0;
-//    }
-.imageplace{
-    margin-top: 130px;
+    max-width: auto;
+    width: 100%;
     margin-left: 0;
+   }
+
+.imageplace{
+    // margin-top: 130px;
+    // margin-left: 0;
 }
    .imageplace::before
  {   
      height: 128%;
-     width: 65%;
-     top: -14%;    
+    //  width: 65%;
+    //  top: -14%;    
 }
 }
+
 @media only screen and (max-width: 600px){
   section{
     margin: 0 16px;
