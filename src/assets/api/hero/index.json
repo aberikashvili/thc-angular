@@ -6,10 +6,25 @@
   "representcaption": "THC LTD represents an extensive array of companies and brands",
   "namecaption":"Schirnhofer Ges.m.b.H.",
   "photos": [
-    "/assets/images/slider1.png",
-    "https://www.worldatlas.com/r/w1200/upload/0a/d3/22/shutterstock-716192545.jpg",
-    "https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2020/opinion/shutterstock2903925921-1602176563.jpg&w=900&height=601",
-    "https://media.premiumtimesng.com/wp-content/files/2019/08/food.jpg",
-    "https://previews.agefotostock.com/previewimage/medibigoff/95c94fb8f0c26ef69b588beeccdacf0a/tip-081lsi05007.jpg"
+    {
+      "text": "Food Import",
+      "image": "/assets/images/slider1.png"
+    },
+    {
+      "text": "Food Import",
+      "image": "https://www.worldatlas.com/r/w1200/upload/0a/d3/22/shutterstock-716192545.jpg"
+    },
+    {
+      "text": "Food Import",
+      "image": "https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2020/opinion/shutterstock2903925921-1602176563.jpg&w=900&height=601"
+    },
+    {
+      "text": "Food Import",
+      "image": "https://media.premiumtimesng.com/wp-content/files/2019/08/food.jpg"
+    },
+    {
+      "text": "Food Import",
+      "image": "https://previews.agefotostock.com/previewimage/medibigoff/95c94fb8f0c26ef69b588beeccdacf0a/tip-081lsi05007.jpg"
+    }
   ]
 }

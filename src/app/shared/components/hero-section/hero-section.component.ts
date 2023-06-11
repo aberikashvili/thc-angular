@@ -8,66 +8,38 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class HeroSectionComponent implements OnInit {
   sliderPosition: number = 0;
-  sliderPhotos: any = [];
+  sliderPhotos: { text: string; image: string }[]=[];
   currentPhoto!: any;
   currentIndex: number = 0;
 
+  constructor(private _dataservice: DataService) {}
 
- constructor(private _dataservice: DataService) {}
- 
   ngOnInit() {
     this.getSliderData();
-    this.startSlider();
-       this._dataservice.getHero().subscribe((data) => {
-         this.title = data.title;
-         this.company = data.company;
-         this.subtitle = data.subtitle;
-         this.descriptioncaption = data.descriptioncaption;
-         this.representcaption = data.representcaption;
-         this.namecaption= data.namecaption;
-         this.photos=data.photos;
-       });
+  
   }
-
-
-
 
   title!: string;
   subtitle!: string;
-  company!:string;
+  company!: string;
   descriptioncaption!: string;
   representcaption!: string;
-  namecaption!:string;
-  photos!: string[];
+  namecaption!: string;
 
- 
-
-  
   getSliderData() {
-    this.sliderPhotos = [
-      {
-        text: 'Food Import',
-        image: '/assets/images/slider1.png',
-      },
-      {
-        text: 'Food Import',
-        image: 'https://www.worldatlas.com/r/w1200/upload/0a/d3/22/shutterstock-716192545.jpg',
-      },
-      {
-        text: 'Food Import',
-        image:
-          'https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2020/opinion/shutterstock2903925921-1602176563.jpg&w=900&height=601',
-      },
-      {
-        text: 'Food Import',
-        image: 'https://media.premiumtimesng.com/wp-content/files/2019/08/food.jpg',
-      },
-      {
-        text: 'Food Import',
-        image:
-          'https://previews.agefotostock.com/previewimage/medibigoff/95c94fb8f0c26ef69b588beeccdacf0a/tip-081lsi05007.jpg',
-      },
-    ];
+    
+    this._dataservice.getHero().subscribe((data) => {
+      this.title = data.title;
+      this.company = data.company;
+      this.subtitle = data.subtitle;
+      this.descriptioncaption = data.descriptioncaption;
+      this.representcaption = data.representcaption;
+      this.namecaption = data.namecaption;
+      this.sliderPhotos = data.photos;
+
+      this.startSlider();
+    });
+
   }
 
   startSlider() {

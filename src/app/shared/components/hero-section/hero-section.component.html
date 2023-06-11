@@ -41,9 +41,9 @@
     <div class="main--desktop-version--right-side flex w-full relative">
       <div
         class="main--desktop-version--right-side--img flex items-center justify-center w-full h-full object-cover"
-        [style]="{ background: 'url(' + currentPhoto.image + ')' }"
+        [style]="{ background: 'url(' + currentPhoto?.image + ')' }"
       >
-        <span>{{ currentPhoto.text }}</span>
+        <span>{{ currentPhoto?.text }}</span>
       </div>
     </div>
     <div class="main--desktop-version--slider-count right-0 absolute">
@@ -98,9 +98,9 @@
       <div class="main--mobile-version--bottom--img w-full h-full">
         <div
           class="main--mobile-version--bottom--img--image flex items-center justify-center h-full w-full object-cover"
-          [style]="{ background: 'url(' + currentPhoto.image + ')' }"
+          [style]="{ background: 'url({{photos}})' }"
         >
-          <span>{{ currentPhoto.text }}</span>
+          <span>{{ currentPhoto?.text }}</span>
         </div>
       </div>
 
