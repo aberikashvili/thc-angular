@@ -12,6 +12,13 @@ const routes: Routes = [
       import('./modules/who-we-are/who-we-are.module').then((m) => m.WhoWeAreModule),
   },
   {
+    path: 'industry-page',
+    loadChildren: () =>
+      import('./modules/industry-page/industry-page-routing.module').then(
+        (m) => m.IndustryPageModule
+      ),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',

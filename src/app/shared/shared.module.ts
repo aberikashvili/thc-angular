@@ -7,6 +7,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { StatisticsComponent } from './components/statistics/statistics.component';
 
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
+import { IndustryPageComponent } from '../modules/industry-page/industry-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
     HeroSectionComponent,
     StatisticsComponent,
     StructureOfTheCompanyComponent,
+    IndustryPageComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -26,6 +28,7 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
     HeroSectionComponent,
     StatisticsComponent,
     StructureOfTheCompanyComponent,
+    IndustryPageComponent,
   ],
 })
 export class SharedModule {}

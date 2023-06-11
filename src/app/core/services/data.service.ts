@@ -9,6 +9,10 @@ export class DataService {
   constructor(private _http: HttpClient) {}
 
   getData(): Observable<any> {
-    return this._http.get('/api/services');
+    return this._http.get<any>('/api/services');
+  }
+
+  getIndustrytPageData(id: string): Observable<any> {
+    return this._http.get<any>(`/api/services/${id}`);
   }
 }

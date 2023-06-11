@@ -1,0 +1,128 @@
+<div><app-header></app-header></div>
+<section class="main">
+  <div class="main--title relative flex flex-col justify-center gap-4 m-auto">
+    <div class="main--title--top relative flex flex-row items-center gap-5">
+      <div class="main--title--top--main-dot flex flex-wrap absolute">
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+      </div>
+      <div class="main--title--top--main-dot--text">
+        <img src="/src/assets/images/titleline.svg" alt="" />
+        <span>ABOUT INDUSTRY</span>
+      </div>
+    </div>
+    <div class="main--title--bottom">{{ pageText?.name }}</div>
+  </div>
+  <div class="main--main-icon">
+    <div
+      class="main--main-icon--left-icon absolute w-2/4 flex justify-center items-center left-0"
+    >
+      <div
+        class="main--main-icon--left-icon--area flex flex-row justify-start items-end flex-wrap"
+      >
+        <div
+          class="main--main-icon--left-icon--area--desc flex flex-col items-start"
+          *ngFor="let item of iconArray"
+        >
+          <span class="main--main-icon--left-icon--area--desc--span1">{{
+            item.name
+          }}</span>
+          <div
+            class="main--main-icon--left-icon--area--desc--bottomdesc flex desc-last"
+          >
+            <a *ngIf="!item.route"
+              ><span>{{ item.description }}</span></a
+            >
+            <a
+              *ngIf="item.route"
+              target="_blank"
+              [href]="'https://digitalinstitute.ge/'"
+            >
+              <span>{{ item.description }}</span></a
+            >
+            <a target="_blank" href="https://digitalinstitute.ge/"
+              ><img [src]="item.img" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="main--right-description absolute flex flex-col gap-2.5 right-0 w-2/4"
+    >
+      <span>SHORT OVERVIEW</span>
+      <span class="main--right-description--spans"
+        >For example: in 2022, our 4 brands: Shinhofer, Anchor, Hayleys and
+        Yamuna became the Golden Brand winners, and in 2023, Shinhofer, Anchor,
+        Hayleys won again.
+      </span>
+      <span class="main--right-description--spans" style="padding-top: 14px"
+        >The brand Torchin has also been awarded Certificates of Appreciation by
+        Nestle Ukraine and Nestle Georgia for outstanding representation and
+        yearly growth in the Georgian market.
+      </span>
+      <span class="main--right-description--spans" style="padding-top: 14px">
+        THC LTD represents an extensive array of companies and brands. Just the
+        food segment alone includes up to 500 different products.
+      </span>
+    </div>
+  </div>
+  <div class="main--main-description">
+    <span
+      >{{ pageText?.text1 }} <br />
+      {{ pageText?.text2 }} <br />
+      {{ pageText?.text3 }} <br />
+      <br />
+      {{ pageText?.text4 }} <br />
+      <br />
+      {{ pageText?.text5 }}</span
+    >
+  </div>
+</section>
