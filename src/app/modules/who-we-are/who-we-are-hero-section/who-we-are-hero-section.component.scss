@@ -1,0 +1,43 @@
+section{
+    margin:5% 0 ;
+}
+
+.AboutCompany{
+  margin: auto;
+
+}
+
+  img{
+    width: 1920px;
+    height: 800px;
+    object-fit: cover;
+  }
+  
+
+p{
+    color: gray;
+    font-size: 16px;
+    width: 65%;
+    margin:5% auto;
+}
+@media only screen and (max-width: 600px) {
+    p{
+        width: 300px;
+    }
+    .AboutCompany{
+      margin: 20px !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    p{
+        width: 550px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    p{
+        color: gray;
+        font-size: small;
+        width: 100%;
+        
+    }
+  }

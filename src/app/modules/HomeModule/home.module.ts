@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DistributioncenterComponent } from './components/distributioncenter/distributioncenter.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -13,6 +14,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [HomeComponent, DistributioncenterComponent],
+
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class HomeModule {}
