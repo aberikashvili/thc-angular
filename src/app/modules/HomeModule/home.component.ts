@@ -7,11 +7,11 @@ import { DataService } from 'src/app/core/services/data.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent  {
-  // constructor(private _dataService: DataService) {}
+  constructor(private _dataService: DataService) {}
 
-  // ngOnInit(): void {
-  //   this._dataService.getData().subscribe((data) => {
-  //     console.log(data);
-  //   });
-  // }
+  ngOnInit(): void {
+    this._dataService.getData().subscribe((data) => {
+      console.log(data);
+    });
+  }
 }
