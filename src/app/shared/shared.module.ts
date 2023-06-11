@@ -7,6 +7,8 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { StatisticsComponent } from './components/statistics/statistics.component';
 
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
+import { RouterModule } from '@angular/router';
+import { IndustryComponent } from '../modules/industry/industry.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { StructureOfTheCompanyComponent } from './components/structure-of-the-co
     StatisticsComponent,
     StructureOfTheCompanyComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   exports: [
     CommonModule,
     ButtonComponent,

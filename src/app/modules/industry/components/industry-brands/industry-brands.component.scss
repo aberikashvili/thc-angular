@@ -1,0 +1,113 @@
+.brands__wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  &__block {
+    width: 16.667%;
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      &--image {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      &--dot{
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        background:#28272C ;
+      }
+          &--dot:first-of-type {
+      left: -2px;
+      top: -2px;
+    }
+    &--dot:nth-of-type(2) {
+      right: -2px;
+      top: -2px;
+    }
+    &--dot:nth-of-type(3) {
+      left: -2px;
+      bottom: -2px;
+    }
+    &--dot:nth-of-type(4) {
+      right: -2px;
+      bottom: -2px;
+    }
+    }
+
+  }
+}
+
+// რესფონსივი
+
+@media (max-width: 1680px) {
+  .brands__wrapper__block {
+    width: 20%;
+  }
+  .brands {
+    margin: 160px 80px 146px 80px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .brands {
+    margin: 160px 60px 146px 60px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .brands__wrapper__block {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brands__wrapper__block {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 800px) {
+  .brands__wrapper__block {
+    width: 50% !important;
+  }
+  .brands__wrapper__block:nth-of-type(n + 7) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .brands {
+    margin: 160px 16px 146px 16px;
+    &__article {
+      &__headline {
+        font-size: 12px;
+        &__line {
+          width: 20px;
+          height: 1px;
+          margin-right: 8px;
+        }
+      }
+      &__header {
+        font-size: 24px;
+        margin: 8px 0 24px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .brands__wrapper {
+    justify-content: center;
+    &__block {
+      width: 171.5px !important;
+      height: 171.5px !important;
+    }
+  }
+}

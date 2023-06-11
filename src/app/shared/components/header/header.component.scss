@@ -47,6 +47,7 @@
   }
 
   @media screen and (max-width: 990px) {
+    
     .desktop-version {
       display: none;
     }
@@ -63,9 +64,11 @@
         }
       }
 
-      &__mobile-menu {
+   
+          &__mobile-menu {
         display: flex;
       }
+
 
       &__mobile-btn {
         background: #5765fd;
