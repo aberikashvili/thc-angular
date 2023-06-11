@@ -10,7 +10,6 @@
 .downsidesection{
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
 }
 section{
     display: flex;
@@ -101,10 +100,7 @@ section{
    .smallinfo{
     font-size: 22px;
    }
-//     .imageplace::before
-//  {
-//     //  right: -60px;
-// }
+
 .downsidetext{
     margin-top: 100px;
    }
@@ -120,29 +116,31 @@ section{
     margin: 0 60px;
  }
  .upside{
-
+    flex-direction: column-reverse;
  }
  .mainimage{
-    min-width: 100%;
+    width: 80%;
+     min-width: auto;
+         margin-left: 130px;
+         
    }
    .downsidetext{
     margin-top: 150px;
    }
    .info{
     max-width: auto;
-    width: 100%;
+    max-width: 100%;
     margin-left: 0;
+    margin-bottom: 100px;
    }
 
-.imageplace{
-    // margin-top: 130px;
-    // margin-left: 0;
-}
+
    .imageplace::before
  {   
      height: 128%;
-    //  width: 65%;
-    //  top: -14%;    
+     width: 65%;
+     top: -14%;  
+     left: -60px;  
 }
 }
 
@@ -156,20 +154,27 @@ section{
 }
 .imageplace{
     
-    margin-top: 80px;
-    margin-left: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.info{
+   
+    margin-bottom: 0;
+   }
+.mainimage{
+    margin-left: 50px;
 }
 .downsidetext{
     margin-top: 90px;
     font-size: 9px;
 }
 .about{
-    font-size: 8px;
+    font-size: 14px;
 }
 .smallinfo{
-    font-size: 17px;
+    font-size: 24px;
 }
-.whoweare{
+.tittle{
     font-size: 12px;
 }
 }
