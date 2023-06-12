@@ -22,7 +22,7 @@ const routes: Routes = [
   {
     path: 'our-brands',
     loadChildren: () =>
-      import('./modules/our-brands/our-brands-routing.module').then((m) => m.OurBrandsModule),
+      import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
   },
   {
     path: '**',

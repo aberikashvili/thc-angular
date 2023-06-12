@@ -36,9 +36,7 @@ export class OurBrandsComponent implements OnInit {
   ];
   filterMode!: 'all' | number;
 
-  ngOnInit(): void {
-    console.log(this.filteredData);
-  }
+  ngOnInit(): void {}
 
   get filteredData(): any[] {
     if (this.filterMode !== 'all' && this.filterMode) {
