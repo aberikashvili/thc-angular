@@ -1,0 +1,207 @@
+:host {
+  overflow: hidden;
+}
+.news__wrapper {
+  display: flex;
+  flex-direction: column;
+  &__component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 260px;
+    &__wrapper {
+      margin-right: 70px;
+      &--image {
+        min-width: 560px;
+        height: 560px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+      }
+    }
+
+    &__wrapper::before {
+      content: '';
+      width: 515px;
+      height: 170px;
+      background-color: #28272c;
+      position: absolute;
+      display: block;
+      top: 490px;
+      right: 145px;
+    }
+
+    .second {
+      margin: 0 0 0 70px;
+      &::before {
+        content: '';
+        left: 145px;
+      }
+    }
+    &__article {
+      display: flex;
+      flex-direction: column;
+      &--time {
+        color: #5765fd;
+        margin-bottom: 12px;
+      }
+      &--header {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      &--text {
+        color: #27262bb3;
+        margin: 32px 0;
+      }
+      &--show {
+        text-transform: capitalize;
+        color: #28272c;
+        width: 129px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--line {
+          width: 32px;
+          height: 2px;
+          display: block;
+          background-color: #5765fd;
+        }
+      }
+    }
+    .link {
+      display: none;
+    }
+  }
+  &__component:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+  &__component:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+// რესფონსივი
+
+@media (max-width: 1366px) {
+  .news {
+    margin: 160px 60px 260px;
+  }
+  .news__wrapper__component__article--header {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .news__wrapper__component__article--text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .news {
+    margin: 80px 60px 35px;
+    &__title {
+      &__text {
+        font-size: 22px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .news__wrapper__component {
+    flex-direction: column;
+    margin-bottom: 60px;
+    &__wrapper {
+      margin: 0px;
+    }
+  }
+
+  .news__wrapper__component__article--header {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+  .news__wrapper__component__article--text {
+    margin: 0;
+    font-size: 14px;
+  }
+  .news__wrapper__component__article--time {
+    font-size: 12px;
+    margin: 14px 0 0;
+  }
+  .news__wrapper__component__article--show {
+    margin: 12px 0 0;
+  }
+  .news__wrapper__component__wrapper--image {
+    height: auto;
+    min-width: auto;
+  }
+  .news__wrapper__component__wrapper::before {
+    display: none;
+  }
+  .news__wrapper__component:last-of-type {
+    display: none;
+  }
+  .news__wrapper__component:nth-of-type(2n) {
+    flex-direction: column;
+  }
+  .second {
+    margin: 0px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .news {
+    margin: 60px 30px 65px;
+  }
+  .news__wrapper__component {
+    flex-direction: column;
+    margin-bottom: 32px;
+    &__article {
+      display: none;
+      &--time {
+        margin-top: 12px;
+      }
+      &--header {
+        font-size: 14px;
+        margin: 8px 0;
+      }
+      &--text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &--show {
+        display: none;
+      }
+    }
+
+    .link {
+      display: flex;
+    }
+    &__wrapper {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .news {
+    margin: 40px 16px 65px;
+    &__title {
+      &__header {
+        font-size: 12px;
+        &__line {
+          width: 20px;
+          height: 1px;
+          margin-right: 8px;
+        }
+      }
+      &__text {
+        font-size: 24px;
+        margin-top: 2px;
+      }
+    }
+  }
+}

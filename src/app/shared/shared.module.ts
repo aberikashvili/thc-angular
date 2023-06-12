@@ -8,7 +8,7 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
 import { RouterModule } from '@angular/router';
-import { IndustryComponent } from '../modules/industry/industry.component';
+
 
 @NgModule({
   declarations: [
