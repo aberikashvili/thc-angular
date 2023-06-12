@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-our-brands',
   templateUrl: './our-brands.component.html',
   styleUrls: ['./our-brands.component.scss'],
 })
-export class OurBrandsComponent implements OnInit {
+export class OurBrandsComponent {
   tabsData: any = [
     { btnName: 'ALL BRANDS', active: 1, type: 'all' },
     { btnName: 'Food Import & Distribution', active: 0, type: '1' },
@@ -35,8 +35,6 @@ export class OurBrandsComponent implements OnInit {
     { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
   ];
   filterMode!: 'all' | number;
-
-  ngOnInit(): void {}
 
   get filteredData(): any[] {
     if (this.filterMode !== 'all' && this.filterMode) {
