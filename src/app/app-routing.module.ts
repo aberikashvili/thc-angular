@@ -20,6 +20,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/news/news.module').then((m) => m.NewsModule),
   },
   {
+    path: 'our-brands',
+    loadChildren: () =>
+      import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',

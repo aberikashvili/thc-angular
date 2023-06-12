@@ -1,0 +1,61 @@
+<div class="layout">
+  <app-header></app-header>
+
+  <section class="main">
+    <div class="main--desktop-version flex flex-col gap-4">
+      <div
+        class="main--desktop-version--toptitle flex flex-row gap-5 items-center"
+      >
+        <img src="./assets/images/titleline.svg" alt="" />
+        <span>OUR BRANDS</span>
+      </div>
+      <div class="main--desktop-version--bottom-title">
+        <span>Importing companies in different directions.</span>
+      </div>
+      <div class="main--desktop-version--category mt-6">
+        <div class="main--desktop-version--category--scroll">
+          <div class="main--desktop-version--category--scroll--tabs flex gap-5">
+            <button
+              class="uppercase flex justify-center items-center"
+              [ngClass]="{ active: this.item.active == true }"
+              (click)="tabChanged(item)"
+              *ngFor="let item of tabsData"
+            >
+              {{ item.btnName }}
+            </button>
+          </div>
+        </div>
+        <div
+          class="main--desktop-version--category--filter-category flex flex-row flex-wrap justify-start mt-20 pl-1"
+        >
+          <div
+            class="main--desktop-version--category--filter-category--data custom-filter relative flex flex-col items-center"
+            *ngFor="let item of filteredData"
+          >
+            <span
+              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute top-0 left-0"
+            ></span>
+            <span
+              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute bottom-0 left-0"
+            ></span>
+            <span
+              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute top-0 right-0"
+            ></span>
+            <span
+              class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute bottom-0 right-0"
+            ></span>
+
+            <div
+              class="main--desktop-version--category--filter-category--data--content w-full flex flex-col justify-center items-center"
+            >
+              <img [src]="item.img" />
+              <a *ngIf="item.detailUrl">{{ item.detailUrl }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+</div>

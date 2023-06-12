@@ -1,0 +1,128 @@
+.main {
+  padding: 160px 30px 180px 100px;
+  &--desktop-version {
+    &--toptitle {
+      img {
+        width: 53px;
+        height: 2px;
+        left: 101px;
+        background: #ff8c6d;
+      }
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.6em;
+        text-transform: uppercase;
+        color: #28272c;
+      }
+    }
+    &--bottom-title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 130%;
+      color: #28272c;
+    }
+    &--category {
+      &--scroll {
+        overflow: auto;
+        &--tabs {
+          min-width: 1765px;
+        }
+      }
+
+      &--filter-category {
+        display: flex;
+        justify-content: center;
+        &--data {
+          height: 290px;
+          width: 290px;
+          margin-top: -4px;
+          margin-left: -4px;
+
+          &--dot {
+            background: #28272c;
+          }
+
+          &--content {
+            margin: 90px auto;
+            img {
+              display: inline-block;
+              cursor: pointer;
+            }
+            a {
+              margin-top: 71px;
+              font-size: 14px;
+              color: #5765fd;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      button {
+        background: #f9f9f8;
+        font-size: 14px;
+        color: #28272c;
+        padding: 13.5px 32px;
+        height: 48px;
+      }
+
+      button:hover {
+        background-color: #5765fd;
+        color: #fff;
+      }
+      .active {
+        background-color: #5765fd;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .main {
+    padding-top: 68px;
+    padding-bottom: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &--desktop-version {
+      &--bottom-title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      &--toptitle {
+        img {
+          width: 22px;
+          height: 1px;
+        }
+      }
+      &--category {
+        &--filter-category {
+          .custom-filter:nth-child(n + 7) {
+            display: none;
+          }
+          margin-top: 48px;
+          &--data {
+            height: 165px;
+            width: 165px;
+
+            &--content {
+              margin: 58px auto;
+              a {
+                font-weight: 500;
+                font-size: 14px;
+              }
+              img {
+                width: 113px;
+              }
+            }
+            a {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
