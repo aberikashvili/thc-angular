@@ -17,8 +17,8 @@
           <div class="main--desktop-version--category--scroll--tabs flex gap-5">
             <button
               class="uppercase flex justify-center items-center"
-              [ngClass]="{ active: this.item.active == 1 }"
-              (click)="btnClick(item)"
+              [ngClass]="{ active: this.item.active == true }"
+              (click)="tabChanged(item)"
               *ngFor="let item of tabsData"
             >
               {{ item.btnName }}
@@ -30,7 +30,7 @@
         >
           <div
             class="main--desktop-version--category--filter-category--data custom-filter relative flex flex-col items-center"
-            *ngFor="let item of filteredCategoryData"
+            *ngFor="let item of filteredData"
           >
             <span
               class="main--desktop-version--category--filter-category--data--dot w-1 h-1 absolute top-0 left-0"
