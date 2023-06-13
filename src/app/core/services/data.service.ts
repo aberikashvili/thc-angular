@@ -11,4 +11,8 @@ export class DataService {
   getData(): Observable<any> {
     return this._http.get('/api/service');
   }
+
+  getStructurePageData(): Observable<any> {
+    return this._http.get('/api/structure-company');
+  }
 }
