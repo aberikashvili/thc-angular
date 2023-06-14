@@ -2,8 +2,8 @@ import { Component,} from '@angular/core';
 
 @Component({
   selector: 'app-explorebrands',
-  templateUrl: './explorebrands.component.html',
-  styleUrls: ['./explorebrands.component.scss'],
+  templateUrl: './explore-brands.component.html',
+  styleUrls: ['./explore-brands.component.scss'],
 })
 export class ExplorebrandsComponent {
  
