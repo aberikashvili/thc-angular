@@ -1,0 +1,10 @@
+{
+  "left": {
+    "imgWeb": "assets/images/for web.png",
+    "imgMob": "assets/images/for mobile.png"
+  },
+  "right": {
+    "imgWeb": "assets/images/map.png",
+    "imgMob": "assets/images/map.png"
+  }
+}
