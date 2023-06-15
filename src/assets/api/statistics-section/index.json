@@ -1,0 +1,24 @@
+{
+  "sectionTitle": "STATISTICS",
+  "title": "Network and Partnerships",
+  "description": "Our company has a vast network of shop locations and distribution centers, with partnerships with numerous reputable brands. With our extensive reach, we are able to provide our clients with a wide range of products and efficient delivery services.",
+
+  "statistics": [
+    {
+      "title": "245",
+      "description": "Shop Locations"
+    },
+    {
+      "title": "79",
+      "description": "Distribution Centers"
+    },
+    {
+      "title": "52",
+      "description": "Partner Brands"
+    },
+    {
+      "title": "456",
+      "description": "Shop Locations"
+    }
+  ]
+}
