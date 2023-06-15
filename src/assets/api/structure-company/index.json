@@ -1,15 +1,28 @@
 {
-  "main_title": "STRUCTURE OF THE COMPANY",
+  "sectionTitle": "STRUCTURE OF THE COMPANY",
   "title": "As of today, the holding includes",
-  "desc": "Since its founding in 1994, the company has found continuous success operating in various business segments such as wholesale and retail, the import and distribution of food products, toys, and tableware, supermarket chain, food manufacturing and real estate rental.",
-  "cap_title1": "Food Import & Distribution",
-  "cap_desc1": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-  "cap_title2": "Import & Distribution of Toys, Tableware and Stationery",
-  "cap_desc2": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-  "cap_title3": "Supermarket Chain",
-  "cap_desc3": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-  "cap_title4": "Construction / Property Development",
-  "cap_desc4": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-  "cap_title5": "Production",
-  "cap_desc5": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
+  "description": "Since its founding in 1994, the company has found continuous success operating in various business segments such as wholesale and retail, the import and distribution of food products, toys, and tableware, supermarket chain, food manufacturing and real estate rental.",
+
+  "industries": [
+    {
+      "title": "Food Import & Distribution",
+      "description": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
+    },
+    {
+      "title": "Import & Distribution of Toys, Tableware and Stationery",
+      "description": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
+    },
+    {
+      "title": "Supermarket Chain",
+      "description": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
+    },
+    {
+      "title": "Construction / Property Development",
+      "description": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
+    },
+    {
+      "title": "Production",
+      "description": "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
+    }
+  ]
 }

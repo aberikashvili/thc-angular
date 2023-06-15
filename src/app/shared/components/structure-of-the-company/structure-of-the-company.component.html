@@ -7,7 +7,7 @@
         <span
           class="stracture__wrapper__left__hedline--line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"
         ></span
-        >{{ pageData?.main_title }}
+        >{{ pageData?.sectionTitle }}
       </p>
       <h2
         class="stracture__wrapper__left__header max-w-[487px] font-bold text-[#28272C] text-[32px] mt-[24px] mb-[24px]"
@@ -17,7 +17,7 @@
       <p
         class="stracture__wrapper__left__text max-w-[632px] text-[18px] text-[#27262bb3]"
       >
-        {{ pageData?.desc }}
+        {{ pageData?.description }}
       </p>
       <app-button
         class="stracture__wrapper__left__button mt-[24px]"
@@ -27,9 +27,13 @@
     </article>
 
     <article class="stracture__wrapper__right">
-      <a href="" class="stracture__wrapper__right__wrapper">
+      <a
+        href=""
+        class="stracture__wrapper__right__wrapper"
+        *ngFor="let item of pageData?.industries"
+      >
         <h1 class="stracture__wrapper__right__wrapper--header">
-          {{ pageData?.cap_title1 }}
+          {{ item.title }}
           <span class="stracture__wrapper__right__wrapper--header--link">
             <img
               src="/assets/images/arrow.png"
@@ -39,67 +43,7 @@
           </span>
         </h1>
         <p class="stracture__wrapper__right__wrapper--text">
-          {{ pageData?.cap_desc1 }}
-        </p>
-      </a>
-      <a href="" class="stracture__wrapper__right__wrapper">
-        <h1 class="stracture__wrapper__right__wrapper--header">
-          {{ pageData?.cap_title2 }}
-          <span class="stracture__wrapper__right__wrapper--header--link">
-            <img
-              src="/assets/images/arrow.png"
-              alt=""
-              class="stracture__wrapper__right__wrapper--header--link--image"
-            />
-          </span>
-        </h1>
-        <p class="stracture__wrapper__right__wrapper--text">
-          {{ pageData?.cap_desc2 }}
-        </p>
-      </a>
-      <a href="" class="stracture__wrapper__right__wrapper">
-        <h1 class="stracture__wrapper__right__wrapper--header">
-          {{ pageData?.cap_title3 }}
-          <span class="stracture__wrapper__right__wrapper--header--link">
-            <img
-              src="/assets/images/arrow.png"
-              alt=""
-              class="stracture__wrapper__right__wrapper--header--link--image"
-            />
-          </span>
-        </h1>
-        <p class="stracture__wrapper__right__wrapper--text">
-          {{ pageData?.cap_desc3 }}
-        </p>
-      </a>
-      <a href="" class="stracture__wrapper__right__wrapper">
-        <h1 class="stracture__wrapper__right__wrapper--header">
-          {{ pageData?.cap_title4 }}
-          <span class="stracture__wrapper__right__wrapper--header--link">
-            <img
-              src="/assets/images/arrow.png"
-              alt=""
-              class="stracture__wrapper__right__wrapper--header--link--image"
-            />
-          </span>
-        </h1>
-        <p class="stracture__wrapper__right__wrapper--text">
-          {{ pageData?.cap_desc4 }}
-        </p>
-      </a>
-      <a href="" class="stracture__wrapper__right__wrapper">
-        <h1 class="stracture__wrapper__right__wrapper--header">
-          {{ pageData?.cap_title5
-          }}<span class="stracture__wrapper__right__wrapper--header--link">
-            <img
-              src="/assets/images/arrow.png"
-              alt=""
-              class="stracture__wrapper__right__wrapper--header--link--image"
-            />
-          </span>
-        </h1>
-        <p class="stracture__wrapper__right__wrapper--text">
-          {{ pageData?.cap_desc5 }}
+          {{ item.description }}
         </p>
       </a>
     </article>
