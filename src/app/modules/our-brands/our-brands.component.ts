@@ -18,7 +18,7 @@ export class OurBrandsComponent {
 
    constructor(private _dataservei:DataService ){}
 
-   NgOnInint(){
+   ngOnInit(){
     this._dataservei.getBrands().subscribe((data =>{
       this.title=data.title;
       this.SubTitle=data.SubTitle;
