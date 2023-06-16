@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
   selector: 'app-our-brands',
@@ -6,6 +7,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-brands.component.scss'],
 })
 export class OurBrandsComponent {
+    title!: string;
+    SubTitle!: string;
+    brands!:string;
+    fooDcaption!: string;
+    toys!: string;
+    chain!: string;
+    production!: string;
+    development!: string;
+
+   constructor(private _dataservei:DataService ){}
+
+   NgOnInint(){
+    this._dataservei.getBrands().subscribe((data =>{
+      this.title=data.title;
+      this.SubTitle=data.SubTitle;
+      this.brands=data.brands;
+      this.fooDcaption=data.fooDcaption;
+      this.toys=data.toys;
+      this.chain=data.chain;
+      this.production=data.production;
+      this.development=data.development;
+    }))
+   }
+
   tabsData: any = [
     { btnName: 'ALL BRANDS', active: 1, type: 'all' },
     { btnName: 'Food Import & Distribution', active: 0, type: '1' },
