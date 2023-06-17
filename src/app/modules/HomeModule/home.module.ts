@@ -3,7 +3,7 @@ import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DistributioncenterComponent } from './components/distributioncenter/distributioncenter.component';
-import { ExplorebrandsComponent } from './components/explorebrands/explore-brands.component';
+import { ExplorebrandsComponent } from './components/explore-brands/explore-brands.component';
 const routes: Routes = [
   {
     path: '',
