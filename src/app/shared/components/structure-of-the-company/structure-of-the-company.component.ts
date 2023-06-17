@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { takeUntil } from 'rxjs';
+
+import { BaseComponent } from '../base.component';
 import { DataService } from 'src/app/core/services/data.service';
 import { CompanyStructureEntry } from './company-structure-entry.model';
 
@@ -7,18 +10,23 @@ import { CompanyStructureEntry } from './company-structure-entry.model';
   templateUrl: './structure-of-the-company.component.html',
   styleUrls: ['./structure-of-the-company.component.scss'],
 })
-export class StructureOfTheCompanyComponent implements OnInit {
+export class StructureOfTheCompanyComponent extends BaseComponent implements OnInit {
   pageData!: CompanyStructureEntry;
 
-  constructor(private _service: DataService) {}
-
-  ngOnInit() {
-    this.getData();
+  constructor(private _dataService: DataService) {
+    super();
   }
 
-  getData() {
-    this._service.getStructurePageData().subscribe((res) => {
-      this.pageData = res;
-    });
+  ngOnInit() {
+    this.loadData();
+  }
+
+  loadData() {
+    this._dataService
+      .getStructurePageData()
+      .pipe(takeUntil(this.destroy$$))
+      .subscribe((res) => {
+        this.pageData = res;
+      });
   }
 }

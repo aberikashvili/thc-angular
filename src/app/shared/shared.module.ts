@@ -8,9 +8,11 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
 import { RouterModule } from '@angular/router';
 import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
+import { BaseComponent } from './components/base.component';
 
 @NgModule({
   declarations: [
+    BaseComponent,
     ButtonComponent,
     HeaderComponent,
     FooterComponent,
@@ -20,9 +22,9 @@ import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
     OurBrandsComponent,
   ],
   imports: [CommonModule, RouterModule],
-
   exports: [
     CommonModule,
+    BaseComponent,
     ButtonComponent,
     HeaderComponent,
     FooterComponent,

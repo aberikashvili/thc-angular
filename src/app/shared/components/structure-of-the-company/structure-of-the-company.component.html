@@ -7,17 +7,17 @@
         <span
           class="stracture__wrapper__left__hedline--line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"
         ></span
-        >{{ pageData?.sectionTitle }}
+        >{{ pageData.sectionTitle }}
       </p>
       <h2
         class="stracture__wrapper__left__header max-w-[487px] font-bold text-[#28272C] text-[32px] mt-[24px] mb-[24px]"
       >
-        {{ pageData?.title }}
+        {{ pageData.title }}
       </h2>
       <p
         class="stracture__wrapper__left__text max-w-[632px] text-[18px] text-[#27262bb3]"
       >
-        {{ pageData?.description }}
+        {{ pageData.description }}
       </p>
       <app-button
         class="stracture__wrapper__left__button mt-[24px]"
@@ -30,7 +30,7 @@
       <a
         href=""
         class="stracture__wrapper__right__wrapper"
-        *ngFor="let item of pageData?.industries"
+        *ngFor="let item of pageData.industries"
       >
         <h1 class="stracture__wrapper__right__wrapper--header">
           {{ item.title }}
