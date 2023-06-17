@@ -1,58 +1,51 @@
-<section class="stracture bg-[#F9F9F8] ">
-
-    <div class="stracture__wrapper flex justify-between ml-[100px] mr-[100px]">
-
-
-
+<section class="stracture bg-[#F9F9F8]">
+  <div class="stracture__wrapper flex justify-between ml-[100px] mr-[100px]">
     <article class="stracture__wrapper__left flex mt-[287px] flex-col">
-        <p class="stracture__wrapper__left__hedline font-semibold uppercase flex items-center tracking-[9.6px]"> <span class="stracture__wrapper__left__hedline--line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"></span> Structure of the company  </p>
-        <h2 class="stracture__wrapper__left__header max-w-[487px] font-bold  text-[#28272C] text-[32px] mt-[24px] mb-[24px] ">As of today, the holding includes</h2>
-        <p class="stracture__wrapper__left__text max-w-[632px] text-[18px] text-[#27262bb3]">Since its founding in 1994, the company has found continuous success operating in various business segments such as wholesale and retail, the import and distribution of food products, toys, and tableware, supermarket chain, food manufacturing and real estate rental.</p>
-        <app-button class="stracture__wrapper__left__button   mt-[24px]" type="blues" >discover more</app-button>
-
-     
-
-        
-
+      <p
+        class="stracture__wrapper__left__hedline font-semibold uppercase flex items-center tracking-[9.6px]"
+      >
+        <span
+          class="stracture__wrapper__left__hedline--line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"
+        ></span
+        >{{ pageData.sectionTitle }}
+      </p>
+      <h2
+        class="stracture__wrapper__left__header max-w-[487px] font-bold text-[#28272C] text-[32px] mt-[24px] mb-[24px]"
+      >
+        {{ pageData.title }}
+      </h2>
+      <p
+        class="stracture__wrapper__left__text max-w-[632px] text-[18px] text-[#27262bb3]"
+      >
+        {{ pageData.description }}
+      </p>
+      <app-button
+        class="stracture__wrapper__left__button mt-[24px]"
+        type="blues"
+        >discover more</app-button
+      >
     </article>
 
     <article class="stracture__wrapper__right">
-         <a href="" class="stracture__wrapper__right__wrapper">
-            <h1 class="stracture__wrapper__right__wrapper--header">Food Import & Distribution <span class="stracture__wrapper__right__wrapper--header--link">
-
-                <img src="/assets/images/arrow.png" alt="" class="stracture__wrapper__right__wrapper--header--link--image">    </span>
-            </h1>
-            <p class="stracture__wrapper__right__wrapper--text">THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.</p>
-         </a>
-         <a href="" class="stracture__wrapper__right__wrapper">
-            <h1 class="stracture__wrapper__right__wrapper--header">Import & Distribution of Toys, Tableware and Stationery <span class="stracture__wrapper__right__wrapper--header--link">
-                <img src="/assets/images/arrow.png" alt="" class="stracture__wrapper__right__wrapper--header--link--image">   
-               </span>
-            </h1>
-            <p class="stracture__wrapper__right__wrapper--text">THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.</p>
-         </a>
-         <a href="" class="stracture__wrapper__right__wrapper">
-            <h1 class="stracture__wrapper__right__wrapper--header">Supermarket Chain <span class="stracture__wrapper__right__wrapper--header--link">
-                <img src="/assets/images/arrow.png" alt="" class="stracture__wrapper__right__wrapper--header--link--image">    </span>
-
-            </h1>
-            <p class="stracture__wrapper__right__wrapper--text">THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.</p>
-         </a>
-         <a href="" class="stracture__wrapper__right__wrapper">
-            <h1 class="stracture__wrapper__right__wrapper--header">Construction / Property  Development <span class="stracture__wrapper__right__wrapper--header--link">
-                <img src="/assets/images/arrow.png" alt="" class="stracture__wrapper__right__wrapper--header--link--image">    </span>
-
-            </h1>
-            <p class="stracture__wrapper__right__wrapper--text">THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.</p>
-         </a>
-         <a href="" class="stracture__wrapper__right__wrapper">
-            <h1 class="stracture__wrapper__right__wrapper--header">Production<span class="stracture__wrapper__right__wrapper--header--link">
-                <img src="/assets/images/arrow.png" alt="" class="stracture__wrapper__right__wrapper--header--link--image">    </span>
-
-            </h1>
-            <p class="stracture__wrapper__right__wrapper--text">THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.</p>
-         </a>
+      <a
+        href=""
+        class="stracture__wrapper__right__wrapper"
+        *ngFor="let item of pageData.industries"
+      >
+        <h1 class="stracture__wrapper__right__wrapper--header">
+          {{ item.title }}
+          <span class="stracture__wrapper__right__wrapper--header--link">
+            <img
+              src="/assets/images/arrow.png"
+              alt=""
+              class="stracture__wrapper__right__wrapper--header--link--image"
+            />
+          </span>
+        </h1>
+        <p class="stracture__wrapper__right__wrapper--text">
+          {{ item.description }}
+        </p>
+      </a>
     </article>
-
-    </div>
+  </div>
 </section>
