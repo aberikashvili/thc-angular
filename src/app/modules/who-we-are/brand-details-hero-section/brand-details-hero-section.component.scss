@@ -1,0 +1,259 @@
+
+.upside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.upside::before{
+     content: "";
+   height: 1075px;
+   width: 45.9%;
+   background-color: #FF8C6D;
+   position: absolute;
+   z-index: 3;
+   left: -319px;
+   top: -185px;
+}
+.downsidesection__wrapper{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.downsidesection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px 0 0 280px;
+    width: 600px;
+    
+}
+.downsidesection__wrapper>.downsidesection__wrapper__items:nth-of-type(2n){
+    margin-top: 60px;
+
+  
+}
+.downsidesection__wrapper__items__label{
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+.downsidesection__wrapper__items__text{
+    padding-top: 8px;
+    font-size: 14px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 319px;
+}
+
+
+.imageplace{
+    position: relative;
+    min-width: 559px;
+    height: 559px;
+    background-color: gainsboro;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.tittle{
+    letter-spacing: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.mainimage{
+    max-width: 340px;
+}
+.downsidetext{
+    text-align: center;
+    margin-top: 280px;
+    font-size: small;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    max-width: 633px;
+    margin-left: 92px;
+}
+.about{
+    font-size: 18px;
+    color: gray;
+    
+}
+.smallinfo{
+    font-size: 32px;
+    margin: 20px 0 20px 0;
+}
+.line{
+    height: 2px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1680px){
+  section{
+    margin: 0 200px;
+  }
+}
+@media only screen and (max-width: 1440px){
+//     .mainimage{
+    
+//     min-width: 500px;
+//    }
+      .imageplace::before
+ {
+     height: 200%;
+    
+     
+}
+.downsidetext{
+    margin-top: 150px;
+   }
+   .downsidesection__wrapper>.downsidesection__wrapper__items:nth-of-type(2n){
+    margin-top: 40px;
+
+  
+}
+}
+@media only screen and (max-width: 1366px){
+   
+   .smallinfo{
+    font-size: 22px;
+   }
+
+.downsidetext{
+    margin-top: 100px;
+   }
+//    .mainimage{
+//     min-width: 400px;
+//    }
+ }
+
+
+ @media only screen and (max-width: 1280px){
+  section{
+    margin: 0 120px;
+  }
+  .upside{
+    flex-direction: column-reverse;
+ }
+ .imageplace::before
+ {
+   content: "";
+    height: 120%;
+    width: 100%;
+    background-color: #FF8C6D;
+    position: absolute;
+    z-index: 3;
+    left: -340px;
+    top: -10%;
+}
+.upside::before{
+     
+   content: "";
+    display: none;
+}
+.imageplace{
+    margin: 60px 0  ;
+    width: 80%;
+     min-width: auto;
+         margin-left: 130px;
+         z-index: 100;
+        //  position: ;
+}
+
+.info{
+    max-width: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 100px;
+   }
+   section{
+    flex-direction: column;
+    margin: 0 60px;
+    align-items: center;
+ }
+ 
+//  .mainimage{
+//     margin: 60px 0  ;
+         
+//    }
+   .downsidetext{
+    margin-top: 150px;
+   }
+   .downsidesection{
+    margin-left: 0;
+
+   }
+}
+@media only screen and (max-width: 600px){
+  section{
+    margin: 0 16px;
+  }
+     .imageplace::before
+ {
+     right: -16px;
+}
+ .downsidesection__wrapper>.downsidesection__wrapper__items:nth-of-type(2n){
+    margin-top: 0px;
+}
+.downsidesection__wrapper__items__text{
+    padding-top: 2px;
+    font-size: 12px;
+}
+.downsidesection__wrapper__items{
+    width: 168px;
+    justify-content: space-between;
+}
+ .imageplace::before
+ {
+   content: "";
+    width: 70%;
+}
+.downsidesection__wrapper{
+    flex-direction: row;
+    margin-top: 24px;
+}
+.downsidesection{
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+}
+.imageplace{
+    margin-bottom: 32px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.info{
+   
+    margin-bottom: 0;
+   }
+.mainimage{
+    margin-left: 50px;
+}
+.downsidetext{
+    margin-top: 90px;
+    font-size: 9px;
+}
+.about{
+    font-size: 14px;
+}
+.smallinfo{
+    font-size: 24px;
+}
+.tittle{
+    font-size: 12px;
+}
+}
