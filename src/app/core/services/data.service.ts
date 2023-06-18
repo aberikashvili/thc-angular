@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { WhoWEAreMedia } from 'src/app/models/whowearemedia.model';
+import { Gallery } from 'src/app/models/gallery.model';
+
+
 
 
 @Injectable({
@@ -13,7 +15,7 @@ export class DataService {
   getData(): Observable<any> {
     return this._http.get('/api/service');
   }
-  getMedia(): Observable<WhoWEAreMedia> {
-    return this._http.get<WhoWEAreMedia>('/api/whowearemedia');
+  getGallery(): Observable<Gallery> {
+    return this._http.get<Gallery>('/api/gallery');
   }
 }

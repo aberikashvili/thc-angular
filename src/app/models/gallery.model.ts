@@ -1,4 +1,4 @@
-export class WhoWEAreMedia {
+export class Gallery {
   constructor(
     public title: string,
     public subTitle: string, 

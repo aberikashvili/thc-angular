@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
-import { StatisticsComponent } from './components/statistics/statistics.component';
-import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
+import { StatisticsComponent } from '../modules/HomeModule/components/statistics/statistics.component';
+import { StructureOfTheCompanyComponent } from '../modules/HomeModule/components/structure-of-the-company/structure-of-the-company.component';
 import { RouterModule } from '@angular/router';
 import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
     StatisticsComponent,
     StructureOfTheCompanyComponent,
     OurBrandsComponent,
+    GalleryComponent,
   ],
   imports: [CommonModule, RouterModule],
 
@@ -30,6 +32,7 @@ import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
     StatisticsComponent,
     StructureOfTheCompanyComponent,
     OurBrandsComponent,
+    GalleryComponent
   ],
 })
 export class SharedModule {}
