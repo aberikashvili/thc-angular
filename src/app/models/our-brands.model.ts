@@ -7,6 +7,7 @@ export class ourBrands {
     public toys: string,
     public chain: string,
     public production: string,
-    public development: string
+    public development: string,
+    public images:{image:string,text:string}[]
   ) {}
 }
