@@ -34,7 +34,6 @@ import { HeaderResponsiveComponent } from './components/header/header-responsive
     MatSelectModule,
     MatFormFieldModule,
     MatSidenavModule,
-    NgIf,
   ],
   exports: [
     CommonModule,
