@@ -15,7 +15,7 @@ export class OurBrandsComponent {
     chain!: string;
     production!: string;
     development!: string;
-    images!:{"image":string,"text":string}[]
+    images!:{"image":string,"text":string}[];
 
    constructor(private _dataservei:DataService ){}
 
@@ -29,6 +29,7 @@ export class OurBrandsComponent {
       this.chain=data.chain;
       this.production=data.production;
       this.development=data.development;
+      this.images=data.images;
     }))
    }
 
