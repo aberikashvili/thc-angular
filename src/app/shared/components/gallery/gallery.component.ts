@@ -9,6 +9,7 @@ import { DataService } from 'src/app/core/services/data.service';
 export class GalleryComponent {
   title!: string;
   subTitle!: string;
+  images!: { image: string }[];
 
   constructor(private _dataservice: DataService) {}
 
@@ -16,7 +17,12 @@ export class GalleryComponent {
     this._dataservice.getGallery().subscribe((data) => {
       this.title = data.title;
       this.subTitle = data.subTitle;
-      debugger;
+      this.images = data.images;
+
+      console.log(this.title)
+      console.log(this.images);
+      console.log(this.subTitle);
+      
     });
   }
 }

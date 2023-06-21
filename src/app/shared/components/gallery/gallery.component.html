@@ -4,22 +4,22 @@
     <h2 class="stracture__wrapper__left__header font-bold  text-[#28272C] text-[32px] mt-[16px] mb-[40px] capitalize">{{subTitle}}</h2>
 </article>
      
-<div class="media__gallery   ">
+<div class="media__gallery   " *ngFor="let photo of images">
    
-    <img src="https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg" class="media__gallery__image   ">
+    <img src="[phoro.image[0]]"  class="media__gallery__image   ">
    
 
       
-    <img src="https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg" class="media__gallery__image   ">
+    <img src="[phoro.image[1]]" class="media__gallery__image   ">
 
-    <img src="https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg" class="media__gallery__image  ">
+    <img src="[phoro.image[2]]" class="media__gallery__image  ">
 
 
      <div class="media__gallery__wrapper ">
     <a href="" class="media__gallery__wrapper__link relative block w-[270px] h-[270px]" >
         <span class="media__gallery__wrapper__link--text capitalize text-[#5765FD] z-10 flex font-semibold absolute right-[50%] top-[50%] translate-x-[50%] translate-y-[-50%]">
             view more <img src="assets/images/gallery__arrow.png " alt="" class="pl-[10px]"></span>
-        <img src="https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg " class="media__gallery__image">
+        <img src="[phoro.image[3]]" class="media__gallery__image">
     </a>
 </div>
    

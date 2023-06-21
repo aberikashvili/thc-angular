@@ -1,10 +1,18 @@
 {
     "title" : "M E D I A",
     "subTitle" : "Photo Gallery",
-    "omages" : [
-       "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg",
-       "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg",
-       "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg",
-       "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg"
+    "images" : [
+      {
+        "image": "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg"
+      },
+      {
+        "image": "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg"
+      },
+      {
+        "image": "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg"
+      },
+      {
+        "image": "https://images.freeimages.com/images/large-previews/77c/nemo-the-horse-1339807.jpg"
+      }
     ]
 }
