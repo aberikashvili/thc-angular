@@ -19,10 +19,6 @@ export class GalleryComponent {
       this.subTitle = data.subTitle;
       this.images = data.images;
       this._cdr.markForCheck();
-
-      console.log(this.title);
-      console.log(this.images);
-      console.log(this.subTitle);
     });
   }
 }
