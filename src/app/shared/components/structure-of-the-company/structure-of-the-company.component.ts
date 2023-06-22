@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { takeUntil } from 'rxjs';
-
 import { BaseComponent } from '../base.component';
 import { DataService } from 'src/app/core/services/data.service';
 import { CompanyStructureEntry } from './company-structure-entry.model';
