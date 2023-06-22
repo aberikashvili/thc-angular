@@ -29,7 +29,7 @@
   }
 }
 .footer__top__wrapper {
-  margin: 0 60px 25px 60px;
+  margin: 0 100px 25px 100px;
   &__Left {
     margin-right: 35px;
     &__text {
@@ -40,8 +40,19 @@
 .footer__top__wrapper__right--block:not(:last-of-type) {
   width: 200px;
 }
+.footer__bottom__wrapper {
+  margin: 0 100px;
+}
 
 // რესფონსივი
+@media (max-width: 1680px) {
+  .footer__top__wrapper {
+    margin: 0 80px 25px 80px;
+  }
+  .footer__bottom__wrapper {
+    margin: 0 80px;
+  }
+}
 
 @media (max-width: 1440px) {
   .footer::before {
@@ -49,18 +60,22 @@
     display: none;
   }
   .footer__top__wrapper {
+    margin: 0 60px 25px 60px;
     justify-content: center;
     &__left {
       display: none;
     }
     &__right {
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 100%;
     }
   }
+  .footer__bottom__wrapper {
+    margin: 0 60px;
+  }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .footer__top__wrapper__right--block--text {
     font-size: 12px;
   }
@@ -69,19 +84,21 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .footer__bottom__wrapper {
     font-size: 12px;
-    margin: 0 50px;
   }
-  .footer__top__wrapper {
-    margin: 0 50px 25px 50px;
+  .location {
+    min-width: 210px;
   }
   .footer__bottom__wrapper__links--link {
     margin-right: 10px;
   }
   .footer__top__wrapper__right--block:nth-of-type(2) {
     display: none;
+  }
+  .footer__top__wrapper__right--block {
+    width: auto;
   }
 }
 
@@ -106,8 +123,11 @@
       display: none;
     }
   }
+  .location {
+    min-width: auto;
+  }
   .footer__top__wrapper__right--block--text {
-    width: 270px;
+    width: auto;
   }
   .footer__top__wrapper__right--block:not(:last-child) {
     display: none;
