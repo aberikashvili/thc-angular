@@ -29,7 +29,7 @@ export class OurBrandsComponent {
       this.chain=data.chain;
       this.production=data.production;
       this.development=data.development;
-      this.images=data.images;
+      this.categoryData=data.images;
     }))
    }
 
@@ -42,24 +42,7 @@ export class OurBrandsComponent {
     { btnName: 'Construction / Property/ Development', active: 0, type: '5' },
   ];
   categoryData: any = [
-    { img: '/assets/images/shchinkhofer.png', type: '1', detailUrl: 'Details' },
-    { img: '/assets/images/shchinkhofer.png', type: '1', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '1', detailUrl: 'Details' },
-    { img: '/assets/images/shchinkhofer.png', type: '2', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '2', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '2', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '3', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '3', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '3', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '4', detailUrl: 'Details' },
-    { img: '/assets/images/shchinkhofer.png', type: '4', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '4', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
-    { img: '/assets/images/shchinkhofer.png', type: '5', detailUrl: false },
+  
   ];
   filterMode!: 'all' | number;
 

@@ -8,77 +8,23 @@
   "production": "Production",
   "development": "Construction / Property  Development",
   "images": [
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    },
-    {
-      "image": "/assets/images/shchinkhofer.png",
-      "text": "Details"
-    }
+    { "img": "/assets/images/shchinkhofer.png", "type": "1", "detailUrl": "Details" },
+    { "img": "/assets/images/shchinkhofer.png", "type": "1", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "1", "detailUrl": "Details" },
+    { "img": "/assets/images/shchinkhofer.png", "type": "2", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "2", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "2", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "3", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "3", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "3", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "4", "detailUrl": "Details" },
+    { "img": "/assets/images/shchinkhofer.png", "type": "4", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "4", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "5", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "5", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "5", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "5", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "5", "detailUrl": false },
+    { "img": "/assets/images/shchinkhofer.png", "type": "5", "detailUrl": false }
   ]
 }
