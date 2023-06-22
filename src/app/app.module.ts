@@ -9,8 +9,7 @@ import { CoreModule } from './core/core.module';
 import { IndustryModule } from './modules/industry/industry.module';
 import { NewsModule } from './modules/news/news.module';
 import { SharedModule } from './shared/shared.module';
-
-import { NewsDetailsPageModule } from './modules/news-details-page/news-details-page.module';
+import { NewsDetailsModule } from './modules/news-details/news-details.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -22,7 +21,7 @@ import { NewsDetailsPageModule } from './modules/news-details-page/news-details-
     CoreModule,
     NewsModule,
     IndustryModule,
-    NewsDetailsPageModule
+    NewsDetailsModule
   ],
 
 
