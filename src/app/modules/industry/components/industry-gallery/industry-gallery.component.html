@@ -1,23 +1,25 @@
-<section class="  gallery ml-[100px] mr-[100px] mb-[160px]">
-<article class=" gallery__article flex  flex-col">
-    <p class=" gallery__article__headline font-semibold uppercase flex items-center tracking-[9.6px]"> <span class="gallery__article__headline__line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"></span>gallery  </p>
-    <h2 class=" gallery__article__header font-bold  text-[#28272C] text-[32px] mt-[16px] mb-[40px] capitalize">photo gallery</h2>
-</article>
-     
-<div class="  gallery__photos ">
-   
-    <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" class="  gallery__photos__image ">
-   
-     <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" class="  gallery__photos__image ">
+<section class="gallery ml-[100px] mr-[100px] mb-[160px]">
+  <article class="gallery__article flex flex-col">
+    <p
+      class="gallery__article__headline font-semibold uppercase flex items-center tracking-[9.6px]"
+    >
+      <span
+        class="gallery__article__headline__line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"
+      ></span
+      >{{ galleryValue?.sectionTitle }}
+    </p>
+    <h2
+      class="gallery__article__header font-bold text-[#28272C] text-[32px] mt-[16px] mb-[40px] capitalize"
+    >
+      {{ galleryValue?.title }}
+    </h2>
+  </article>
 
- <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" class="  gallery__photos__image ">
-
-    <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" class="  gallery__photos__image ">
-
- <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" class="  gallery__photos__image ">
-
-  <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" class="  gallery__photos__image ">
-
-</div>
-
+  <div class="gallery__photos">
+    <img
+      *ngFor="let item of galleryValue?.images"
+      [src]="item.image"
+      class="gallery__photos__image"
+    />
+  </div>
 </section>
