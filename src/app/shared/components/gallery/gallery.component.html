@@ -1,29 +1,45 @@
-<section class="media   mr-[390px] ml-[390px] ">
-<article class="stracture__wrapper__left flex  flex-col">
-    <p class="stracture__wrapper__left__hedline font-semibold uppercase flex items-center tracking-[9.6px]"> <span class="stracture__wrapper__left__hedline--line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"></span>{{title}}  </p>
-    <h2 class="stracture__wrapper__left__header font-bold  text-[#28272C] text-[32px] mt-[16px] mb-[40px] capitalize">{{subTitle}}</h2>
-</article>
-     
-<div class="media__gallery   " *ngFor="let photo of images">
-   
-    <img src="[phoro.image[0]]"  class="media__gallery__image   ">
-   
+<section class="media mr-[390px] ml-[390px]">
+  <article class="stracture__wrapper__left flex flex-col">
+    <p
+      class="stracture__wrapper__left__hedline font-semibold uppercase flex items-center tracking-[9.6px]"
+    >
+      <span
+        class="stracture__wrapper__left__hedline--line h-[2px] w-[53px] mr-[20px] bg-[#FF8C6D] block"
+      ></span
+      >{{ title }}
+    </p>
+    <h2
+      class="stracture__wrapper__left__header font-bold text-[#28272C] text-[32px] mt-[16px] mb-[40px] capitalize"
+    >
+      {{ subTitle }}
+    </h2>
+  </article>
 
-      
-    <img src="[phoro.image[1]]" class="media__gallery__image   ">
+  <div class="media__gallery">
+    <div class="media__gallery__imagewrapper"
+      *ngFor="let photo of images; let index = index"
+      [class.media__gallery__wrapper]="index === images.length - 1"
+    >
+      <img
+        [src]="photo.image"
+        class="media__gallery__image"
+        *ngIf="index !== images.length - 1"
+      />
 
-    <img src="[phoro.image[2]]" class="media__gallery__image  ">
+      <a *ngIf="index === images.length - 1"
+        href=""
+        class="media__gallery__wrapper__link relative block w-[270px] h-[270px]"
+      >
+        <span
+          class="media__gallery__wrapper__link--text capitalize text-[#5765FD] z-10 flex font-semibold absolute right-[50%] top-[50%] translate-x-[50%] translate-y-[-50%]"
+        >
+          view more
+          <img src="assets/images/gallery__arrow.png " alt="" class="pl-[10px]"
+        /></span>
+        <img  [src]="photo.image" class="media__gallery__image" />
+      </a>
+    </div>
 
-
-     <div class="media__gallery__wrapper ">
-    <a href="" class="media__gallery__wrapper__link relative block w-[270px] h-[270px]" >
-        <span class="media__gallery__wrapper__link--text capitalize text-[#5765FD] z-10 flex font-semibold absolute right-[50%] top-[50%] translate-x-[50%] translate-y-[-50%]">
-            view more <img src="assets/images/gallery__arrow.png " alt="" class="pl-[10px]"></span>
-        <img src="[phoro.image[3]]" class="media__gallery__image">
-    </a>
-</div>
-   
-
-</div>
-
+    <div class="media__gallery__wrapper"></div>
+  </div>
 </section>

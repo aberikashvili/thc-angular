@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
@@ -11,18 +11,18 @@ export class GalleryComponent {
   subTitle!: string;
   images!: { image: string }[];
 
-  constructor(private _dataservice: DataService) {}
+  constructor(private _dataservice: DataService, private _cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
     this._dataservice.getGallery().subscribe((data) => {
       this.title = data.title;
       this.subTitle = data.subTitle;
       this.images = data.images;
+      this._cdr.markForCheck();
 
-      console.log(this.title)
+      console.log(this.title);
       console.log(this.images);
       console.log(this.subTitle);
-      
     });
   }
 }
