@@ -13,8 +13,8 @@
       gap: 20px;
       .left {
         img {
-          width: 850px;
-          height: 850px;
+          width: 45vw;
+          height: 45vw;
         }
       }
       .right {
@@ -25,14 +25,14 @@
           display: flex;
           gap: 20px;
           img {
-            width: 415px;
-            height: 415px;
+            width: 22vw;
+            height: 22vw;
           }
         }
         &-bottom {
           img {
-            width: 850px;
-            height: 415px;
+            width: 45vw;
+            height: 22vw;
           }
         }
       }
@@ -41,8 +41,8 @@
       display: flex;
       gap: 20px;
       img {
-        width: 270px;
-        height: 270px;
+        width: 14.24vw;
+        height: 15vw;
       }
     }
     .bottom {
@@ -54,14 +54,14 @@
         flex-wrap: wrap;
         gap: 20px;
         img {
-          width: 415px;
-          height: 415px;
+          width: 21.9vw;
+          height: 21vw;
         }
       }
       &-right {
         img {
-          width: 850px;
-          height: 850px;
+          width: 44.5vw;
+          height: 43vw;
         }
       }
     }
@@ -101,10 +101,10 @@
       }
     }
   }
-   .all__gallry__hedline{
+  .all_gallry_hedline {
     font-size: 12px;
   }
-  .all__gallry__header {
+  .all_gallry_header {
     font-size: 24px;
   }
 }

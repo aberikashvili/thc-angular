@@ -13,14 +13,14 @@
         gap: 20px;
         &:first-child {
           img {
-            width: 415px;
-            height: 415px;
+            width: 23vw;
+            height: 23vw;
           }
         }
         &:last-child {
           img {
-            width: 270px;
-            height: 270px;
+            width: 14.3vw;
+            height: 14.3vw;
           }
         }
       }
@@ -33,18 +33,16 @@
         gap: 20px;
         &:first-child {
           img {
-            width: 270px;
-            height: 270px;
+            width: 15vw;
+            height: 15vw;
           }
         }
         &:last-child {
-          position: absolute;
-          bottom: 0px;
-          left: 870px;
+          margin-top: -7vw;
 
           img {
-            width: 850px;
-            height: 415px;
+            width: 45vw;
+            height: 22vw;
           }
         }
       }
@@ -87,10 +85,10 @@
       }
     }
   }
-  .industries__gallry__hedline{
+  .industries_gallry_hedline {
     font-size: 12px;
   }
-  .industries__gallry__header {
+  .industries_gallry_header {
     font-size: 24px;
   }
 }
