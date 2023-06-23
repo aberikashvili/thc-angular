@@ -44,7 +44,7 @@ section{
     text-align: center;
     font-size: 26px;
     max-width: 880px;
-    margin: 19% auto 0 auto;
+    margin: 22.8% auto 0 auto;
 }
 .info{
     display: flex;
@@ -74,8 +74,12 @@ section{
    content: "";
    width: 65%;
    height: 1200px;
-   
-   
+}
+.downsidetext{
+    text-align: center;
+    font-size: 26px;
+    max-width: 880px;
+    margin: 19% auto 0 auto;
 }
 }
 @media only screen and (max-width: 1730px){
