@@ -79,7 +79,7 @@ section{
 }
 .downsidetext{
    
-    margin: 300px auto 0 auto;
+    margin: 19% auto 0 auto;
    
 }
 }
@@ -135,6 +135,7 @@ section{
  }
  .mainimage{
     min-width: 100%;
+    margin-right: 324px;
    }
    .downsidetext{
     margin-top: 150px;
@@ -143,6 +144,9 @@ section{
    }
    .info{
     max-width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
    }
    .about{
     margin: 0;
@@ -162,10 +166,7 @@ section{
   section{
     margin: 0 16px;
   }
-     .imageplace::before
- {
-     right: -16px;
-}
+    
 .imageplace{
     
     margin-top: 80px;
