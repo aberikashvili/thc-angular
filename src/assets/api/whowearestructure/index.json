@@ -1,16 +1,16 @@
 {
-    "tittle" : "S T R U C T U R E  O F  T H E  C O M P A N Y",
-    "holdingTittle" : "As of today, the holding includes",
+    "title" : "S T R U C T U R E O F T H E  C O M P A N Y",
+    "holdingtitle" : "As of today, the holding includes",
     "holdingDescription" : "Since its founding in 1994, the company has found continuous success operating in various business segments such as wholesale and retail, the import and distribution of food products, toys, and tableware, supermarket chain, food manufacturing and real estate rental.",
-    "foodTittle" : "Food Import & Distribution",
+    "foodtitle" : "Food Import & Distribution",
     "foodDescription" : "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-    "toyTittle" : "Import & Distribution of Toys, Tableware and Stationery",
+    "toytitle" : "Import & Distribution of Toys, Tableware and Stationery",
     "toyDescription" : "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-    "supermarkettittle" : "Supermarket Chain",
+    "supermarketitle" : "Supermarket Chain",
     "supermarketDescription" :"THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-    "constructionTittle": "Construction / Property  Development",
+    "constructiontitle": "Construction / Property  Development",
     "constructionDescription" : "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products.",
-    "productiontittle" :"Production",
+    "productiontitle" :"Production",
     "productionDescription" : "THC LTD represents an extensive array of companies and brands. Just the food segment alone includes up to 500 different products."
 
 }

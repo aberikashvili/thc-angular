@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { DataService } from 'src/app/core/services/data.service';
 
 @Component({
@@ -8,39 +8,37 @@ import { DataService } from 'src/app/core/services/data.service';
 })
 export class WHOWEAREStructureComponent {
   title!: string;
-  holdinTittle!: string;
-  holdinDescription!: string;
-  foodTittle!: string;
+  holdigtitle!: string;
+  holdingDescription!: string;
+  foodtitle!: string;
   foodDescription!: string;
-  toyTittle!: string;
+  toytitle!: string;
   toyDescription!: string;
-  supermarketTittle!: string;
+  supermarketitle!: string;
   supermarketDescription!: string;
-  constructionTittle!: string;
+  constructiontitle!: string;
   constructionDescription!: string;
-  productionTittle!: string;
+  productiontitle!: string;
   productionDescription!: string;
 
-  constructor(private _dataservice: DataService) {}
-  ngOnInit(){
-    this._dataservice.getWhoWeAreStructure().subscribe((data)=>{
-      this.title =data.title ;
-      this.holdinTittle= data.holdinTittle;
-      this.holdinDescription =data.holdinDescription;
-      this.foodTittle =data.foodTittle;
-      this.foodDescription =data.foodDescription;
-      this.toyTittle=data.toyTittle;
-      this.toyDescription=data.toyDescription;
-      this.supermarketTittle=data.supermarketTittle;
-      this.supermarketDescription=data.supermarketTittle;
-      this.supermarketDescription=data.supermarketDescription;
-      this.constructionTittle=data.constructionTittle;
-      this.constructionDescription=data.constructionDescription;
-      this.productionTittle=data.constructionTittle;
-      this.constructionDescription=data.constructionDescription;
-    })
-      
-
-    
+  constructor(private _dataservice: DataService, private _cdr: ChangeDetectorRef) {}
+  ngOnInit() {
+    this._dataservice.getWhoWeAreStructure().subscribe((data) => {
+      this.title = data.title;
+      this.holdigtitle = data.holdingtitle;
+      this.holdingDescription = data.holdingDescription;
+      this.foodtitle = data.foodtitle;
+      this.foodDescription = data.foodDescription;
+      this.toytitle = data.toytitle;
+      this.toyDescription = data.toyDescription;
+      this.supermarketitle = data.supermarketitle;
+      this.supermarketDescription = data.supermarketDescription;
+      this.supermarketDescription = data.supermarketDescription;
+      this.constructiontitle = data.constructiontitle;
+      this.constructionDescription = data.constructionDescription;
+      this.productiontitle = data.productiontitle;
+      this.productionDescription = data.productionDescription;
+      this._cdr.markForCheck();
+    });
   }
 }
