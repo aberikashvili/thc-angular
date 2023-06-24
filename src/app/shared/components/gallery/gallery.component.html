@@ -17,8 +17,7 @@
 
   <div class="media__gallery">
     <div class="media__gallery__imagewrapper"
-      *ngFor="let photo of images; let index = index"
-      [class.media__gallery__wrapper]="index === images.length - 1"
+      *ngFor="let photo of images; let index = index" 
     >
       <img
         [src]="photo.image"
@@ -40,6 +39,6 @@
       </a>
     </div>
 
-    <div class="media__gallery__wrapper"></div>
+   
   </div>
 </section>
