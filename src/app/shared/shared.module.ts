@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
-import { StatisticsComponent } from './components/statistics/statistics.component';
+import { StatisticsComponent } from '../modules/HomeModule/components/statistics/statistics.component';
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
 import { RouterModule } from '@angular/router';
 import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
