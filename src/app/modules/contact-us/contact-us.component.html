@@ -35,13 +35,27 @@
         <div class="example-container">
           <mat-form-field class="example-full-width w-80">
             <mat-label>First Name</mat-label>
-            <input matInput />
+            <input
+              [formControl]="firstName"
+              ngModel
+              minlength="2"
+              maxlength="20"
+              required
+              matInput
+            />
           </mat-form-field>
         </div>
         <div class="example-container">
           <mat-form-field class="example-full-width w-80">
             <mat-label>Last Name</mat-label>
-            <input matInput />
+            <input
+              [formControl]="lastName"
+              ngModel
+              minlength="5"
+              maxlength="20"
+              required
+              matInput
+            />
           </mat-form-field>
         </div>
       </div>
@@ -49,7 +63,7 @@
         <div class="example-container">
           <mat-form-field class="w-80">
             <mat-label>E-mail</mat-label>
-            <input matInput [formControl]="email" />
+            <input [formControl]="email" ngModel matInput required />
             <mat-error *ngIf="email.invalid && email.dirty">
               <ng-container *ngIf="email.hasError('email')"
                 >Not a valid email</ng-container
@@ -60,20 +74,40 @@
         <div class="example-container">
           <mat-form-field class="example-full-width w-80">
             <mat-label>Company Name</mat-label>
-            <input matInput />
+            <input
+              [formControl]="companyName"
+              ngModel
+              minlength="2"
+              maxlength="50"
+              required
+              matInput
+            />
           </mat-form-field>
         </div>
       </div>
       <div class="example-container" textarea>
         <mat-form-field class="example-full-width">
           <mat-label>Type Text</mat-label>
-          <textarea matInput></textarea>
+          <textarea
+            [formControl]="textArea"
+            ngModel
+            required
+            matInput
+          ></textarea>
         </mat-form-field>
       </div>
-      <div class="main--right-side--inputs--button desk">
+      <div
+        [ngClass]="{ disabled: checkInputs() }"
+        (click)="onSubmit()"
+        class="main--right-side--inputs--button desk"
+      >
         <app-button type="oranges" [width]="'100px'">SEND</app-button>
       </div>
-      <div class="main--right-side--inputs--button mob">
+      <div
+        [ngClass]="{ disabled: checkInputs() }"
+        (click)="onSubmit()"
+        class="main--right-side--inputs--button mob"
+      >
         <app-button type="oranges" [width]="'343px'">SEND</app-button>
       </div>
     </div>
