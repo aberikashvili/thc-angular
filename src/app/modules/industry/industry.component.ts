@@ -30,7 +30,6 @@ export class IndustryComponent extends BaseComponent implements OnInit {
       .pipe(takeUntil(this.destroy$$))
       .subscribe((res) => {
         this.brandsData = res.brands;
-        console.log(this.brandsData);
         this.galeryData = res.gallery;
       });
   }
