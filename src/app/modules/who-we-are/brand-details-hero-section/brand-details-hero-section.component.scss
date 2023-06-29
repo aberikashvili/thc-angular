@@ -1,223 +1,151 @@
-.upside {
+.content{
+  display: flex;
+  flex-direction: column;
+}
+// .background_logoiamge_background-orange_mobile{
+//   position: absolute;
+//   left: 0;
+//   height: 400px;
+// }
+.downsidesection{
+   display: flex;
+   flex-direction:row ;
+   margin: 4.17vw 35.42vw auto 31.667vw;
+   max-width: 567px;
+   justify-content: space-between;
+   
+}
+.background_logoiamge_background-orange{
+  width: 30.6vw;
+  height: 56.9vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.upside{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: auto 12.8125% auto 16.6145833333%;
   justify-content: space-between;
-  position: relative;
+  
 }
-.upside::before {
-  content: '';
-  height: 1075px;
-  width: 45.9%;
-  background-color: #ff8c6d;
-  position: absolute;
-  z-index: 3;
-  left: -319px;
-  top: -185px;
-}
-.downsidesection__wrapper {
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.downsidesection {
+downsidesection__wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 80px 0 0 280px;
-  width: 600px;
+  
 }
-.downsidesection__wrapper > .downsidesection__wrapper__items:nth-of-type(2n) {
-  margin-top: 60px;
+// .background{
+//  position: absolute;
+ 
+// }
+.schlogoo{
+  background-color: #F9F9F8;
+  padding:  9.8959vw 5.208vw;
+  max-width: 99%;
+  // position: relative;
+  
 }
-.downsidesection__wrapper__items__label {
-  font-weight: bold;
+.info{
+  margin-left: 4.79166666667%;
+  
+}
+.background_logoiamge_image{
+  position: relative;
+}
+
+.downsidesection__wrapper__items__label{
   font-size: 16px;
-  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
-.downsidesection__wrapper__items__text {
-  padding-top: 8px;
+.downsidesection__wrapper__items__text{
+  font-size: 14px;
+  font-weight: 300;
+}
+ .downsidesection__wrapper .downsidesection__wrapper__items:nth-child(2) {
+    margin-top: 60px;
+  }
+@media only screen and (max-width: 1440px){
+  .background_logoiamge_background-orange{
+  width: 28vw;
+  height: 60vw;
+}
+
+.downsidesection__wrapper__items__text{
   font-size: 14px;
 }
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0px 319px;
+.info_tittle_subtittle{
+  margin: 8px auto 12px auto;
 }
-
-.imageplace {
-  position: relative;
-  min-width: 559px;
-  height: 559px;
-  background-color: gainsboro;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.title {
-  display: flex;
-  align-items: center;
+@media only screen and (max-width: 1200px){
+     .background_logoiamge_background-orange{
+  width: 23vw;
+  height: 65vw;
 }
-.tittle {
-  letter-spacing: 8px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
 }
-.mainimage {
-  max-width: 340px;
-}
-.downsidetext {
-  text-align: center;
-  margin-top: 280px;
-  font-size: small;
-}
-.info {
-  display: flex;
-  flex-direction: column;
-  max-width: 633px;
-  margin-left: 92px;
-}
-.about {
-  font-size: 18px;
-  color: gray;
-}
-.smallinfo {
-  font-size: 32px;
-  margin: 20px 0 20px 0;
-}
-.line {
-  height: 2px;
-  width: 30px;
-  margin-right: 20px;
-}
-
-@media only screen and (max-width: 1680px) {
-  section {
-    margin: 0 200px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .imageplace::before {
-    height: 200%;
-  }
-  .downsidetext {
-    margin-top: 150px;
-  }
-  .downsidesection__wrapper > .downsidesection__wrapper__items:nth-of-type(2n) {
-    margin-top: 40px;
-  }
-}
-@media only screen and (max-width: 1366px) {
-  .smallinfo {
-    font-size: 22px;
-  }
-
-  .downsidetext {
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  section {
-    margin: 0 120px;
-  }
-  .upside {
+@media only screen and (max-width: 900px){
+  .upside{
     flex-direction: column-reverse;
+    margin: 60px 16px ;
   }
-  .upside::before {
-    content: '';
-    height: 85%;
-    width: 100%;
-    background-color: #ff8c6d;
-    position: absolute;
-    z-index: -3;
-    left: -340px;
-    top: 21%;
-  }
-  .imageplace {
-    margin: 60px 0;
-    width: 80%;
-    min-width: auto;
-    margin-left: 130px;
-    z-index: 100;
-  }
+  .downsidesection{
+   display: flex;
+   flex-direction:column ;
+}
+// .background_logoiamge_background-orange{
+//   display: none;
+// }
+.info_tittle_subtittle{
+  font-size: 24px;
+}
+.info_tittle_text{
+  font-size: 12px;
+}
+.info{
+  margin-bottom: 20px;
+}
+.schlogoo{
+  margin-top: 33px;
+  
+  
+}
+.background_logoiamge_background-orange{
+  top: auto;
+  
+}
+.background_logoiamge{
 
-  .info {
-    max-width: auto;
-    max-width: 100%;
-    margin-left: 0;
-    margin-bottom: 100px;
-  }
-  section {
-    flex-direction: column;
-    margin: 0 60px;
-    align-items: center;
-  }
+width: 291px;
+}
+.downsidesection__wrapper{
+  display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
 
-  .downsidetext {
-    margin-top: 150px;
+}
+.downsidesection__wrapper .downsidesection__wrapper__items:nth-child(2) {
+    margin-top:0;
+    
   }
-  .downsidesection {
-    margin-left: 0;
+  .downsidesection__wrapper__items{
+    width: 171.5px;
+  }
+  .downsidesection{
+    width: 343px;
+    margin: auto ;
+    
+  }
+ 
+}
+@media only screen and (max-width: 400px){
+ .downsidesection{
+    width: 343px;
+    margin: 16px 24px ;
+    
   }
 }
-@media only screen and (max-width: 600px) {
-  section {
-    margin: 0 16px;
-  }
-  .imageplace::before {
-    right: -16px;
-  }
-  .downsidesection__wrapper > .downsidesection__wrapper__items:nth-of-type(2n) {
-    margin-top: 0px;
-  }
-  .downsidesection__wrapper__items__text {
-    padding-top: 2px;
-    font-size: 12px;
-  }
-  .downsidesection__wrapper__items {
-    width: 168px;
-    justify-content: space-between;
-  }
-  .imageplace::before {
-    content: '';
-    width: 70%;
-  }
-  .downsidesection__wrapper {
-    flex-direction: row;
-    margin-top: 24px;
-  }
-  .downsidesection {
-    margin: 0;
-    flex-direction: column;
-    width: 100%;
-  }
-  .imageplace {
-    margin-bottom: 32px;
-    margin-top: 60px;
-    margin-left: 40px;
-  }
-  .info {
-    margin-bottom: 0;
-  }
-  .mainimage {
-    margin-left: 50px;
-  }
-  .downsidetext {
-    margin-top: 90px;
-    font-size: 9px;
-  }
-  .about {
-    font-size: 14px;
-  }
-  .smallinfo {
-    font-size: 24px;
-  }
-  .tittle {
-    font-size: 12px;
-  }
-}
+
+
+
