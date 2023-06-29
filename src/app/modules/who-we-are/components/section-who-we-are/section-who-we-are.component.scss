@@ -1,188 +1,115 @@
-:host{
-    position: relative;
+.background_logoiamge_mobile {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-section{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-    margin: 85px 100px;
+.bgcolor {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  right: -16px;
+  background-color: #ff8c6d;
+  z-index: -1;
 }
-.imageplace::before
- {
-   content: "";
-   height: 1300px;
-   width: 527px;
-   background-color: #FF8C6D;
-   position: absolute;
-   z-index: 3;
-   right: -100px;
-   top: -185px;
+.background_mobile {
+  margin: 48px 0;
 }
-.imageplace{
-    position: relative;
-    margin-left: 70px;
+.background_logoiamge_background-orange {
+  width: 30.6vw;
+  height: 56.9vw;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.title{
-    display: flex;
-    align-items: center;
-}
-.whoweare{
-    letter-spacing: 16px;
-    font-size: medium;
-    display: flex;
-    align-items: center;
-}
-.mainimage{
-    position: relative;
-    z-index: 5;
-    min-width: 705px;
-     
-}
-.downsidetext{
-    text-align: center;
-    font-size: 26px;
-    max-width: 880px;
-    margin: 22.8% auto 0 auto;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    max-width: 705px;
-}
-.about{
-    font-size: 18px;
-    color: gray;
-    align-items: flex-end;
-    margin-left: 35px;
-    max-width: 633px;
-}
-.smallinfo{
-    font-size: 32px;
-    margin: 20px 0 20px 0;
-    max-width: 704px;
-}
-.line{
-    height: 2px;
-    width: 30px;
-    margin-right: 20px;
-}
-@media only screen and (max-width: 1900px){
-.imageplace::before
- {
-   content: "";
-   width: 65%;
-   height: 1200px;
-}
-.downsidetext{
-    text-align: center;
-    font-size: 26px;
-    max-width: 880px;
-    margin: 19% auto 0 auto;
-}
-}
-@media only screen and (max-width: 1730px){
-.imageplace::before
- {
-   content: "";
-   width: 65%;
-   height: 1075px;
-   
-   
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 4% 16.5104166667% auto 5.26041666667%;
+  justify-content: space-between;
 }
 
- }
-
-
-@media only screen and (max-width: 1440px){
-    .mainimage{
-    
-    min-width: 560px;
-   }
-      .imageplace::before
- {
-    width: 80%;
-     height: 150%;
-     
+.background {
+  max-width: 36.719vw;
 }
-.downsidetext{
-    margin-top: 150px;
-   }
+.info {
+  margin-right: 4.79166666667%;
+  min-width: 36.72vw;
 }
-
-@media only screen and (max-width: 1366px){
-   section{
-    margin:0 60px
-   }
-   .smallinfo{
-    font-size: 22px;
-   }
-    .imageplace::before
- {
-    width: 60%;
-     right: -60px;
-     height: 140%;
+.info_tittle_text {
+  margin-left: 35px;
 }
-.downsidetext{
-    margin-top: 100px;
-   }
- }
-@media only screen and (max-width: 1024px){
- section{
-    flex-wrap: wrap-reverse;
- }
- .mainimage{
-    min-width: 100%;
-    margin-right: 324px;
-   }
-   .downsidetext{
-    margin-top: 150px;
-    max-width: 342px;
-    font-size: 16px;
-   }
-   .info{
-    max-width: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: auto;
-   }
-   .about{
-    margin: 0;
-   }
-.imageplace{
-    margin-top: 130px;
-    margin-left: 0;
+.downsidetext {
+  text-align: center;
+  font-size: 26px;
+  max-width: 880px;
+  margin: 17% auto 0 auto;
 }
-   .imageplace::before
- {   
-     height: 128%;
-     width: 65%;
-     top: -14%;    
+.background_logoiamge_image {
+  position: relative;
 }
+.background_logoiamge_mobile {
+  display: none;
 }
-@media only screen and (max-width: 600px){
-  section{
-    margin: 0 16px;
+@media only screen and (max-width: 1440px) {
+  .background_logoiamge_background-orange {
+    width: 28vw;
+    height: 60vw;
   }
-    
-.imageplace{
-    
-    margin-top: 80px;
-    margin-left: 0;
+  .info_tittle_subtittle {
+    margin: 8px auto 12px auto;
+  }
 }
-.downsidetext{
-    margin-top: 90px;
-    
+@media only screen and (max-width: 1200px) {
+  .background_logoiamge_background-orange {
+    width: 23vw;
+    height: 65vw;
+  }
+  .downsidetext {
+    font-size: 16px;
+    max-width: 342px;
+  }
+  .info_tittle_text {
+    margin-left: 0px;
+  }
 }
-.about{
-    font-size: 14px;
-    max-width: 344px;
-}
-.smallinfo{
-    font-size: 17px;
-}
-.whoweare{
+@media only screen and (max-width: 900px) {
+  .main {
+    flex-direction: column-reverse;
+    margin: 60px 16px;
+  }
+  .background_logoiamge {
+    display: none;
+  }
+  .background_logoiamge_mobile {
+    display: flex;
+  }
+
+  .info_tittle_subtittle {
+    font-size: 24px;
+  }
+  .info_tittle_text {
     font-size: 12px;
+  }
+  .info {
+    margin-bottom: 20px;
+  }
+  .downsidetext {
+    margin: 13% auto 0 auto;
+  }
+  .schlogoo {
+    margin-top: 33px;
+  }
+  .background_logoiamge_background-orange {
+    top: auto;
+  }
+  .background_logoiamge {
+    width: 291px;
+  }
 }
+@media only screen and (max-width: 450px) {
+  .downsidetext {
+    margin: auto 16px;
+  }
 }
