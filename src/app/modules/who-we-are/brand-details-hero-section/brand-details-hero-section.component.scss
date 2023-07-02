@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   display: none;
 }
 .bgcolor {
@@ -16,7 +16,19 @@
 .background_mobile {
   margin: 33px 0;
 }
-
+.background-gray {
+  background-color: #f9f9f8;
+  min-width: 60%;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  margin: 22px 0;
+  align-items: center;
+  margin-left: 60px;
+}
+.mbicon {
+  height: 49.56px;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -91,6 +103,9 @@ downsidesection__wrapper {
   .upside {
     flex-direction: column-reverse;
     margin: 60px 16px 0px 16px;
+  }
+  .info {
+    margin-left: 0;
   }
   .downsidesection {
     display: flex;
