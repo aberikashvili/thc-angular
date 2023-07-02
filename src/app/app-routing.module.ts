@@ -21,9 +21,11 @@ const routes: Routes = [
   },
   {
     path: 'our-brands',
-    loadChildren: () =>
-      import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
+    loadChildren: () =>import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
   },
+
+  { path: 'news-details',
+   loadChildren: () => import('./modules/news-details/news-details.module').then(m => m.NewsDetailsModule) },
   {
     path: '**',
     pathMatch: 'full',

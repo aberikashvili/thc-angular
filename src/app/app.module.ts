@@ -9,7 +9,7 @@ import { CoreModule } from './core/core.module';
 import { IndustryModule } from './modules/industry/industry.module';
 import { NewsModule } from './modules/news/news.module';
 import { SharedModule } from './shared/shared.module';
-
+import { NewsDetailsModule } from './modules/news-details/news-details.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -21,8 +21,13 @@ import { SharedModule } from './shared/shared.module';
     CoreModule,
     NewsModule,
     IndustryModule,
+    NewsDetailsModule
   ],
+
+
+
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
