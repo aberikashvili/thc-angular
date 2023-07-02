@@ -6,7 +6,6 @@ import { WhoWeAreMediaComponent } from './components/who-we-are-media/who-we-are
 import { WhoWeAreHeroSectionComponent } from './components/who-we-are-hero-section/who-we-are-hero-section.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { WhoWeAreComponent } from './who-we-are.component';
-import { OurBrandssectionComponent } from './our-brandssection/our-brandssection.component';
 
 const routes: Routes = [
   {
@@ -21,7 +20,6 @@ const routes: Routes = [
     WHOWEAREStructureComponent,
     WhoWeAreMediaComponent,
     WhoWeAreHeroSectionComponent,
-    OurBrandssectionComponent,
   ],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
