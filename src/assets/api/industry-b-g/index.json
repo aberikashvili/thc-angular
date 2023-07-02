@@ -1,0 +1,57 @@
+{
+  "brands": {
+    "sectionTitle": "brands",
+    "title": "Industry Brands",
+    "icons": [
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      },
+      {
+        "logo": "/assets/images/logo.png"
+      }
+    ]
+  },
+
+  "gallery": {
+    "sectionTitle": "gallery",
+    "title": "Photo Gallery",
+    "images": [
+      { "image": "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" },
+      { "image": "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" },
+      { "image": "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" },
+      { "image": "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" },
+      { "image": "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" },
+      { "image": "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" }
+    ]
+  }
+}
