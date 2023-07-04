@@ -49,7 +49,9 @@
               class="main--desktop-version--category--filter-category--data--content w-full flex flex-col justify-center items-center"
             >
               <img [src]="item.img" />
-              <a *ngIf="item.detailUrl">{{ item.detailUrl }}</a>
+              <a *ngIf="item.detailUrl" href="/brand-details-page"
+                >{{ item.detailUrl }}
+              </a>
             </div>
           </div>
         </div>

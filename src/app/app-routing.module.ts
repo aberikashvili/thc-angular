@@ -25,6 +25,13 @@ const routes: Routes = [
       import('./modules/our-brands/our-brands.module').then((m) => m.OurBrandsModule),
   },
   {
+    path: 'brand-details-page',
+    loadChildren: () =>
+      import('./modules/brand-details-page/brand-details-page.module').then(
+        (m) => m.BrandDetailPageModule
+      ),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',
