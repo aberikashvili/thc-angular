@@ -50,10 +50,18 @@
       &--main-dot {
         width: 616px;
         right: -35px;
-        padding-top: 55px;
-        &--dot1 {
-          background-color: #fffffd;
-          margin: 42px;
+        padding-top: 160px;
+
+        &--container {
+          &--size {
+            width: 93px;
+            height: 93px;
+            align-items: baseline;
+
+            &--dot1 {
+              border: 2px solid white;
+            }
+          }
         }
 
         &--text {
@@ -117,7 +125,7 @@
   }
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1230px) {
   .main {
     &--title {
       height: 457px;
@@ -143,11 +151,13 @@
         &--main-dot {
           right: 0px;
           width: 430px;
-          bottom: -3px;
-          &--dot1 {
-            margin: 25px;
-            width: 4px;
-            height: 4px;
+          bottom: -70px;
+
+          &--container {
+            &--size {
+              width: 64px;
+              height: 64px;
+            }
           }
 
           &--text {
@@ -185,7 +195,7 @@
       overflow: hidden;
 
       &--bottom {
-        width: 53%;
+        width: 50%;
       }
     }
     &--main-icon {
@@ -253,16 +263,18 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 665px) {
   .main {
     &--title {
       &--top {
         &--main-dot {
-          bottom: -20px;
-
-          &--dot1 {
-            width: 4px;
-            height: 4px;
+          bottom: -58px;
+          right: -52px;
+          &--container {
+            &--size {
+              width: 57px;
+              height: 57px;
+            }
           }
         }
       }
@@ -275,9 +287,7 @@
     &--title {
       &--top {
         &--main-dot {
-          bottom: -21px;
-          width: 378px;
-          right: 2px;
+          right: -50px;
         }
       }
     }

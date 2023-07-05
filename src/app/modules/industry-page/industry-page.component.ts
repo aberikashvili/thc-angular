@@ -11,6 +11,8 @@ export class IndustryPageComponent implements OnInit {
   pageId!: string;
   pageText!: any;
   iconArray!: any[];
+  dotArray: any[] = [1, 2, 3, 4, 5, 6, 7];
+
   constructor(private route: ActivatedRoute, private industryServices: DataService) {}
 
   ngOnInit(): void {

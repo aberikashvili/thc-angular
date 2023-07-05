@@ -2,56 +2,47 @@
 <section class="main">
   <div class="main--title relative flex flex-col justify-center gap-4 m-auto">
     <div class="main--title--top relative flex flex-row items-center gap-5">
-      <div class="main--title--top--main-dot flex flex-wrap absolute">
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
-        <span class="main--title--top--main-dot--dot1 w-1 h-1"></span>
+      <div class="main--title--top--main-dot flex flex-wrap absolute flex-col">
+        <div
+          class="main--title--top--main-dot--container flex"
+          *ngFor="let dot of dotArray"
+        >
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+          <div class="main--title--top--main-dot--container--size flex">
+            <span
+              class="main--title--top--main-dot--container--size--dot1"
+            ></span>
+          </div>
+        </div>
       </div>
       <div class="main--title--top--main-dot--text">
         <img src="/src/assets/images/titleline.svg" alt="" />
