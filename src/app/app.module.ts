@@ -5,17 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/HomeModule/home.module';
 import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
-import { CoreModule } from './core/core.module';
-import { IndustryModule } from './modules/industry/industry.module';
-import { NewsModule } from './modules/news/news.module';
 import { SharedModule } from './shared/shared.module';
 import { BrandDetailPageModule } from './modules/brand-details-page/brand-details-page.module';
+import { CoreModule } from './core/core.module';
+import { NewsModule } from './modules/news/news.module';
+import { IndustryModule } from './modules/industry/industry.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AppComponent,
     HomeModule,
     WhoWeAreModule,
     SharedModule,

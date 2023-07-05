@@ -8,7 +8,9 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 import { StructureOfTheCompanyComponent } from './components/structure-of-the-company/structure-of-the-company.component';
 import { RouterModule } from '@angular/router';
 import { OurBrandsComponent } from '../modules/our-brands/our-brands.component';
+import { MediaPageComponent } from '../modules/Media-page/media-page/media-page.component';
 import { BaseComponent } from './components/base.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { BaseComponent } from './components/base.component';
     StatisticsComponent,
     StructureOfTheCompanyComponent,
     OurBrandsComponent,
+    MediaPageComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -32,6 +35,7 @@ import { BaseComponent } from './components/base.component';
     StatisticsComponent,
     StructureOfTheCompanyComponent,
     OurBrandsComponent,
+    
   ],
 })
 export class SharedModule {}

@@ -11,6 +11,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/who-we-are/who-we-are.module').then((m) => m.WhoWeAreModule),
   },
+  { path: 'media-page', loadChildren: () => import('./modules/Media-page/media-page/media-page.module').then(m => m.MediaPageModule) },
   {
     path: 'industry',
     loadChildren: () => import('./modules/industry/industry.module').then((m) => m.IndustryModule),
