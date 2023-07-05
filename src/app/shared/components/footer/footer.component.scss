@@ -82,14 +82,14 @@
   .footer__top__wrapper__right--block--header {
     font-size: 13px;
   }
+    .location {
+    min-width: 215px;
+  }
 }
 
 @media (max-width: 800px) {
   .footer__bottom__wrapper {
     font-size: 12px;
-  }
-  .location {
-    min-width: 210px;
   }
   .footer__bottom__wrapper__links--link {
     margin-right: 10px;
