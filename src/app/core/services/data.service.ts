@@ -10,6 +10,10 @@ export class DataService {
   constructor(private _http: HttpClient) {}
 
   getData(): Observable<any> {
-    return this._http.get<any>('/api/services');
+    return this._http.get('/api/service');
+  }
+
+  getStructurePageData(): Observable<CompanyStructureEntry> {
+    return this._http.get<CompanyStructureEntry>('/api/structure-company');
   }
 }
