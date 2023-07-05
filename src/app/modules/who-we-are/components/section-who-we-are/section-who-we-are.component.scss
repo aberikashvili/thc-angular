@@ -89,9 +89,7 @@
   .info_tittle_subtittle {
     font-size: 24px;
   }
-  .info_tittle_text {
-    font-size: 12px;
-  }
+
   .info {
     margin-bottom: 20px;
   }
@@ -111,5 +109,17 @@
 @media only screen and (max-width: 450px) {
   .downsidetext {
     margin: auto 16px;
+  }
+  .info_tittle {
+    font-size: 12px;
+  }
+  .info_tittle_text {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .stracture__wrapper__left__hedline--line {
+    width: 16px;
+    height: 1.2px;
+    margin-right: 8px;
   }
 }
