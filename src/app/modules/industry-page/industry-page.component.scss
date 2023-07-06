@@ -297,3 +297,20 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .main {
+    &--title {
+      &--top {
+        &--main-dot {
+          right: -105px;
+          &--container {
+            &--size:nth-child(1) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
