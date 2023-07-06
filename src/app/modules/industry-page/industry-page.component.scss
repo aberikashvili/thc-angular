@@ -298,12 +298,12 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 385px) {
   .main {
     &--title {
       &--top {
         &--main-dot {
-          right: -105px;
+          right: -100px;
           &--container {
             &--size:nth-child(1) {
               display: none;
