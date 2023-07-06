@@ -285,11 +285,13 @@
 @media screen and (max-width: 467px) {
   .main {
     &--title {
+      min-height: 460px;
       &--top {
         height: 237px;
         max-height: 237px;
         &--main-dot {
-          right: -7vw;
+          bottom: -59px;
+          right: -54px;
         }
       }
     }
