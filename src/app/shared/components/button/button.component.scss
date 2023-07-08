@@ -3,6 +3,8 @@
   color: #fff;
   padding: 13px 40px;
   font-size: 13px;
+  z-index: 5;
+  position: relative;
 
   &--orange {
     background-color: #ff8c6d;
