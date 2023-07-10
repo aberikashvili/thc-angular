@@ -301,14 +301,23 @@
 @media screen and (max-width: 385px) {
   .main {
     &--title {
+      min-height: 480px;
       &--top {
         &--main-dot {
           right: -100px;
+          margin-bottom: 17px;
           &--container {
             &--size:nth-child(1) {
               display: none;
             }
           }
+        }
+      }
+    }
+    &--main-icon {
+      &--left-icon {
+        &--area {
+          margin-left: 30px;
         }
       }
     }
