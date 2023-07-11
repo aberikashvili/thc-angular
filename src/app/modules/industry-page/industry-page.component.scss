@@ -15,7 +15,7 @@
         }
         &--desc {
           margin-top: 70px;
-          gap: 8px;
+
           &--span1 {
             font-weight: 600;
             font-size: 16px;
@@ -65,9 +65,6 @@
         }
 
         &--text {
-          display: flex;
-          gap: 20px;
-          align-items: center;
           img {
             width: 53px;
             height: 2px;
