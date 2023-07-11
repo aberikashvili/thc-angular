@@ -17,7 +17,6 @@
           margin-top: 70px;
 
           &--span1 {
-            font-weight: 600;
             font-size: 16px;
             letter-spacing: 0.1em;
             color: #fffffd;
@@ -25,7 +24,6 @@
 
           &--bottomdesc {
             span {
-              font-weight: 300;
               font-size: 14px;
               line-height: 160%;
               color: #fffffd;
@@ -39,7 +37,6 @@
       }
     }
   }
-
   &--title {
     background: rgb(127, 127, 127);
     width: 90%;
@@ -92,7 +89,6 @@
     bottom: -170px;
     padding: 185px 83px;
     span:first-child {
-      font-weight: 600;
       font-size: 16px;
       line-height: 160%;
       letter-spacing: 0.1em;
@@ -100,7 +96,6 @@
     }
     &--spans {
       font-size: 14px;
-      line-height: 22px;
       line-height: 160%;
       fill: Solid;
       color: #fffffd;
@@ -121,7 +116,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1230px) {
   .main {
     &--title {
@@ -259,7 +253,6 @@
     }
   }
 }
-
 @media screen and (max-width: 665px) {
   .main {
     &--title {
@@ -278,7 +271,6 @@
     }
   }
 }
-
 @media screen and (max-width: 467px) {
   .main {
     &--title {
@@ -294,7 +286,6 @@
     }
   }
 }
-
 @media screen and (max-width: 385px) {
   .main {
     &--title {
