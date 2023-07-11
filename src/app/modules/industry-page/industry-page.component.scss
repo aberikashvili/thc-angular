@@ -298,11 +298,18 @@
 @media screen and (max-width: 385px) {
   .main {
     &--title {
-      min-height: 480px;
+      min-height: 500px;
+      &--bottom {
+        margin-top: 70px;
+      }
       &--top {
         &--main-dot {
           right: -100px;
-          margin-bottom: 17px;
+          margin-bottom: -5px;
+
+          &--text {
+            margin-bottom: -71px;
+          }
           &--container {
             &--size:nth-child(1) {
               display: none;
